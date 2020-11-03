@@ -1,0 +1,249 @@
+*ES6/ES2015 is the biggest update to the language
+*ES5 is supported by all browsers. But ES6, ES7, ES8 is only supported by the modern browsers. Old browsers does not support ES6, ES7, ES8. The solution to this problem is transpiling and polyfilling (converting to ES5)
+*JS does not need semi-colons
+*Dynamic Typing - Data types are automatically assigned to variables
+*variables that does not hava any data are undefined type
+*Type coertion - Joining strings, numbers, booleans and undefined with '+' operator, incrementing strings
+*ES5 is supported by all browsers. But ES6, ES7, ES8 is only supported by the modern browsers. Old browsers does not support ES6, ES7, ES8. The solution to this problem is transpiling and polyfilling (converting to ES5)
+*JS does not need semi-colons
+*Dynamic Typing - Data types are automatically assigned to variables
+*variables that does not hava any data are undefined type
+*Type coertion - Joining strings, numbers, booleans and undefined with '+' operator
+*\n is used for new line
+*numOne < numTwo returns true or false
+*operator precidence - operators are performed decendingly as their precidence
+*x = y = 10 assigns both variables a value of 10
+*2 == '2'  returns true. == operator does type coertion
+*2 === '2' returns false. This operator is called strict equality
+*When ever JS expects a value, is an expression. Like addition, subtraction, multiplication, greater than, less than, equals
+*statements does not produce immediate values. They just perform an action. Like if else statement, while loop, for loop, function declaration, print statement, assignment statement 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Variable and constant:
+*var declares a variable as global variable. The variable is accessible regardless the block it is declared
+*let declares a variable as local variable. The variable is only accessible inside the block it is declared 
+var varName = "hi"
+const a = 10 //declaration of constant
+typeof varName  //returns the type of the variable in string format
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Type coertion:
+/*
+console.log('I am ' + 23 + ' years old');
+console.log('23' - '10' - 3);
+console.log('23' / '2');
+console.log('23' > '18');
+
+let n = '1' + 1; // '11'
+n = n - 1;
+console.log(n);
+*/
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Type conversion:
+/*
+const inputYear = '1991';
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18);
+
+console.log(Number('Jonas'));
+console.log(typeof NaN);
+
+console.log(String(23), 23);
+
+// 5 falsy values: 0, '', undefined, null, NaN
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('Jonas'));
+console.log(Boolean({}));
+console.log(Boolean(''));
+*/
+
+
+
+NaN:
+*Not a Number
+typeof NaN //returns `number`
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Interaction with browser:
+console.log("")
+console.log(x,y) //prints both variables separated with space
+alert("")
+var varName = prompt("")
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+String:
+*Template literals are string literals allowing embedded expressions. You can use multi-line strings and string interpolation features with them.
+/*
+let y = 10
+
+let x = `Fahim
+${y}
+Shahriyar`
+console.log(x)
+
+x = 'Fahim\n'+y+'\nShahriyar'
+console.log(x)
+
+console.log(`Is y less than 10? ${y<10 ? true : false}`)
+*/
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+conditions:
+if(){}
+else if(){}
+else{}
+
+10<12 ? console.log(true) : console.log(false) //Ternary operator
+
+var x = 10<12 ? "yes" : "no"
+console.log(x)
+
+/*
+var x = 12;
+switch(x){
+    case 9:
+        console.log(9)
+        break
+    case 10:
+        console.log(10)
+        break
+    case 11:
+        console.log(11)
+        break
+    default:
+        console.log("No match")
+}
+*/
+
+/*
+var num = 10;
+switch(true){
+    case num<10:
+        console.log("Less than 10")
+        break
+    case num===10:
+        console.log("Equals to 10")
+        break
+    default:
+        console.log('More than 10')
+}
+*/
+
+Falsy values: undefined, null, O, Empty string (''), Not a number. These values are not false but considered as false as a condition
+Truthly values: Values other than Falsy Values
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Functions:
+
+Function declaration:
+function functionName (parameter){
+    statements
+}
+
+Function expression:
+var functionName = function(parameter){
+    statements
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Arrays:
+*Every element of an array in JS can have different data types
+var x = ['john', 2]
+console.log(x[1])
+var y = new Array('John', 10)
+console.log(y) //prints the entire array
+
+varArray.length  //returns the elements count of the array
+varArray.push("value") //adds to the end of the Array
+varArray.pop()  //deletes the last element of the array
+varArray.unshift('value') //adds to the beginning of the array
+varArray.shift() //deletes the first element of the array
+varArray.indexOf(value) //returns index of the element
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Objects:
+
+/*
+var obj = {
+    firstName : "value",
+    lastName : "value",
+    age : 10,
+    call : function(x){
+        this.height = 96  //creating new element
+        return this.age
+    },
+}
+
+console.log(obj)
+console.log(obj['firstName'])
+console.log(obj.age)
+console.log(obj.call(1))
+console.log(obj.height)
+*/
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Loop:
+for(var i = 0; i<10; i++)
+while(i<10)
+/*
+var x = [1,2,3,4,5,6,7,8]
+var y = function(item){
+    console.log(item)
+}
+x.forEach(y)
+*/
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

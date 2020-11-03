@@ -1,0 +1,855 @@
+from math import * #imports math package
+
+#single line comment
+'''Multiple line comment'''
+
+print(int/float/"string"/'string')
+
+Blackslash character/ Escape sequence: \n = new line, \t = tab, \" = double quotation, \b = backspace
+
+varName = int/float/"string"
+
+
+
+print("string"+str+'string'+"string")
+print ("string"+"string")
+print (intVar)
+print ("string",intVar,"string")
+print("string",intVar,"string")
+print ("string"+"string",end="")  #To avoid new line
+
+
+
+code_one, unit_one, price_one = input().split()
+l=list(map(int,input().split())) //Multiple input in one line
+
+
+
+x = "center"
+print (f'value of x = { x }')
+print("X =",X) #Python automatically prints a space before the variable
+print("X ={}".format(X)) #use this to avoid the automatic space before the variable
+print("X = "+str(X)) #use this to avoid the automatic space before the variable
+print("A={:.4f}".format(R*R*3.14159))
+round(3.14159, 2) #returns only 2 digits after decimal point
+
+
+
+import sys
+print(sys.version)  #Prints Python version
+
+
+
+arrayName = ["string", num]
+print(arrayName) #prints all array elements
+print(arrayName[n]) #prints the nth element; n= 0,1,2,3,4.........
+print(arrayName[n:]) #prints from the nth element to the last element
+print(arrayName[-1]) #prints the last element
+print(var in arrayName) #prints true if var is present in the array
+print(var not in arrayName) #prints true if var is not present in the array
+print(arrayName*3) #prints the array 3 times
+arrayName= array1 + array2
+len(arrayName) #returns the number of elements of the array
+arrayName.append("") #Appends to the array
+arrayName.insert(index, value)
+arrayName.remove(value) #removes the element from the array
+arrayName.sort() #sorts the array and stores it in the same variable
+arrayName.reverse() #sorts the array in reverse way and stores it in the same variable
+arrayName.pop() #Removes the last element of the array
+arrayName.clear() #Removes all elements of the array
+array1 = array2.copy() #copies array 2 to array 1
+arrayName.index(value) #returns the index of the value
+arrayName.count(value) #returns the number of presence of the element in the arrayName
+
+
+varArray = sorted(string/array)
+varArray = sorted(string/array, reverse=True)
+vowels.sort(reverse=True)
+
+
+varArray = list(string / touples / set / dictionary) #returns the array formed with the value
+range(10) #returns all numbers from 0 to 9
+varArray = list(range(10)) #returns all numbers from 0 to 9 and converts them into an array
+varArray = list(range(5,11)) #returns all numbers from 5 to 10 and converts them into an array
+range(start,end,interval)
+
++ =addition, - = substraction, * = multiplication, / = division, % = remainder, // = floor division, ** = exponential
+
+var = input("Enter your data: ") #input function. Takes all inputs as strings including int, float. Need to use Type Casting
+
+Type casting:
+intVarName = int(str)
+floatVarName = float(str)
+doubleVarName = eval(str)
+
+
+
+Library functions:
+print()
+input()
+max(num1,num2,num3,num4,.......) #returns the biggest number
+min(num1,num2,num3,num4,.......) #returns the smallest number
+abs(num) #returns the absolute value of the number
+pow(num1,num2) #num1**num2
+sqrt(num) #square root function. Library package import needed
+round(num)
+floor(num)
+ceil(num) #ceiling function
+type(varName) #returns the data type of the variable
+randint(1,5) #returns a random number in between 1 to 5. use from random import randint.
+random.randint(1,5) #Use import random to import the whole package
+time.time() #returns time in seconds from 1 Jan 1971
+in #print('x' in "fahim")
+not in #print('x' not in "fahim")
+not #print(not '10')
+
+
+
+Conditional statement if:
+/*
+if x>=10:
+	print("") # statement inside if
+	print("") # statement inside if
+print("") # statement outside if
+*/
+
+/*
+if x:
+	print ("x has value")
+*/
+
+/*
+if x>=10:
+	print("")
+	print("")
+elif x<10:
+	print("")
+else:
+	print("")
+*/
+
+/* Inner if statement
+if x%2==0:
+	if x%3==0:
+		print "x is divided by both 2 and 3"
+*/
+
+print(num1 if num1>num2 else num2) #Ternary if operator.
+print(var1 if condition else var2)
+max = num1 if num1>num2 else num2
+
+if condition and condition: #logical and operator
+if condition or condition: #logical or operator
+if not condition: #logical not operator
+
+
+
+While Loop:
+/*
+while condition:
+	statement
+	statement
+	if condition:
+		break/ continue
+*/
+
+
+
+For loop:
+/*
+varName= [10,20,30,40,50]
+for x in varName:
+	print (x)
+	
+for x in list(range(10)):
+    print (x)
+*/
+
+for iteration, x in enumerate(arr):  //iteration is the cycle count of the loop. iteration = 0, 1, 2, 3....
+    print(iteration)
+
+Input list(Array) from user:
+	varName = input("Enter 5 numbers separated by spaces: ") #10 20 30 40 50
+	arrayName = varName.split() #returns all numbers as integers and as elements of an array
+
+
+
+Matrix: Two dimensional array
+/* Two dimensional array
+matrix = [
+    [1,2,3,4,5],
+    [6,7,8,9,0],
+]
+for row in matrix:
+    for col in row:
+        print (col)
+*/
+
+/*3 dimensional array
+matrix = [
+    [[1,2,3,4,5],[6,7,8,9,10]],
+    [[11,12,13,14,15],[16,17,18,19,20]],
+    [[21,22,23,24,25],[26,27,28,29,30]]
+]
+for dim1 in matrix:
+    for dim2 in dim1:
+        for x in dim2:
+            print (x)
+*/
+
+
+
+Dictionary:
+/*
+varName = {
+    "value11":"value12",
+    "value21":"value22",
+    "value31":"value32"
+}
+print (varName["value11"])
+print (varName.get("value21"))
+print (varName.get("value41","Not a valid key"))  #Prints Not a valid Key if value41 does not exists
+*/
+
+
+
+Tuples:
+/*
+varName = (
+    ("value11", "value12", "value13"),
+    "value2",
+    "value3",
+    "value4",
+)
+varName =("value11", "value12", "value13"), "value2", "value3", "value4" #Touples can be defined with out first brackets
+# Touples does not support value assaignment e.g. varName[1]=100. But Touples are faster than List/Array
+print (varName[0])
+print (varName[0][1])
+print (varName[1:])  #Prints all touple elements from index 1
+print (varName[1:2])  #Prints all touple elements from index 1 until index 2
+*/
+
+
+
+Set:
+/*
+varName = {1, 2, 3, 4 , 5}
+print (varName)
+varName = {1, 2, 3, 4 , 5, 5} #Set can not have two or more elements with same value. Program will consider them as one
+print (varName)
+varName = set([1,2,3,4,5]);
+print (varName)
+varName.add("value")  #adds the value to the set
+print (varName)
+varName.remove("value")  #removes the value form the set
+print (varName)
+print("value" in varName)  #Prints false if value is not present in varName
+print("value" not in varName)  #Prints true if value is not present in varName
+varName1 = {4,5,6,7,8,9,10}
+print (varName | varName1) #prints the union of the two sets
+print (varName & varName1) #prints the intersection of the two sets
+print (varName - varName1)  #Prints the subtraction of the two sets
+*/
+
+
+
+Stack: LIFO: Last In First Out
+/*
+varName= [] #Empty list
+varName.append("C")
+varName.append("C++")
+varName.append("Java")
+varName.append("Python")
+print (varName)
+varName.pop()
+print (varName)
+varName.pop()
+print (varName)
+*/
+
+
+
+Queue: FIFO: First In First Out
+/*
+from collections import deque
+varName = deque(["C","C++","JAVA","PYTHON"])
+print (varName)
+varName.pop()  #Removes PYTHON from the que
+print (varName)
+varName.popleft()  #Removes C from the que
+print (varName)
+
+*/
+
+
+
+
+Functions:
+/*
+def functionName(x,y,z):
+	statement  #inside function
+	statement  #inside function
+	return value/variableName
+functionName(value,value,value)
+functionName(x=value,y=value,z=value)  #Also valid
+varName = functionName  #function assaignment in a variable
+varName(value,value,value)
+*/
+
+
+
+xargs: x arguements. Converts all parameters into a touples
+/*
+def functionName(*parameter):
+    print (parameter)
+    print (parameter[0])  #n=0,1,2,3,4,.....
+    sum = 0
+    for num in parameter:
+        sum = sum+num
+functionName(value,value,value,...........)
+*/
+
+
+xxargs: Double x arguements. Converts all parameters into Dictionary
+/*
+def functionName(**parameter):
+    print (parameter)
+    print (parameter["id"])
+    print (parameter["name"])
+functionName(id=10,name="Fahim")
+*/
+
+
+
+Lambda Function: A function without name/ Anonymous function. It returns the value of its statement
+/*
+print ((lambda a,b: a*a+2*a*b+b*b)(2,3))
+*/
+
+
+Map Function: Takes a function and a list as parameter
+/*
+def square (x):
+    return x*x
+numList = [1,2,3,4,5]
+varName = list(map(square,numList))
+print (varName)
+*/
+
+
+
+Filter Function: Takes a named Function or a lambda function and a List as parameters and removes elements form the List according to the conditions in the function
+/*
+numList=[1,2,3,4,5]
+varName = list(filter(lambda a: a%2==0,numList))
+print (varName)
+*/
+/*
+numList=[1,2,3,4,5]
+def functionName(a):
+    if a%2==0:
+        return a
+varName = list(filter(functionName,numList))
+print (varName)
+*/
+
+
+
+Comprehensive List/ List Comprehensions:
+/*  #This function works as map function but very small and efficient
+	numList=[1,2,3,4,5]
+	varName = [x*x for x in numList]
+	print (varName)
+*/
+/*  #This function works as map function but very small and efficient
+	numList=[1,2,3,4,5]
+	varName = [x for x in numList if x%2==0]
+	print (varName)
+*/
+
+
+
+Zip Function: Returns a list constructed from touples. The touples are constructed from nth element of the lists
+/*
+rollList=[1,2,3,4,5]
+nameList=["C","C++","JAVA","PYTHON","HTML"]
+varName = zip(rollList,nameList)
+# print(tuple(varName))
+print(list(varName))
+varName = zip(rollList,nameList,"BBBBB")
+print (list(varName))
+*/
+
+
+
+File:
+/*
+file= open("index.txt","r+")  # r= read, w = Over write, r+=read & Append write
+print (file.readable())
+print(file.read())
+file.close()
+*/
+/*
+file= open("index.txt","r+")
+print(file.readlines())  #Returns all sentences as elements inside a List and prints them
+file.close()
+*/
+/*
+file= open("index.txt","r+")
+print(file.readlines())
+file.write("\n String")
+file.close()
+*/
+
+Exception Handling:
+/*
+varInt = [0,1,2,3,4,5]
+try:
+    varName = varInt[3]/varInt[6]
+    print (varName)
+except (ZeroDivisionError, ValueError): #For more than one error
+    print ("Division by zero is not possible")
+except IndexError:
+    print ("Index not valid")
+except TypeError:
+    print ("Data type error")
+finally:  #This code runs wheather exception occures or not. So the code does not stop for any exceptoin
+    print ("Finish")
+*/
+
+/* Raise Exception
+def voter(age):
+    if age < 18:
+        raise ValueError("You are not allowed to vote")
+    return "You are allowed to vote"
+try:
+    voter(17)
+except ValueError as nickName:
+    print (nickName)
+*/
+
+/*
+try:
+    var = ""
+except(ZeroDivisionError):
+    print("Division by zero is not possible")
+except(ValueError):
+    print("Value error")
+except(TypeError):
+    print("Type error")
+except(IndexError):
+    print("Index does not exist")
+except(SyntaxError):
+    print("Syntex error")
+finally:
+    print("Error occurred")
+*/
+
+
+
+
+Swapping: Variable value inter change
+/*
+a= 10
+b = 20
+a,b=b,a
+print (a)
+print (b)
+*/
+
+Object oriented programming:
+/*
+class className:
+    roll= ""
+    name = ""
+objectName = className()
+objectName.roll = 10
+objectName.name= "JAVA"
+print ("Roll: ",objectName.roll,", Name:",objectName.name)
+*/
+
+Method: Function inside a class
+/*
+class className:
+    roll= ""
+    name = ""
+    def setValue(self,roll,name):
+        self.roll=roll
+        self.name=name
+    def getValue(self):
+        print ("Roll: ",self.roll,", Name:",self.name)
+objectName = className()
+objectName.setValue(roll = 10,name = "Center Shock")
+objectName.setValue(name="Center shock", roll = 10)
+objectName.getValue()
+*/
+
+Constructor: Constructors are methods which can get parameters while declaring objects
+/*
+class className:
+    roll= ""
+    name = ""
+    def __init__(self,roll,name):
+        self.roll=roll
+        self.name=name
+    def getValue(self):
+        print ("Roll: ",self.roll,", Name:",self.name)
+objectName = className(name="Center shock", roll = 10)
+objectName.getValue()
+*/
+
+Inheritance: Obtaining one class's proparties by another class
+/*
+class className1(className2):  #className1 inherits all proparties of className2. className2 is super class/ parent class/ Base class and className1 is subclass/ child class/ derived class
+	pass  #Use keyword pass if you don't want to give any statement to a class
+*/
+
+/*
+class className1:
+    def __init__(self):
+        print ("Constructor")
+    def pf(self):
+        print ("Hello world")
+class className2(className1):
+    pass
+objectName = className2()
+objectName.pf()
+print (issubclass(className2,className1)) #Prints true if className2 is subclass of className1
+*/
+
+
+
+Method overriding: #Rewriting super class method in subclass
+/*
+class className1():
+    def pf(self):
+        print ("className1")
+class className2(className1):
+    def pf(self):
+        print ("className2")
+objectName = className2()
+objectName.pf()
+*/
+/*
+class className1(object):
+    def __init__(self):
+        print ("className1")
+class className2(className1):
+    def __init__(self):
+        super(className2,self).__init__()  # inherits super class constructor properties
+        print ("className2")
+objectName = className2()
+*/
+/* For Python2 version
+class className1(object):
+    def pf(self):
+        print ("className1")
+class className2(className1):
+    def pf(self):
+        super(className2,self).pf()  # inherits super class constructor properties
+        print ("className2")
+objectName = className2()
+objectName.pf()
+*/
+/* For Python3 version
+class className1:
+    def pf(self):
+        print ("className1")
+class className2(className1):
+    def pf(self):
+        super().pf()  # inherits super class function properties
+        print ("className2")
+objectName = className2()
+objectName.pf()
+*/
+
+Types of inheritance:
+	1. Hierarchical inheritance
+		className1(className):
+			pass
+			
+	2. Multi-level inheritance
+		className1(className):
+			pass
+		className2(className1):
+			pass
+		className3(className2):
+			pass
+			
+	3. Multiple inheritance:
+		class className(className1,className2)  #className1 gets priority over className2 in method overriding and method calling
+
+
+Abstraction: If a method has no statement then the method is called abstract method and the class that contains that abstract method is called abstract class. You can not make object of an abstract class. In python to declear a class as abstruct there are some certain rules. Without those rules a class can not be abstract and you can make object of that class
+/*
+from abc import ABC, abstractmethod
+class className(ABC):
+    def __init__(self):
+        print("Hello world")
+
+    @abstractmethod
+    def methodName(self):
+        pass
+*/
+
+Polymorphism: Using of a function with less limitation of parameters. One built in polymorphic function is len("string"), len([10,20,30]) 
+/*
+def poly(a,b,c=0):
+    print(a+b+c)
+poly(10,20,30)
+poly(10,20)
+*/
+
+Magic Methods: These method looklike __keyword__. Like __init__
+__eq__(self,other)  #equal
+__ne__(self,other)  #not equal
+__lt__(self,other)  #less than
+__gt__(self,other)  #greater than
+__le__(self,other)  #less than or equal
+__ge__(self,other)  #greater than or equal
+__add__(self,other) #addition
+__sub__(self,other) #subtraction
+__mul__(self,other) #multiplication
+__div__(self,other) #division
+def __str__(self)
+
+/*
+class className:
+    num = ""
+    def __init__(self,num):
+        self.num=num
+    def __str__(self):
+        return "Value of num is "+str(self.num)
+    def __eq__(self, other):
+        return self.num==other.num
+object1 = className(10)
+object2 = className(20)
+print(object1)
+print(object1==object2)
+*/
+
+
+Module: Methods or classes in another files. Use from moduleName import methodName
+/*
+#folderName/moduleName.py file starts here
+	def methodName():
+		print("Method working")
+
+	def triangle():
+		pass
+#moduleName.py file ends here
+#folderName/python.py file starts here
+	from folderName.moduleName import methodName
+	methodName()
+#python.py file ends here
+*/
+
+Regular expressions:
+/*
+import re
+pattern = r"color"
+if re.match(pattern,"colorI love red color"): # To return true pattern must be present at the end of the string
+    print("Match")
+else:
+    print("Doesn't match")
+
+if re.search(pattern,"I love red color"):
+    print("Match")
+else:
+    print("Doesn't match")
+print(re.findall(pattern,"I love red color color"))
+match = re.search(pattern,"I love red color")
+if match:
+    print(match.start())
+    print(match.end())
+    print(match.span())
+*/
+re.sub("targetPattern","replacePattern", "targetString")
+re.sub("targetPattern","Replace pattern", "targetString", count=1) #Only the first matched targetPattern pattern is replaced by the replacePattern in targetString
+
+
+Meta character:
+/*Dot(.) Meta character
+import re
+pattern = r"colo..r" # One dot means any character. Two dots mean any 2 characters
+if re.match(pattern,"colouur I love red colour"):
+    print("Match")
+*/
+
+/* ^ and $ Meta character
+import re
+pattern = r"^colo..r$" # String must start with colo and must end with r. And any two characters in the middle.
+if re.match(pattern,"colouur"):
+    print("Match")
+*/
+
+/* Astric(*) Meta character
+import re
+pattern = r"a*" # * means zero or more. String can have 0 a or more a. For multiple characters use pattern = r"(ab)*"
+if re.match(pattern,"faaad"):
+    print("Match")
+*/
+
+/* Astric(*) Meta character
+import re
+pattern = r"a*b" # Zero or more a and one b
+if re.match(pattern,"bfaaad"):
+    print("Match")
+*/
+
+/* Plus(+) Meta character
+import re
+pattern = r"(ab)+" # + means one or more. String must have 1 ab or more ab.
+if re.match(pattern,"abfaaad"):
+    print("Match")
+*/
+
+/* Plus(+) Meta character
+import re
+pattern = r"a+b" # One or more a and one b
+if re.match(pattern,"abfaaad"):
+    print("Match")
+*/
+
+/*(?) Meta character
+import re
+pattern = r"ice(-)?cream" # ? means string can contain zero or one - sign
+if re.match(pattern,"icecream"):
+    print("Match")
+*/
+
+/* {}$ meta character
+import re
+pattern = r"a{1,3}$" # String must have one or up to three a
+if re.match(pattern,"aaa"):
+    print("Match")
+*/
+
+
+Character class:
+/*
+import re
+pattern = r"[aeiou]" #string must have one vowle at the starting
+if re.match(pattern,"ajwlq"):
+    print("Match")
+*/
+
+/*
+import re
+pattern = r"[A-Z]" #string must have one capital letter at the starting
+if re.match(pattern,"Bjwlq"):
+    print("Match")
+*/
+
+/*
+import re
+pattern = r"[a-z]" #string must have one small letter at the starting
+if re.match(pattern,"ajwlq"):
+    print("Match")
+*/
+
+/*
+import re
+pattern = r"[0-9]" #string must have one number at the starting
+if re.match(pattern,"8ajwlq"):
+    print("Match")
+*/
+
+/*
+import re
+pattern = r"[A-Z][a-z][0-9]"  #string must have one capital letter, one small letter and one number at the starting
+if re.match(pattern,"Vu8ajwlq"):
+    print("Match")
+*/
+
+
+
+
+
+Linear search:
+/*
+def linear_search(arr, y):
+    a = 0
+    for x in arr:
+        if x == y: return a
+        a += 1
+    return -1
+arr = [1,3,5,7,9,11,13,15,17,19]
+print(linear_search(arr,int(input())))
+*/
+
+Binary search:
+/*
+def binary_search(arr, y):
+    start = 0
+    end = len(arr)-1
+    while start<=end:
+        mid = int((start+end)/2)
+        if arr[mid] == y: return mid
+        elif arr[mid]<y: start = mid + 1
+        else: end = mid - 1
+    return -1
+arr = [1,3,5,7,9,11,13,15,17,19]
+print(binary_search(arr,int(input())))
+*/
+
+
+
+
+
+Selection sort:
+/*
+arr = [3, 44, 38, 5, 47, 15, 36, 26, 27, 2, 0]
+n = len(arr)
+a = 0
+while a<n-1:
+    b = a + 1
+    c = 0
+    d = arr[a]
+    while b<n:
+        if d>arr[b]:
+            c = b
+            d = arr[b]
+        b+=1
+    if c>0: arr[a],arr[c] = arr[c], arr[a]
+    a+=1
+print(arr)
+*/
+
+Bubble sort:
+/*
+arr = [3, 44, 38, 5, 47, 15, 36, 26, 27, 2, 0]
+n = len(arr)
+while n>1:
+    a = 0
+    while a<n-1:
+        if arr[a]>arr[a+1]: arr[a], arr[a+1] = arr[a+1], arr[a]
+        a += 1
+    n -= 1
+print(arr)
+*/
+
+Insertion sort:
+/*
+arr = [3, 44, 38, 5, 47, 15, 36, 26, 27, 2, 0]
+n = len(arr)
+a = 1
+while a<n:
+    b = a-1
+    i = arr[a]
+    while b>=0 and arr[b]>i:
+        arr[b+1] = arr[b]
+        b -= 1
+    arr[b+1] = i
+    a += 1
+print(arr)
+*/
+
+
+
+
+
+a, b = map(int, input().split())  //Input two integers
+a = [int(x) for x in input().split()] //Input an integer list
+a = [[int(x) for x in input().split()] for i in range(2)]  //inputs two list in a list
+list.append(list)

@@ -1,0 +1,827 @@
+Method overloading: With method overloading, multiple methods can have the same name with different parameters.
+Scope: In Java, variables are only accessible inside the region like: loop, condition, curly braces they are created. This is called scope.
+Class Attributes: Veriables in a class.
+
+Public:	The code is accessible for all classes
+Private: The code is only accessible within the declared class
+Default: The code is only accessible in the same package. This is used when you don't specify a modifier.
+Protected: The code is accessible in the same package and subclasses.
+
+Final: Attributes and methods cannot be overridden/modified
+Static: Attributes and methods belongs to the class, rather than an object. A static method means that it can be accessed without creating an object of the class
+Abstract: Can only be used in an abstract class, and can only be used on methods. The method does not have a body, for example abstract void run();. The body is provided by the subclass (inherited from).
+Transient: Attributes and methods are skipped when serializing the object containing them
+Synchronized: Methods can only be accessed by one thread at a time
+Volatile: The value of an attribute is not cached thread-locally, and is always read from the "main memory".
+synchronized: A non-access modifier, which specifies that methods can only be accessed by one thread at a time.
+
+
+
+
+Get and Set: Private variables can only be accessed within the same class (an outside class has no access to it). However, it is possible to access them if we provide public get and set methods.
+/*
+public class Person {
+  private String name;
+  public String getName() {
+    return name;
+  }
+  public void setName(String newName) {
+    this.name = newName;
+  }
+}
+*/
+
+
+
+
+/*Constructor
+public class MyClass {
+  int x;
+
+  public MyClass(int y) {
+    x = y;
+}
+*/
+
+
+
+
+/*Abstract class
+abstract class Person {
+  public String fname = "John";
+  public int age = 24;
+  public abstract void study(); // abstract method
+}
+*/
+
+
+
+
+/*Inner class
+class OuterClass {
+  int x = 10;
+
+  class InnerClass {
+    int y = 5;
+  }
+}
+
+public class MyMainClass {
+  public static void main(String[] args) {
+    OuterClass myOuter = new OuterClass();
+    OuterClass.InnerClass myInner = myOuter.new InnerClass();
+    System.out.println(myInner.y + myOuter.x);
+  }
+}
+*/
+
+
+
+
+
+/*Interfaces
+interface Animal {
+  public void animalSound(); // interface method (does not have a body)
+  public void sleep(); // interface method (does not have a body)
+}
+
+// Pig "implements" the Animal interface
+class Pig implements Animal {
+  public void animalSound() {
+    // The body of animalSound() is provided here
+    System.out.println("The pig says: wee wee");
+  }
+  public void sleep() {
+    // The body of sleep() is provided here
+    System.out.println("Zzz");
+  }
+}
+
+class MyMainClass {
+  public static void main(String[] args) {
+    Pig myPig = new Pig();  // Create a Pig object
+    myPig.animalSound();
+    myPig.sleep();
+  }
+}
+*/
+
+
+
+
+Enum: An enum is a special "class" that represents a group of constants (unchangeable variables, like final variables).
+/*
+public class MyClass {
+  enum Level {
+    LOW, //this is the value
+    MEDIUM,
+    HIGH
+  }
+
+  public static void main(String[] args) {
+    Level myVar = Level.MEDIUM; 
+    System.out.println(myVar);
+  }
+
+  for (Level myVar : Level.values()) {
+  	System.out.println(myVar);
+  }
+}
+*/
+
+
+
+
+
+final int x = 10; //declaration of constant
+float x = 10.66f;
+double x = 10.66d;
+float x = 18e3f;
+float x = 18E3f;
+
+float x = 10.11;
+int y = x; //Automatic casting
+int y = (int)x; //Manual casting
+
+str/array.length
+
+Scanner sc=new Scanner(System.in);
+int nextInt()
+float nextFloat()
+double nextDouble()
+byte nextByte()
+character nextChar()
+String nextLine()
+boolean nextBoolean()
+long nextLong()
+short nextShort()
+BigInteger nextBigInteger()
+BigDecimal nextBigDecimal()
+
+
+
+
+
+/*Multiple input in one line
+package test;
+
+import java.util.Scanner;
+public class test{
+    public static void main( String[] args )
+    {
+        Scanner sc = new Scanner(System.in);
+        int[] str = new int[10];
+        for(int i = 0; i<10; i++){
+            str[i] =  sc.nextInt();
+        }
+        
+        for(int i = 0; i<10; i++){
+            System.out.print(str[i]+" ");
+        }
+    }
+}
+
+*/
+/*
+import java.io.BufferedReader; 
+import java.io.IOException; 
+import java.io.InputStreamReader; 
+public class Test  
+{ 
+    public static void main(String[] args) throws IOException  
+    { 
+        BufferedReader reader =  new BufferedReader(new InputStreamReader(System.in));
+	int n = Integer.parseInt(reader.readLine());
+        String[] a_str = reader.readLine().split(" "); 
+	int[] a = new int[n];  
+        for(int i = 0; i < n; i++){
+		a[i] = Integer.parseInt(a_str[i]);
+	}
+}
+*/
+
+
+
+
+Arraylist:
+/*
+import java.util.ArrayList;
+
+public class MyClass {
+  public static void main(String[] args) {
+    ArrayList<String> cars = new ArrayList<String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("Mazda");
+    System.out.println(cars);
+  }
+}
+*/
+cars.get(0); //To access an element in the ArrayList, use the get() method and refer to the index number
+cars.set(0, "Opel"); //To modify an element, use the set() method and refer to the index number
+cars.remove(0); // To remove an element, use the remove() method and refer to the index number
+cars.clear(); // To remove all the elements in the ArrayList, use the clear() method
+cars.size(); // To find out how many elements an ArrayList have, use the size method
+Collections.sort(cars); // import java.util.Collections;
+/*For-each loop
+for (String i : cars) {
+      System.out.println(i);
+    }
+*/
+
+
+
+
+Linked list:
+/*
+import java.util.LinkedList;
+
+public class MyClass {
+  public static void main(String[] args) {
+    LinkedList<String> cars = new LinkedList<String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("Mazda");
+    System.out.println(cars);
+  }
+}
+*/
+addFirst()	//Adds an item to the beginning of the list.	
+addLast()	//Add an item to the end of the list	
+removeFirst()	//Remove an item from the beginning of the list.	
+removeLast()	//Remove an item from the end of the list	
+getFirst()	//Get the item at the beginning of the list	
+getLast()	//Get the item at the end of the list
+add(index, element)
+remove()        // removes the head of the linked list
+remove(index)
+
+
+
+
+HashMap
+/*
+import java.util.HashMap;
+
+public class MyClass {
+  public static void main(String[] args) {
+    // Create a HashMap object called capitalCities
+    HashMap<String, String> capitalCities = new HashMap<String, String>();
+
+    // Add keys and values (Country, City)
+    capitalCities.put("England", "London");
+    capitalCities.put("Germany", "Berlin");
+    capitalCities.put("Norway", "Oslo");
+    capitalCities.put("USA", "Washington DC");
+    System.out.println(capitalCities);
+  }
+}
+*/
+capitalCities.get("England"); //To access a value in the HashMap, use the get() method and refer to its key
+capitalCities.remove("England"); //To remove an item, use the remove() method and refer to the key
+capitalCities.clear() //To remove all items, use the clear() method
+capitalCities.size(); //To find out how many items there are, use the size method
+/*
+for (String i : capitalCities.keySet()) {
+  System.out.println(i);
+}
+*/
+
+
+
+
+HashSet: A HashSet is a collection of items where every item is unique.
+/*
+import java.util.HashSet;
+
+public class MyClass {
+  public static void main(String[] args) {
+    HashSet<String> cars = new HashSet<String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("BMW");
+    cars.add("Mazda");
+    System.out.println(cars);
+  }
+}
+*/
+cars.contains("Mazda");  //To check whether an item exists in a HashSet, use the contains() method
+cars.remove("Volvo"); //To remove an item, use the remove() method
+cars.clear();  //To remove all items, use the clear() method
+cars.size();  //To find out how many items there are, use the size method
+/*
+for (String i : cars) {
+  System.out.println(i);
+}
+*/
+
+
+
+
+Iterator: An Iterator is an object that can be used to loop through collections, like ArrayList and HashSet. It is called an "iterator" because "iterating" is the technical term for looping.
+/*
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class MyClass {
+  public static void main(String[] args) {
+
+    // Make a collection
+    ArrayList<String> cars = new ArrayList<String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("Mazda");
+
+    // Get the iterator
+    Iterator<String> it = cars.iterator();
+
+    // Print the first item
+    System.out.println(it.next());
+  }
+}
+*/
+/*To loop through a collection, use the hasNext() and next() methods of the Iterator
+while(it.hasNext()) {
+  System.out.println(it.next());
+}
+*/
+/*Use an iterator to remove numbers less than 10 from a collection
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class MyClass {
+  public static void main(String[] args) {
+    ArrayList<Integer> numbers = new ArrayList<Integer>();
+    numbers.add(12);
+    numbers.add(8);
+    numbers.add(2);
+    numbers.add(23);
+    Iterator<Integer> it = numbers.iterator();
+    while(it.hasNext()) {
+      Integer i = it.next();
+      if(i < 10) {
+        it.remove();
+      }
+    }
+    System.out.println(numbers);
+  }
+}
+*/
+
+
+
+
+Wrapper Classes: Byte, Short, Integer, Long, Float, Double, Boolean, Character
+Sometimes you must use wrapper classes, for example when working with Collection objects, such as ArrayList, where primitive types cannot be used (the list can only store objects)
+/*
+public class MyClass {
+  public static void main(String[] args) {
+    Integer myInt = 5;
+    Double myDouble = 5.99;
+    Character myChar = 'A';
+    System.out.println(myInt);
+    System.out.println(myDouble);
+    System.out.println(myChar);
+  }
+}
+*/
+/*To string
+public class MyClass {
+  public static void main(String[] args) {
+    Integer myInt = 100;
+    String myString = myInt.toString();
+    System.out.println(myString.length());
+  }
+}
+*/
+
+/*intValue(), byteValue(), shortValue(), longValue(), floatValue(), doubleValue(), charValue(), booleanValue()
+public class MyClass {
+  public static void main(String[] args) {
+    Integer myInt = 5;
+    Double myDouble = 5.99;
+    Character myChar = 'A';
+    System.out.println(myInt.intValue());
+    System.out.println(myDouble.doubleValue());
+    System.out.println(myChar.charValue());
+  }
+}
+*/
+
+
+
+
+
+Exception:
+/*
+public class MyClass {
+  public static void main(String[] args) {
+    try {
+      int[] myNumbers = {1, 2, 3};
+      System.out.println(myNumbers[10]);
+    } catch (Exception e) {
+      System.out.println("Something went wrong.");
+    } finally {
+      System.out.println("The 'try catch' is finished.");
+    }
+  }
+}
+*/
+/*Throw exception
+public class MyClass {
+  static void checkAge(int age) {
+    if (age < 18) {
+      throw new ArithmeticException("Access denied - You must be at least 18 years old.");
+    }
+    else {
+      System.out.println("Access granted - You are old enough!");
+    }
+  }
+
+  public static void main(String[] args) {
+    checkAge(15); // Set age to 15 (which is below 18...)
+  }
+}
+*/
+
+
+
+
+Threads:
+/*Way 1 to create a thread
+public class MyClass extends Thread {
+  public void run() {
+    System.out.println("This code is running in a thread");
+  }
+}
+*/
+/*Way 2 to create a thread
+public class MyClass implements Runnable {
+  public void run() {
+    System.out.println("This code is running in a thread");
+  }
+}
+*/
+/*Start()
+public class MyClass extends Thread {
+  public static void main(String[] args) {
+    MyClass thread = new MyClass();
+    thread.start();
+    System.out.println("This code is outside of the thread");
+  }
+  public void run() {
+    System.out.println("This code is running in a thread");
+  }
+}
+*/
+/*start()
+public class MyClass implements Runnable {
+  public static void main(String[] args) {
+    MyClass obj = new MyClass();
+    Thread thread = new Thread(obj);
+    thread.start();
+    System.out.println("This code is outside of the thread");
+  }
+  public void run() {
+    System.out.println("This code is running in a thread");
+  }
+}
+*/
+/*Because threads run at the same time as other parts of the program, there is no way to know in which order the code will run. When the threads and main program are reading and writing the same variables, the values are unpredictable. The problems that result from this are called concurrency problems.
+public class MyClass extends Thread {
+  public static int amount = 0;
+
+  public static void main(String[] args) {
+    MyClass thread = new MyClass();
+    thread.start();
+    System.out.println(amount);
+    amount++;
+    System.out.println(amount);
+  }
+
+  public void run() {
+    amount++;
+  }
+}
+*/
+/*To avoid concurrency problems, it is best to share as few attributes between threads as possible. If attributes need to be shared, one possible solution is to use the isAlive() method of the thread to check whether the thread has finished running before using any attributes that the thread can change.
+public class MyClass extends Thread {
+  public static int amount = 0;
+
+  public static void main(String[] args) {
+    MyClass thread = new MyClass();
+    thread.start();
+    // Wait for the thread to finish
+    while(thread.isAlive()) {
+    System.out.println("Waiting...");
+  }
+  // Update amount and print its value
+  System.out.println("Main: " + amount);
+  amount++;
+  System.out.println("Main: " + amount);
+  }
+  public void run() {
+    amount++;
+  }
+}
+*/
+
+
+
+
+
+
+File io:
+canRead()	//Boolean, Tests whether the file is readable or not
+canWrite()	//Boolean, Tests whether the file is writable or not
+createNewFile()	 //Boolean, Creates an empty file
+delete()	//Boolean, Deletes a file
+exists()	//Boolean, Tests whether the file exists
+getName()	//String, Returns the name of the file
+getAbsolutePath() //String, Returns the absolute pathname of the file
+length()	//Long, Returns the size of the file in bytes
+list()	//String[], Returns an array of the files in the directory
+mkdir()	//Boolean, Creates a directory
+
+/*Create new file
+import java.io.File;  // Import the File class
+import java.io.IOException;  // Import the IOException class to handle errors
+
+public class CreateFile {
+  public static void main(String[] args) {
+    try {
+      File myObj = new File("filename.txt");
+      if (myObj.createNewFile()) {
+        System.out.println("File created: " + myObj.getName());
+      } else {
+        System.out.println("File already exists.");
+      }
+    } catch (IOException e) {
+      System.out.println("An error occurred.");
+      e.printStackTrace();
+    }
+  }
+}
+*/
+File myObj = new File("C:\\Users\\MyName\\filename.txt");
+/*File write
+import java.io.FileWriter;   // Import the FileWriter class
+import java.io.IOException;  // Import the IOException class to handle errors
+
+public class WriteToFile {
+  public static void main(String[] args) {
+    try {
+      FileWriter myWriter = new FileWriter("filename.txt");
+      myWriter.write("Files in Java might be tricky, but it is fun enough!");
+      myWriter.close();
+      System.out.println("Successfully wrote to the file.");
+    } catch (IOException e) {
+      System.out.println("An error occurred.");
+      e.printStackTrace();
+    }
+  }
+}
+*/
+/*Read file
+import java.io.File;  // Import the File class
+import java.io.FileNotFoundException;  // Import this class to handle errors
+import java.util.Scanner; // Import the Scanner class to read text files
+
+public class ReadFile {
+  public static void main(String[] args) {
+    try {
+      File myObj = new File("filename.txt");
+      Scanner myReader = new Scanner(myObj);
+      while (myReader.hasNextLine()) {
+        String data = myReader.nextLine();
+        System.out.println(data);
+      }
+      myReader.close();
+    } catch (FileNotFoundException e) {
+      System.out.println("An error occurred.");
+      e.printStackTrace();
+    }
+  }
+}
+*/
+/*Delete file
+import java.io.File;  // Import the File class
+
+public class DeleteFile {
+  public static void main(String[] args) { 
+    File myObj = new File("filename.txt"); 
+    if (myObj.delete()) { 
+      System.out.println("Deleted the file: " + myObj.getName());
+    } else {
+      System.out.println("Failed to delete the file.");
+    } 
+  } 
+}
+*/
+/*Delete folder
+import java.io.File; 
+
+public class DeleteFolder {
+  public static void main(String[] args) { 
+    File myObj = new File("C:\\Users\\MyName\\Test"); 
+    if (myObj.delete()) { 
+      System.out.println("Deleted the folder: " + myObj.getName());
+    } else {
+      System.out.println("Failed to delete the folder.");
+    } 
+  } 
+}
+*/
+
+
+
+
+
+
+
+Keywords:
+abstract  //A non-access modifier. Used for classes and methods: An abstract class cannot be used to create objects (to access it, it must be inherited from another class). An abstract method can only be used in an abstract class, and it does not have a body. The body is provided by the subclass (inherited from)
+assert	//For debugging
+boolean	//A data type that can only store true and false values
+break  //Breaks out of a loop or a switch block
+byte //A data type that can store whole numbers from -128 and 127
+case //Marks a block of code in switch statements
+catch //Catches exceptions generated by try statements
+char  //A data type that is used to store a single character
+class  //Defines a class
+continue  //Continues to the next iteration of a loop
+const  //Defines a constant. Not in use - use final instead
+default	 //Specifies the default block of code in a switch statement
+do  //Used together with while to create a do-while loop
+double  //A data type that can store whole numbers from 1.7e−308 to 1.7e+308
+else  //Used in conditional statements
+enum  //Declares an enumerated (unchangeable) type
+exports	 //Exports a package with a module. New in Java 9
+extends	 //Extends a class (indicates that a class is inherited from another class)
+final  //A non-access modifier used for classes, attributes and methods, which makes them non-changeable (impossible to inherit or override)
+finally	 //Used with exceptions, a block of code that will be executed no matter if there is an exception or not
+float  //A data type that can store whole numbers from 3.4e−038 to 3.4e+038
+for  //Create a for loop
+goto  //Not in use, and has no function
+if  //Makes a conditional statement
+implements  //Implements an interface
+import  //Used to import a package, class or interface
+instanceof  //Checks whether an object is an instance of a specific class or an interface
+int  //A data type that can store whole numbers from -2147483648 to 2147483647
+interface  //Used to declare a special type of class that only contains abstract methods
+long  //A data type that can store whole numbers from -9223372036854775808 to 9223372036854775808
+module  //Declares a module. New in Java 9
+native  //Specifies that a method is not implemented in the same Java source file (but in another language)
+new  //Creates new objects
+package  //Declares a package
+private  //An access modifier used for attributes, methods and constructors, making them only accessible within the declared class
+protected  //An access modifier used for attributes, methods and constructors, making them accessible in the same package and subclasses
+public  //An access modifier used for classes, attributes, methods and constructors, making them accessible by any other class
+requires  //Specifies required libraries inside a module. New in Java 9
+return  //Finished the execution of a method, and can be used to return a value from a method
+short  //A data type that can store whole numbers from -32768 to 32767
+static  //A non-access modifier used for methods and attributes. Static methods/attributes can be accessed without creating an object of a class
+strictfp  //Restrict the precision and rounding of floating point calculations
+super  //Refers to superclass (parent) objects
+switch  //Selects one of many code blocks to be executed
+synchronized  //A non-access modifier, which specifies that methods can only be accessed by one thread at a time
+this  //Refers to the current object in a method or constructor
+throw  //Creates a custom error
+throw  //Indicates what exceptions may be thrown by a method
+transient  //A non-accesss modifier, which specifies that an attribute is not part of an object's persistent state
+try  //Creates a try...catch statement
+var  //Declares a variable. New in Java 10
+void  //Specifies that a method should not have a return value
+volatile  //Indicates that an attribute is not cached thread-locally, and is always read from the "main memory"
+while  //Creates a while loop
+
+
+
+
+
+String methods:
+charAt()  //Returns the character at the specified index (position), char
+codePointAt()  //Returns the Unicode of the character at the specified index, int
+codePointBefore()  //Returns the Unicode of the character before the specified index, int
+codePointCount()  //Returns the Unicode in the specified text range of this String, int
+compareTo()  //Compares two strings lexicographically, int
+compareToIgnoreCase()  //Compares two strings lexicographically, ignoring case differences, int
+concat()  //Appends a string to the end of another string, String
+contains()  //Checks whether a string contains a sequence of characters, boolean
+contentEquals()  //Checks whether a string contains the exact same sequence of characters of the specified CharSequence or StringBuffer, boolean
+copyValueOf()  //Returns a String that represents the characters of the character array, String
+endsWith()   //Checks whether a string ends with the specified character(s), boolean
+equals()  //Compares two strings. Returns true if the strings are equal, and false if not, boolean
+equalsIgnoreCase()  //Compares two strings, ignoring case considerations, boolean
+format()  //Returns a formatted string using the specified locale, format string, and arguments, String
+getBytes()  //Encodes this String into a sequence of bytes using the named charset, storing the result into a new byte array, byte[]
+getChars()  //Copies characters from a string to an array of chars, void
+hashCode()  //Returns the hash code of a string, int
+indexOf()  //Returns the position of the first found occurrence of specified characters in a string, int
+intern()  //Returns the index within this string of the first occurrence of the specified character, starting the search at the specified index, String
+isEmpty()  //Checks whether a string is empty or not, boolean
+lastIndexOf()  //Returns the position of the last found occurrence of specified characters in a string, int
+length()  //Returns the length of a specified string, int
+matches()  //Searches a string for a match against a regular expression, and returns the matches, boolean
+offsetByCodePoints()  //Returns the index within this String that is offset from the given index by codePointOffset code points, int
+regionMatches()  //Tests if two string regions are equal, boolean
+replace()  //Searches a string for a specified value, and returns a new string where the specified values are replaced, String
+replaceFirst()  //Replaces the first occurrence of a substring that matches the given regular expression with the given replacement, String
+replaceAll()  //Replaces each substring of this string that matches the given regular expression with the given replacement, String
+split()  //Splits a string into an array of substrings, String[]
+startsWith()  //Checks whether a string starts with specified characters, boolean
+subSequence()  //Returns a new character sequence that is a subsequence of this sequence, CharSequence
+substring()  //Extracts the characters from a string, beginning at a specified start position, and through the specified number of character, String
+toCharArray()  //Converts this string to a new character array, char[]
+toLowerCase()  //Converts a string to lower case letters, String
+toString()  //Returns the value of a String object, String
+toUpperCase()  //Converts a string to upper case letters, String
+trim()  //Removes whitespace from both ends of a string, String
+valueOf()  //Returns the primitive value of a String object, String
+
+
+
+
+Math methods:
+abs(x)  //Returns the absolute value of x, double|float|int|long
+acos(x)  //Returns the arccosine of x, in radians, double
+asin(x)  //Returns the arcsine of x, in radians, double
+atan(x)  //Returns the arctangent of x as a numeric value between -PI/2 and PI/2 radians, double
+atan2(y,x)  //Returns the angle theta from the conversion of rectangular coordinates (x, y) to polar coordinates (r, theta), double
+cbrt(x)  //Returns the cube root of x, double
+ceil(x)  //Returns the value of x rounded up to its nearest integer, double
+copySign(x, y)  //Returns the first floating point x with the sign of the second floating point y, double
+cos(x)  //Returns the cosine of x (x is in radians), double
+cosh(x)  //Returns the hyperbolic cosine of a double value, double
+exp(x)  //Returns the value of Ex, double
+expm1(x)  //Returns ex -1, double
+floor(x)  //Returns the value of x rounded down to its nearest integer, double
+getExponent(x)  //Returns the unbiased exponent used in x, int
+hypot(x, y)  //Returns sqrt(x2 +y2) without intermediate overflow or underflow, double
+IEEEremainder(x, y)  //Computes the remainder operation on x and y as prescribed by the IEEE 754 standard, double
+log(x)  //Returns the natural logarithm (base E) of x, double
+log10(x)  //Returns the base 10 logarithm of x, double
+log1p(x)  //Returns the natural logarithm (base E) of the sum of x and 1, double
+max(x, y)  //Returns the number with the highest value, double|float|int|long
+min(x, y)  //Returns the number with the lowest value, double|float|int|long
+nextAfter(x, y)  //Returns the floating point number adjacent to x in the direction of y, double|float
+nextUp(x)  //Returns the floating point value adjacent to x in the direction of positive infinity, double|float
+pow(x, y)  //Returns the value of x to the power of y, double
+random()  //Returns a random number between 0 and 1, double
+round(x)  //Returns the value of x rounded to its nearest integer, int
+rint()  //Returns the double value that is closest to x and equal to a mathematical integer, double
+signum(x)  //Returns the sign of x, double
+sin(x)  //Returns the sine of x (x is in radians), double
+sinh(x)  //Returns the hyperbolic sine of a double value, double
+sqrt(x)  //Returns the square root of x, double
+tan(x)  //Returns the tangent of an angle, double
+tanh(x)  //Returns the hyperbolic tangent of a double value, double
+toDegrees(x)  //Converts an angle measured in radians to an approx. equivalent angle measured in degrees, double
+toRadians(x)  //Converts an angle measured in degrees to an approx. angle measured in radians, double
+ulp(x)  //Returns the size of the unit of least precision (ulp) of x, double|float
+
+
+
+
+Integer[] array = Arrays.stream( arr ).boxed().toArray( Integer[]::new ); //int array to Integer array
+Integer[] subarr = Arrays.copyOfRange(array, i+1, n-1);
+List<Integer> list = Arrays.asList(Array); //Array to list
+ArrayList<Integer> arraylist = new ArrayList<Integer>(list);  //List to ArrayList
+Collections.addAll(arraylist, array);  //Integer array to ArrayList
+ArrayList<Integer> Array = new ArrayList<Integer>(HashListVariable);  //HashList to ArrayList
+Collections.sort(ArrayList);  //Sorts an ArrayList
+Collections.frequency(arraylist, value);  //returns the number of frequency in the arrayList
+List<Integer> list = Arrays.asList(array); //Integer array to Integer list
+list.contains(x);  //Returns true if the variable is present in the list
+int[] array = Arrays.asList(StringArray).stream().mapToInt(Integer::parseInt).toArray();  //String array to int array
+int[] array = Arrays.stream(StringArray).mapToInt(Integer::parseInt).toArray();  //String array to int array
+Integer[] array = arraylist.toArray();  //ArrayList to Array
+HashSet<Integer> hash = new HashSet(Arrays.asList(intArray)); // int array to Integer HashList
+int index = Arrays.binarySearch(intArray, integer);
+int[] array = Arrays.copyOfRange(intArray, startIndex, endIndex+1);
+
+string = string.split(" ")[0];
+int = 'a' - 'a';
+int = (int)'a';
+string.indexOf(character/index, startFrom);
+
+
+package test;
+
+import java.util.*;
+import java.io.*;
+public class test{
+    public static void main(String[] args) throws IOException{
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        int[] arr = new int[10];
+        String[] a_str = reader.readLine().split(" ");
+		int a = Integer.parseInt(reader.readLine());
+        arr = Arrays.stream(a_str).mapToInt(Integer::parseInt).toArray();
+        
+
+    }
+}

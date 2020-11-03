@@ -1,0 +1,19 @@
+composer create-project --prefer-dist laravel/laravel blog        //Terminal command in VScode. It creates a new project named blog.
+
+Artisan commands:
+php artisan serve      //runs the project on xampp
+php artisan make:Controller ControllerName
+php artisan make:Model ModelName
+php artisan make:Middleware MiddlewareName
+php artisan migrate
+php artisan cache:clear
+php artisan route:clear
+php artisan config:clear
+php artisan view:clear
+
+Controllers:
+1. Custom controller
+2. Single action controller: Has only one method
+3. Resource controller: Handle http request, CURD (Create, Update, Read, Delete) operation
+4. Middleware controller: Works between request and response.
+

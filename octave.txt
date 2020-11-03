@@ -1,0 +1,180 @@
+ctrl + l  %clears screen
+
+1 == 2  %prints false
+1 ~= 2  %prints true
+1 && 0  %and operation
+1 || 0  %or operation
+xor(1,0)  %xor operation
+xnor(1,0)  %xnor operation
+
+PS1(">> ");  %changes octave CLI path to ">> "
+
+sqrt(10) %Prints square root of 10
+a = 3  %If semicolon is not used then every line will show an output
+a = pi;  %If semicolon is used then line will not show output
+disp(a)  %prints only the value not the variable also
+disp(sprintf("Value of a is %.2f", a))  %Old style C syntex
+format long  %formats all variables into long double / float
+format short  %formats all variables into short  double / float which is default value
+
+A = [1 2; 3 4; 5 6]
+A = [1 2;
+3 4;
+5 6]  %This also creates a 3*2 matrix
+size(A)  %prints the size of A
+size(A,1) %prints the number of rows
+size(A,2) %prints the number of columns
+length(A) %prints the longeth dimention of the matrix
+A(3,2)  %prints the indicated element
+A(2, :)  %prints the second row
+A(:, 2) %prints the second column
+A([1 3], :) %prints the first and third row
+A(:, 2) = [10; 11; 12]  %Changes value of second column
+A = [A,[13;14;15]]  %appends a column in A
+A(:) %prints all elements of A in a column vector
+C = [A B] %Concats two matrices side by side and makes a bigger matrix
+C = [A, B] %Concats two matrices side by side and makes a bigger matrix
+C = [A; B] %Concats two matrices up and down and makes a bigger matrix
+
+1:6  %Saves the 1*6 matrix in ans variable
+v = 1:6  %saves a 1*6 matrix in v variable
+v = 1:.1:2  %saves a 1*11 matrix in v variable
+
+ones(2,3)
+zeros(2,3)
+eye(4)
+rand(2,3) %Prints a 2*3 matrix with random numbers. The number range is (0,1)
+randn(2,3) %Prints a 2*3 matrix with random numbers. The mean of all numbers 0 and standard deviation 0
+w = a + b*randn(2,3) %Prints a 2*3 matrix with random numbers. The mean of all numbers a and standard deviation b
+hist(w) %Plots w in a graph
+hist(w,50) %Plots w in a graph
+
+pwd %print current directory
+load features.dat  %Loads the data and saves the matrix in a variable named features
+load('features.dat')  %Loads the data and saves the matrix in a variable named features
+who %prints all the variables
+whos %%prints all the variables with description
+clear variableName %deletes the variable
+clear %deletes all variables
+
+v = priceY(1:10)
+save fileName.mat v  %saves variable v in a binary file
+save fileName.txt v  %saves variable v in a text file
+save fileName.txt v -ascii  %saves variable v in a text file with ascii format
+
+A*B  %Matrix multiplication
+A.*B %Element-wise multiplication
+A.^2 %Element-wise square
+1./A %Element-wise inverse
+log(A) %Element-wise log
+exp(A) %Element-wise exponential
+abs(A) %Element-wise absolute value
+-A  %Element-wise negative
+A+1  %Element-wise addition
+A' %Transpose of A
+max(A) %Maximum number in matrix A
+[val, ind] = max(A) %Returns the maximum value and its index number
+A<3 %Element-wise operation
+find(A<3) %Element-wise index find in a vector
+magic(3) %Returns the magic matrix
+[r, c] = find(A <= 7)  %Finds the row and column indices
+sum(A) %Returns the sum of all elements
+prod(A) %Returns the product of all elements
+floor(A) %Element-wise floor
+ceil(A)  %Element-wise ceil
+max(rand(3), rand(3))
+max(A)  %Column-wise maximum
+max(A,[],1)  %Column-wise maximum
+max(A,[],2)  %Row-wise maximum
+max(max(A))  %Returns the maximum number
+max(A(:))  %Returns the maximum number
+sum(A,1)  %Column-wise sum
+sum(A,2)  %Row-wise sum
+sum(sum(A.*eye(3)))  %Sum of all diagonal elements
+sum(sum(A.*flipud(eye(3))))  %Sum of another diagonal elements
+pinv(A)  %Inverse of the matrix
+
+
+x = [1: 0.01 : 2]
+y = sin(2*pi*4*x)
+z = cos(2*pi*4*x)
+plot(x,y)
+hold on
+plot(x, z, 'r')  % r = red
+plot(x,y, 'b')
+xlabel('time')
+ylabel('value')
+legend('sin', 'cos')
+title('Title Name')
+print -dpng 'myPlot.png'  %Saves the plot
+close  %Closes the plot
+clc  %Clears the screen
+home  %Clears the screen
+
+
+linspace(start, end, N); %Return a row vector with N linearly spaced elements between START and END. If N is unspecified it defaults to 100. 
+surf(n*1Vector, n*1Vector, n*2matrix); %3d plot
+logspace (A, pi, N) %Return a row vector with N elements logarithmically spaced from 10^A to 10^B. If N is unspecified it defaults to 50.
+contour(theta0_vals, theta1_vals, J_vals, logspace(-2, 3, 20))
+
+
+
+figure(1); plot(x,y);
+figure(2); plot(x,z);
+
+subplot(1,2,1)
+plot(x,y)
+subplot(1,2,2)
+plot(x,z)
+axis([.5 1 -1 1])
+
+clf % Clear figure
+A = magic(5)
+imagesc(A)
+imagesc(a); colorbar; colormap gray;
+
+
+%For loop
+v = 1:10;
+for x = v;
+disp(x);
+end;
+
+v = zeros(10,1);
+for x = 1:10;
+v(x) = x^2;
+end;
+
+
+%While loop
+v = ones(1,10);
+i =  1;
+while i<=10;
+v(i) = i;
+i += 1;
+end;
+
+
+%Break Statement
+i = 1;
+while i<1000;
+disp(i)
+if i == 10;  %elseif something <= something;
+break;
+end;
+i += 1;
+end;
+
+quit  %Closes octave
+exit  %Closes octave
+
+addpath('F:\Downloads\Tutorial\Machine learning Stanford University\machine-learning-ex\week 2 Octave Matlab tutorial 6')  %Adds path to access functions without changing directory
+
+%Save octave functions in another .m file. The function name and file name has to be same
+function y = squareThisNumber(x)
+y = x^2;
+y = 10;
+
+function [y1, y2] = squareAndCubeThisNumber(x)
+y1 = x^2;
+y2 = x^3;

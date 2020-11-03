@@ -1,0 +1,1628 @@
+
+Linear search:
+/*With python
+def linear_search(arr, y):
+    a = 0
+    for x in arr:
+        if x == y: return a
+        a += 1
+    return -1
+arr = [1,3,5,7,9,11,13,15,17,19]
+print(linear_search(arr,int(input())))
+*/
+/*with C
+#include<stdio.h>
+
+int linear_search(int a[], int size, int item){
+    int index = 0;
+    while(index < size){
+        if(a[index] == item) return index;
+        index++;
+    }
+    return -1;
+}
+
+int main(){
+    int a[10] = {1,3,5,7,9,11,13,15,17,19};
+    printf("%d",linear_search(a, 10, 13));
+    return 0;
+}
+*/
+
+
+
+
+
+Binary search:
+/*With python and loop
+def binary_search(arr, y):
+    start = 0
+    end = len(arr)-1
+    while start<=end:
+        mid = int((start+end)/2)
+        if arr[mid] == y: return mid
+        elif arr[mid]<y: start = mid + 1
+        else: end = mid - 1
+    return -1
+arr = [1,3,5,7,9,11,13,15,17,19]
+print(binary_search(arr,int(input())))
+*/
+/*With C and recursion
+#include<stdio.h>
+void binary_search(int a[], int start, int end, int item){
+    if(end < start){
+        printf("-1");
+        exit(1);
+    }
+    int mid = (start + end)/2;
+    if(a[mid] == item){
+        printf("%d", mid);
+    }
+    else if(item < a[mid]){
+        binary_search(a, start, mid-1, item);
+    }
+    else{
+        binary_search(a, mid+1, end, item);
+    }
+}
+
+int main(){
+    int a[10] = {1,3,5,7,9,11,13,15,17,19};
+    binary_search(a, 0, 9, 19);
+    return 0;
+}
+*/
+/* With C and loop
+#include<stdio.h>
+int binary_search(int a[], int size, int item){
+    int start = 0;
+    int end = size -1;
+    while(start <= end){
+        int mid = (start + end)/2;
+        if(a[mid] == item){
+            return mid;
+        }else if(item < a[mid]){
+            end = mid -1;
+        }
+        else{
+            start = mid + 1;
+        }
+    }
+    return -1;
+}
+int main(){
+    int a[10] = {1,3,5,7,9,11,13,15,17,19};
+    printf("%d", binary_search(a, 10, 18));
+    return 0;
+}
+*/
+
+Selection sort:
+/*
+arr = [3, 44, 38, 5, 47, 15, 36, 26, 27, 2, 0]
+n = len(arr)
+a = 0
+while a<n-1:
+    b = a + 1
+    c = 0
+    d = arr[a]
+    while b<n:
+        if d>arr[b]:
+            c = b
+            d = arr[b]
+        b+=1
+    if c>0: arr[a],arr[c] = arr[c], arr[a]
+    a+=1
+print(arr)
+*/
+/*With C
+#include<stdio.h>
+int main(){
+    int a[10] = {11,1,0,5,67,90,45,9,7,4}, a_index = 0;
+
+    while(a_index < 10-1){
+        int min = a[a_index];
+        int min_index = a_index;
+        int search_index = a_index+1;
+        while(search_index<10){
+            if(a[search_index] < min){
+                min_index = search_index;
+                min = a[search_index];
+            }
+            search_index++;
+        }
+        if(min_index > a_index){
+            int temp = a[a_index];
+            a[a_index] = a[min_index];
+            a[min_index] = temp;
+        }
+        a_index++;
+    }
+    for(a_index = 0; a_index<10; a_index++){
+        printf("%d ", a[a_index]);
+    }
+    return 0;
+}
+*/
+
+
+
+
+Bubble sort:
+/*
+arr = [3, 44, 38, 5, 47, 15, 36, 26, 27, 2, 0]
+n = len(arr)
+while n>1:
+    a = 0
+    while a<n-1:
+        if arr[a]>arr[a+1]: arr[a], arr[a+1] = arr[a+1], arr[a]
+        a += 1
+    n -= 1
+print(arr)
+*/
+/*With C
+#include<stdio.h>
+int main(){
+    int a[10] = {11,1,0,5,67,40,45,9,7,90}, a_index, size = 10;
+
+    while(size > 0){
+        a_index = 0;
+        int max_index = 0;
+        int max = a[max_index];
+        a_index++;
+        while(a_index < size){
+            if(a[a_index] > max){
+                max_index = a_index;
+                max = a[a_index];
+            }
+            a_index++;
+        }
+        if(max_index != size-1){
+            int temp = a[size-1];
+            a[size-1] = a[max_index];
+            a[max_index] = temp;
+        }
+        size--;
+    }
+    for(a_index = 0; a_index<10; a_index++){
+        printf("%d ", a[a_index]);
+    }
+    return 0;
+}
+*/
+
+Insertion sort:
+/*
+arr = [3, 44, 38, 5, 47, 15, 36, 26, 27, 2, 0]
+n = len(arr)
+a = 1
+while a<n:
+    b = a-1
+    i = arr[a]
+    while b>=0 and arr[b]>i:
+        arr[b+1] = arr[b]
+        b -= 1
+    arr[b+1] = i
+    a += 1
+print(arr)
+*/
+
+
+Stack:
+/*
+#include<stdio.h>
+#define STACK_MAX 5
+
+typedef struct{
+    int top;
+    int data[STACK_MAX];
+}Stack;
+
+void push(Stack *s, int item){
+    if(s->top < STACK_MAX){
+        s->data[s->top] = item;
+        s->top = s->top + 1;
+    }
+    else{
+        printf("Stack is full!\n");
+    }
+}
+
+int pop(Stack *s){
+    if(s->top == 0){
+        printf("Stack is empty!\n");
+        return -1;
+    }
+    else{
+        s->top = s->top-1;
+        return s->data[s->top];
+    }
+}
+int main(){
+    Stack stack;
+    stack.top = 0;
+    push(&stack, 10);
+    push(&stack, 11);
+    push(&stack, 12);
+    push(&stack, 13);
+    printf("%d\n",pop(&stack));
+    printf("%d\n",pop(&stack));
+    printf("%d\n",pop(&stack));
+    return 0;
+}
+*/
+
+/*Circular queue
+#include<stdio.h>
+#define Q_SIZE 5
+
+typedef struct{
+    int head, tail;
+    int data[Q_SIZE  + 1];
+}Queue;
+
+void enque(Queue *q, int item){
+    if((q->tail+1)%(Q_SIZE+1) == q->head){
+        printf("Queue is full!\n");
+        return;
+    }
+    q->data[q->tail] = item;
+    q->tail = (q->tail+1)%(Q_SIZE+1);
+}
+
+int deque(Queue *q){
+    int item;
+    if(q->tail == q->head){
+        printf("Queue is empty!\n");
+        return -1;
+    }
+    item = q->data[q->head];
+    q->head = (q->head+1)%(Q_SIZE+1);
+    return item;
+}
+
+int main(){
+    Queue queue;
+    queue.head = 0;
+    queue.tail = 0;
+    enque(&queue, 10);
+    enque(&queue, 11);
+    printf("%d\n",deque(&queue));
+    printf("%d\n",deque(&queue));
+    printf("%d\n",deque(&queue));
+    return 0;
+}
+*/
+
+/*Linked list
+#include<stdio.h>
+#include<stdlib.h>
+
+typedef struct node Node;
+struct node{
+    int data;
+    Node *next;
+};
+
+//new node creation
+Node *create_node(int item, Node *next){
+    Node *new_node = (Node *)malloc(sizeof(Node));
+    if (new_node == 0){
+        printf("Error! Could not create a node.");
+        exit(1);
+    }
+    new_node->data = item;
+    new_node->next = next;
+
+    return new_node;
+}
+
+Node *prepend(Node *head, int item){
+    Node *new_node = create_node(item, head);
+    return new_node;
+}
+
+Node *append(Node *head, int item){
+    Node *new_node = create_node(item, NULL);
+    if(head == NULL){
+        return new_node;
+    }
+    Node *current_node = head;
+    while(current_node->next != NULL){
+        current_node = current_node->next;
+    }
+    current_node->next = new_node;
+    return head;
+}
+
+void insert(Node *node, int item){
+    Node *new_node = create_node(item, node->next);
+    node->next = new_node;
+}
+
+//Node remove function
+Node *remove_node(Node *head, Node *node){
+    if(node == head){
+        head = node->next;
+        free(node);
+        return head;
+    }
+    Node *current_node = head;
+    while (current_node != NULL){
+        if(current_node->next == node){
+            break;
+        }
+        current_node = current_node->next;
+    }
+    if(current_node == NULL){
+        return head;
+    }
+    current_node->next = node->next;
+    free(node);
+    return head;
+}
+
+void print_linked_list(Node *head){
+    Node *current_node = head;
+    while(current_node != NULL){
+        printf("%d ", current_node->data);
+        current_node = current_node->next;
+    }
+}
+
+int main(){
+    Node *head = NULL;
+    head = prepend(head, 10);
+    head = append(head, 11);
+    head = append(head, 12);
+    head = append(head, 13);
+    print_linked_list(head);
+    return 0;
+}
+*/
+
+/*Doubly linked list
+#include<stdio.h>
+#include<stdlib.h>
+
+typedef struct node Node;
+struct node{
+    int data;
+    Node *prev;
+    Node *next;
+};
+
+//new node creation
+Node *create_node(int item, Node *next, Node *prev){
+    Node *new_node = (Node *)malloc(sizeof(Node));
+    if (new_node == 0){
+        printf("Error! Could not create a node.");
+        exit(1);
+    }
+    new_node->data = item;
+    new_node->prev = prev;
+    new_node->next = next;
+
+    return new_node;
+}
+
+Node *prepend(Node *head, int item){
+    Node *new_node = create_node(item, NULL, head);
+    if(head == NULL){
+        return new_node;
+    }
+    head->prev = new_node;
+    return new_node;
+}
+
+Node *append(Node *head, int item){
+    Node *new_node = create_node(item, NULL, NULL);
+    if(head == NULL){
+        return new_node;
+    }
+    Node *current_node = head;
+    while(current_node->next != NULL){
+        current_node = current_node->next;
+    }
+    current_node->next = new_node;
+    new_node->prev = current_node;
+    return head;
+}
+
+void insert(Node *node, int item){
+    Node *new_node = create_node(item, node, node->next);
+    node->next->prev = new_node;
+    node->next = new_node;
+}
+
+//Node remove function
+Node *remove_node(Node *head, Node *node){
+    if(node == head){
+        node->next->prev = NULL;
+        head = node->next;
+        free(node);
+        return head;
+    }
+    node->prev->next = node->next;
+    node->next->prev = node->prev;
+    free(node);
+    return head;
+}
+
+void print_linked_list_forward(Node *head){
+    Node *current_node = head;
+    while(current_node != NULL){
+        printf("%d ", current_node->data);
+        current_node = current_node->next;
+    }
+}
+
+int main(){
+    Node *head = NULL;
+    head = prepend(head, 10);
+    head = append(head, 11);
+    head = append(head, 12);
+    head = append(head, 13);
+    print_linked_list_forward(head);
+    return 0;
+}
+*/
+
+Tree:
+1. Root
+2. Edge: Connections between nodes
+3. Parent
+4. Child
+5. Siblings
+6. Leaf: Nodes that doesn't have any child node
+7. Internal Nodes: All nodes except leaf nodes
+8. Degree: Direct child count of a node
+9. Level: Root is level 0
+10: Height: Total number of edges from leaf node to a particular node
+11. Depth: Root level deapth is 0
+12. Path: ABEJ, CGK
+
+Binary tree: A tree where no node has more than 2 child nodes
+Full binary tree: A binary tree where every node has 2 child nodes except leaf nodes
+Complete binary tree
+
+/*Binary tree with pre-order traversal
+#include<stdio.h>
+#include<stdlib.h>
+typedef struct node Node;
+struct node{
+    int data;
+    Node *right;
+    Node *left;
+};
+
+//new node creation
+Node *create_node(int item){
+    Node *new_node = (Node *)malloc(sizeof(Node));
+    if (new_node == 0){
+        printf("Error! Could not create a node.");
+        exit(1);
+    }
+    new_node->data = item;
+    new_node->right = NULL;
+    new_node->left = NULL;
+
+    return new_node;
+}
+
+void add_left_child(Node *node, Node *child){
+    node->left = child;
+}
+
+void add_right_child(Node *node, Node *child){
+    node->right = child;
+}
+
+void add_tree(Node *head, int level){
+    Node *left = create_node(level);
+    Node *right = create_node(level);
+    add_left_child(head, left);
+    add_right_child(head, right);
+    if(level<4){
+        add_tree(left, level+1);
+        add_tree(right, level+1);
+    }
+}
+
+//Pre-order traversal
+void pre_order(Node *node){
+    printf("%d\n", node->data);
+    if(node->left != NULL){
+        pre_order(node->left);
+    }
+    if(node->right != NULL){
+        pre_order(node->right);
+    }
+}
+
+int main(){
+    int item = 1;
+    int level = 0;
+    Node *root = create_node(level);
+    add_tree(root, level+1);
+    pre_order(root);
+    return 0;
+}
+*/
+
+/*Post-order traversal
+#include<stdio.h>
+#include<stdlib.h>
+typedef struct node Node;
+struct node{
+    int data;
+    Node *right;
+    Node *left;
+};
+
+//new node creation
+Node *create_node(int item){
+    Node *new_node = (Node *)malloc(sizeof(Node));
+    if (new_node == 0){
+        printf("Error! Could not create a node.");
+        exit(1);
+    }
+    new_node->data = item;
+    new_node->right = NULL;
+    new_node->left = NULL;
+
+    return new_node;
+}
+
+void add_left_child(Node *node, Node *child){
+    node->left = child;
+}
+
+void add_right_child(Node *node, Node *child){
+    node->right = child;
+}
+
+void add_tree(Node *head, int level){
+    Node *left = create_node(level);
+    Node *right = create_node(level);
+    add_left_child(head, left);
+    add_right_child(head, right);
+    if(level<4){
+        add_tree(left, level+1);
+        add_tree(right, level+1);
+    }
+}
+
+//Post-order traversal
+void post_order(Node *node){
+    if(node->left != NULL){
+        post_order(node->left);
+    }
+    if(node->right != NULL){
+        post_order(node->right);
+    }
+    printf("%d\n", node->data);
+
+}
+
+int main(){
+    int item = 1;
+    int level = 0;
+    Node *root = create_node(level);
+    add_tree(root, level+1);
+    post_order(root);
+    return 0;
+}
+*/
+
+/*In-order traversal
+#include<stdio.h>
+#include<stdlib.h>
+typedef struct node Node;
+struct node{
+    int data;
+    Node *right;
+    Node *left;
+};
+
+//new node creation
+Node *create_node(int item){
+    Node *new_node = (Node *)malloc(sizeof(Node));
+    if (new_node == 0){
+        printf("Error! Could not create a node.");
+        exit(1);
+    }
+    new_node->data = item;
+    new_node->right = NULL;
+    new_node->left = NULL;
+
+    return new_node;
+}
+
+void add_left_child(Node *node, Node *child){
+    node->left = child;
+}
+
+void add_right_child(Node *node, Node *child){
+    node->right = child;
+}
+
+void add_tree(Node *head, int level){
+    Node *left = create_node(level);
+    Node *right = create_node(level);
+    add_left_child(head, left);
+    add_right_child(head, right);
+    if(level<4){
+        add_tree(left, level+1);
+        add_tree(right, level+1);
+    }
+}
+
+//In-order traversal
+void in_order(Node *node){
+    if(node->left != NULL){
+        in_order(node->left);
+    }
+
+    printf("%d\n", node->data);
+
+    if(node->right != NULL){
+        in_order(node->right);
+    }
+}
+
+int main(){
+    int item = 1;
+    int level = 0;
+    Node *root = create_node(level);
+    add_tree(root, level+1);
+    in_order(root);
+    return 0;
+}
+*/
+
+
+
+
+Merge sort:
+/*
+#include<stdio.h>
+#include<stdlib.h>
+void merge(int a[], int left, int mid, int right){
+    int i;
+    int index_a = left, index_l = 0, index_r = 0, size_left, size_right;
+
+    size_left = mid - left +1;
+    size_right = right - mid;
+
+    int l[size_left], r[size_right];
+
+    for(i = 0; i < size_left; i++){
+        l[i] = a[left+i];
+    }
+
+    for(i = 0; i < size_right; i++){
+        r[i] = a[mid+1+i];
+    }
+
+    while(index_l < size_left && index_r < size_right){
+        if(l[index_l] <= r[index_r]){
+            a[index_a] = l[index_l];
+            index_l++;
+        }
+        else{
+            a[index_a] = r[index_r];
+            index_r++;
+        }
+        index_a++;
+    }
+
+    while(index_l < size_left){
+        a[index_a] = l[index_l];
+        index_a++;
+        index_l++;
+    }
+
+    while(index_r < size_right){
+        a[index_a] = r[index_r];
+        index_a++;
+        index_r++;
+    }
+
+}
+void merge_sort(int a[], int left, int right){
+    if(left >= right)return;
+
+    int mid = left + (right - left)/2;
+    merge_sort(a, left, mid);
+    merge_sort(a, mid+1, right);
+
+    merge(a, left, mid, right);
+}
+int main(){
+    int i;
+    int size = 5;
+    int a[5] = {8, 3, 4, 0, -1};
+    merge_sort(a, 0, size-1);
+
+    for(i = 0; i < size; i++){
+        printf("%d ",a[i]);
+    }
+
+    return 0;
+}
+*/
+
+Quick sort:
+/*
+#include<stdio.h>
+void quick_sort(int a[], int low, int high){
+    if(low >= high){
+        return;
+    }
+
+    int p;
+    p = partition(a, low, high);
+
+    quick_sort(a, low, p-1);
+    quick_sort(a, p+1, high);
+}
+
+int partition(int a[], int low, int high){
+    int pivot, i, j, t;
+    pivot = a[high];
+    i = low-1;
+    for (j = low; j < high; j++){
+        if(a[j] < pivot){
+            i += 1;
+            t = a[j];
+            a[j] = a[i];
+            a[i] = t;
+        }
+    }
+    t = a[high];
+    a[high] = a[i+1];
+    a[i+1] = t;
+    return i+1;
+
+}
+
+int main(){
+    int n = 8;
+    int a[] = {1,3,2,9,5,7,4,0};
+
+    quick_sort(a, 0, n);
+
+    int i = 0;
+    while (i<n){
+        printf("%d ",a[i]);
+        i++;
+    }
+    return 0;
+}
+*/
+
+Heap:
+1. Max heap
+2. Min heap
+
+/*Max heap
+#include<stdio.h>
+int left(int i){
+    return 2*i;
+}
+int right(int i){
+    return 2*i + 1;
+}
+int parent(int i){
+    return i/2;
+}
+
+void max_heapify(int heap[], int heap_size, int i){
+    int l, r, largest, t;
+
+    l = left(i);
+    r = right(i);
+
+    if(l <= heap_size && heap[l] > heap[i]){
+        largest = l;
+    }else{
+        largest = i;
+    }
+
+    if(r <= heap_size && heap[r] > heap[largest]){
+        largest = r;
+    }
+
+    if(largest != i){
+        t = heap[i];
+        heap[i] = heap[largest];
+        heap[largest] = t;
+
+        max_heapify(heap, heap_size, largest);
+    }
+}
+
+void build_max_heap(int heap[], int heap_size){
+    int i;
+    for(i = heap_size/2; i >= 1; i--){
+        max_heapify(heap, heap_size, i);
+    }
+}
+
+int main(){
+    int heap_size = 11;
+    int heap[11] = {0,1,4,0,2,5,8,3,9,4,5};
+    build_max_heap(heap, heap_size-1);
+
+    int i = 1;
+    for(i; i<heap_size; i++){
+        printf("%d ",heap[i]);
+    }
+    return 0;
+}
+*/
+
+/*Heap sort
+#include<stdio.h>
+int left(int i){
+    return 2*i;
+}
+int right(int i){
+    return 2*i + 1;
+}
+int parent(int i){
+    return i/2;
+}
+
+void max_heapify(int heap[], int heap_size, int i){
+    int l, r, largest, t;
+
+    l = left(i);
+    r = right(i);
+
+    if(l <= heap_size && heap[l] > heap[i]){
+        largest = l;
+    }else{
+        largest = i;
+    }
+
+    if(r <= heap_size && heap[r] > heap[largest]){
+        largest = r;
+    }
+
+    if(largest != i){
+        t = heap[i];
+        heap[i] = heap[largest];
+        heap[largest] = t;
+
+        max_heapify(heap, heap_size, largest);
+    }
+}
+
+void build_max_heap(int heap[], int heap_size){
+    int i;
+    for(i = heap_size/2; i >= 1; i--){
+        max_heapify(heap, heap_size, i);
+    }
+}
+
+void heap_sort(int heap[], int heap_size){
+    int i, t;
+
+    for(i = heap_size; i>1; i--){
+        t = heap[1];
+        heap[1] = heap[i];
+        heap[i] = t;
+
+        heap_size--;
+        max_heapify(heap, heap_size, 1);
+    }
+}
+
+int main(){
+    int heap_size = 11;
+    int heap[11] = {0,1,4,0,2,5,8,3,9,4,5};
+    build_max_heap(heap, heap_size-1);
+    heap_sort(heap, heap_size-1);
+
+    int i = 1;
+    for(i; i<=heap_size-1; i++){
+        printf("%d ",heap[i]);
+    }
+    return 0;
+}
+*/
+
+/*Priority queue
+#include<stdio.h>
+int left(int i){
+    return 2*i;
+}
+int right(int i){
+    return 2*i + 1;
+}
+int parent(int i){
+    int p = i/2;
+
+    return p;
+}
+
+void max_heapify(int heap[], int heap_size, int i){
+    int l, r, largest, t;
+
+    l = left(i);
+    r = right(i);
+
+    if(l <= heap_size && heap[l] > heap[i]){
+        largest = l;
+    }else{
+        largest = i;
+    }
+
+    if(r <= heap_size && heap[r] > heap[largest]){
+        largest = r;
+    }
+
+    if(largest != i){
+        t = heap[i];
+        heap[i] = heap[largest];
+        heap[largest] = t;
+
+        max_heapify(heap, heap_size, largest);
+    }
+}
+
+void build_max_heap(int heap[], int heap_size){
+    int i;
+    for(i = heap_size/2; i >= 1; i--){
+        max_heapify(heap, heap_size, i);
+    }
+}
+
+int extract_max(int heap[], int *heap_size){
+    int max_item = heap[1];
+
+    heap[1] = heap[*heap_size];
+    *heap_size -= 1;
+
+    max_heapify(heap, *heap_size, 1);
+
+    return max_item;
+}
+
+int insert_node(int heap[], int heap_size, int item){
+    int i, p, t;
+
+    heap_size += 1;
+    heap[heap_size] = item;
+    i = heap_size;
+
+    while(i>1 && heap[i]> heap[parent(i)]){
+        p = parent(i);
+        t = heap[p];
+        heap[p] = heap[i];
+        heap[i] = t;
+
+        i = p;
+    }
+    return heap_size;
+}
+
+int main(){
+    int heap_size = 11;
+    int heap[11] = {0,1,4,0,2,6,8,3,9,7,5};
+    heap_size -= 1;
+    build_max_heap(heap, heap_size);
+
+    printf("%d\n",extract_max(heap, &heap_size));
+
+    heap_size = insert_node(heap, heap_size, 16);
+
+    int i = 1;
+    for(i; i<=heap_size; i++){
+        printf("%d ",heap[i]);
+    }
+    return 0;
+}
+*/
+
+Binary search tree:
+/*
+#include<stdio.h>
+#include<stdlib.h>
+
+typedef struct node Node;
+struct node{
+    int data;
+    Node *parent;
+    Node *left;
+    Node *right;
+};
+
+Node *create_node(int item){
+    Node *new_node = (Node *)malloc(sizeof(Node));
+    if(new_node == 0){
+        printf("Error! Could not create a node.");
+        exit(1);
+    }
+    new_node->data = item;
+    new_node->parent = NULL;
+    new_node->left = NULL;
+    new_node->right = NULL;
+
+    return new_node;
+}
+void add_left_child(Node *parent, Node *node){
+    parent->left = node;
+    node->parent = parent;
+}
+void add_right_child(Node *parent, Node *node){
+    parent->right = node;
+    node->parent = parent;
+}
+
+Node *bst_insert(Node *root, Node *node){
+    Node *parent_node, *current_node;
+
+    if (root == NULL){
+        root = node;
+        return root;
+    }
+
+    parent_node = NULL;
+    current_node = root;
+    while(current_node != NULL){
+        parent_node = current_node;
+        if(node->data < current_node->data){
+            current_node = current_node->left;
+        }else{
+            current_node = current_node->right;
+        }
+    }
+
+    if(node->data < parent_node->data){
+        add_left_child(parent_node, node);
+    }else{
+        add_right_child(parent_node, node);
+    }
+
+    return root;
+}
+
+Node *bst_transplant(Node *root, Node *current_node, Node *new_node){
+    if(current_node == root){
+        root = new_node;
+    }else if(current_node == current_node->parent->left){
+        add_left_child(current_node->parent, new_node);
+    }else{
+        add_right_child(current_node->parent, new_node);
+    }
+
+    return root;
+}
+
+Node *bst_minimum(Node *node){
+    while(node->left != NULL){
+        node = node->left;
+    }
+    return node;
+}
+
+Node *bst_delete(Node *root, Node *node){
+    Node *smallest_node;
+    if(node->left = NULL){
+        root = bst_transplant(root, node, node->right);
+    }else if(node->right == NULL){
+        root = bst_transplant(root, node, node->left);
+    }else{
+        smallest_node = bst_minimum(node->right);
+        if(smallest_node->parent != node){
+            root = bst_transplant(root, smallest_node, smallest_node->right);
+            add_right_child(smallest_node, node->right);
+        }
+        root = bst_transplant(root, node, smallest_node);
+        add_left_child(smallest_node, node->left);
+    }
+    free(node);
+    return root;
+}
+
+int main(){
+
+}
+*/
+
+
+
+/*
+/*
+Ashish has an array a of size n.
+A subsequence of a is defined as a sequence that can be obtained from a by deleting some elements (possibly none), without changing the order of the remaining elements.
+Consider a subsequence s of a. He defines the cost of s as the minimum between:
+The maximum among all elements at odd indices of s.
+The maximum among all elements at even indices of s.
+Note that the index of an element is its index in s, rather than its index in a. The positions are numbered from 1. So, the cost of s is equal to min(max(s1,s3,s5,…),max(s2,s4,s6,…)).
+For example, the cost of {7,5,6} is min(max(7,6),max(5))=min(7,5)=5.
+Help him find the minimum cost of a subsequence of size k.
+Input
+The first line contains two integers n and k (2≤k≤n≤2⋅105) — the size of the array a and the size of the subsequence.
+The next line contains n integers a1,a2,…,an (1≤ai≤109) — the elements of the array a.
+Output
+Output a single integer — the minimum cost of a subsequence of size k.
+*/
+
+#include<stdio.h>
+int minimum;
+int indicator = 0;
+void compare(int subset[] , int k){
+    int i = 0;
+    for(i; i < k; i++){
+        printf("%d ", subset[i]);
+    }
+    printf("\n");
+
+    int count = 2;
+    int odd = subset[1];
+    int even = subset[0];
+    for(count; count < k ; count++){
+        if(count%2 == 0 && even<subset[count]){
+            even = subset[count];
+        }
+        if(count%2 != 0 && odd<subset[count]){
+            odd = subset[count];
+        }
+    }
+    if(indicator == 0){
+        minimum = (even < odd) ? even : odd;
+        indicator++;
+    }else{
+        int min = (even < odd) ? even : odd;
+        minimum = (minimum < min) ? minimum : min;
+    }
+}
+
+void create_subset(int a[], int level, int subset[], int boundary, int k , int count, int n){
+    for(count; count<boundary; count++){
+        subset[level] = a[count];
+        if (boundary == n){
+            compare(subset, k);
+        }else{
+            create_subset(a, level+1, subset, boundary + 1, k, count+1, n);
+        }
+    }
+}
+
+int main(){
+    int count = 0, n, k, b[2];
+    for(count; count<2; count++){
+        scanf("%d",&b[count]);
+    }
+    n = b[0];
+    k = b[1];
+    int a[n];
+    count = 0;
+    for(count; count<n; count++){
+        scanf("%d",&a[count]);
+    }
+    int boundary = n - k + 1;
+    count = 0;
+    for(count; count<boundary; count++){
+        int level = 0;
+        int subset[k];
+        subset[0] = a[count];
+        create_subset(a, level+1, subset, boundary + 1, k, count+1, n);
+    }
+    printf("%d", minimum);
+    return 0;
+}
+*/
+
+
+
+
+
+/* Print a matrix spirally 
+package test;
+
+import java.util.Scanner;
+public class test{
+    public static void main( String[] args )
+    {   
+        Scanner scan = new Scanner(System.in);
+        int cycle = scan.nextInt();
+        
+        for(int n = 0; n<cycle; n++){
+            int row, col;
+            int[] rowcol = new int[2]; 
+            for(int i = 0; i<=1; i++){
+                rowcol[i] = scan.nextInt();
+            }
+            row = rowcol[0];
+            col = rowcol[1];
+            int[][] a = new int[row][col];
+
+            for(int i = 0; i<row; i++){
+                for(int j = 0; j<col; j++){
+                    a[i][j] = scan.nextInt();
+                }
+            }
+            
+            int up = 0;
+            int down = row-1;
+            int left = 0;
+            int right = col-1;
+
+            while(up <= down && left <= right){
+                
+                if(up<=down && left<=right){
+                    print_row(a, left, right, up);
+                    up++;
+                }
+                if(up<=down && left<=right){
+                    print_col(a, up, down, right);
+                    right--;
+                }
+                if(up<=down && left<=right){
+                    print_row(a, right, left, down);
+                    down--;
+                }
+                if(up<=down && left<=right){
+                    print_col(a, down, up, left);
+                    left++;
+                }
+            }
+            System.out.println(" ");
+        }
+    } 
+    public static void print_row(int[][] a, int x1, int x2, int y){
+        if(x1<=x2){
+            while(x1<=x2){
+                System.out.print(a[y][x1]+" ");
+                x1++;
+            }
+        }
+        else{
+            while(x1>=x2){
+                System.out.print(a[y][x1]+ " ");
+                x1--;
+                }
+        }
+    }
+    
+    public static void print_col(int[][] a, int y1, int y2, int x){
+        if(y1<=y2){
+            while(y1<=y2){
+                System.out.print(a[y1][x]+" ");
+                y1++;
+            }
+        }
+        else{
+            while(y1>=y2){
+                System.out.print(a[y1][x]+" ");
+                y1--;
+                }
+        }
+    }
+}
+*/
+
+
+
+
+/*Print the common elements in three different array. Repeated elements must be printed once.
+package test;
+
+import java.util.*;
+public class test{
+    public static void main( String[] args )
+    {   
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        while(t-->0){
+            int a = sc.nextInt();
+            int b = sc.nextInt();
+            int c = sc.nextInt();
+            int[] A = new int[a];
+            int[] B = new int[b];
+            int[] C = new int[c];
+            for(int i = 0; i<a; i++)A[i] = sc.nextInt();
+            for(int i = 0; i<b; i++)B[i] = sc.nextInt();
+            for(int i = 0; i<c; i++)C[i] = sc.nextInt();
+            boolean sign = true;
+            
+            int d =0, e = 0, f = 0;
+            while(d<a && e<b && f<c){
+                while(d<a-1 && A[d] == A[d+1])d++;
+                while(e<b-1 && B[e] == B[e+1])e++;
+                while(f<c-1 && C[f] == C[f+1])f++;
+                
+                if(A[d] == B[e] && B[e] == C[f]){
+                    System.out.print(A[d] + " ");
+                    d++; e++; f++; sign = false;
+                }
+                else{
+                    if(A[d]<=B[e]){
+                        if(A[d]<=C[f])d++;
+                        else f++;
+                    }
+                    else{
+                        if(B[e]<=C[f])e++;
+                        else f++;
+                    }
+                }
+                
+            }
+            
+            if(sign){
+                System.out.print(-1);
+            }
+            System.out.println();
+        }
+    }
+}
+*/
+
+
+
+
+/*Print all subsets of an array
+import java.io.IOException; 
+  
+class Main 
+{
+    static void printSubsets(char set[]) 
+    { 
+        int n = set.length;  
+        for (int i = 0; i < (1<<n); i++) 
+        { 
+            System.out.print("{ "); 
+            for (int j = 0; j < n; j++) if ((i & (1 << j)) > 0) System.out.print(set[j] + " "); 
+            System.out.println("}"); 
+        } 
+    } 
+    public static void main(String[] args) 
+    { 
+        char set[] = {'a', 'b', 'c'}; 
+        printSubsets(set); 
+    } 
+} 
+*/
+
+
+
+
+
+/*First non repeating element in an array with java using hashmap
+// Efficient Java program to find first non- 
+// repeating element. 
+import java.util.*; 
+  
+class GFG { 
+  
+    static int firstNonRepeating(int arr[], int n) 
+    { 
+        // Insert all array elements in hash 
+        // table 
+  
+        Map<Integer, Integer> m = new HashMap<>(); 
+        for (int i = 0; i < n; i++) { 
+            if (m.containsKey(arr[i])) { 
+                m.put(arr[i], m.get(arr[i]) + 1); 
+            } 
+            else { 
+                m.put(arr[i], 1); 
+            } 
+        } 
+        // Traverse array again and return 
+        // first element with count 1. 
+        for (int i = 0; i < n; i++) 
+            if (m.get(arr[i]) == 1) 
+                return arr[i]; 
+        return -1; 
+    } 
+  
+    // Driver code 
+    public static void main(String[] args) 
+    { 
+        int arr[] = { 9, 4, 9, 6, 7, 4 }; 
+        int n = arr.length; 
+        System.out.println(firstNonRepeating(arr, n)); 
+    } 
+} 
+  
+// This code contributed by Rajput-Ji 
+*/
+
+/*First not repeating element with python
+
+# Efficient Python3 program to find first  
+# non-repeating element. 
+from collections import defaultdict 
+  
+def firstNonRepeating(arr, n): 
+    mp = defaultdict(lambda:0) 
+  
+    # Insert all array elements in hash table  
+    for i in range(n): 
+        mp[arr[i]] += 1
+  
+    # Traverse array again and return  
+    # first element with count 1.  
+    for i in range(n): 
+        if mp[arr[i]] == 1: 
+            return arr[i] 
+    return -1
+  
+# Driver Code 
+arr = [9, 4, 9, 6, 7, 4] 
+n = len(arr) 
+print(firstNonRepeating(arr, n))  
+  
+# This code is contributed by Shrikant13 
+*/
+
+
+
+/*All non repeating element of an array with java using hashMap
+// Efficient Java program to print all non- 
+// repeating elements. 
+import java.util.*; 
+  
+class GFG { 
+  
+    static void firstNonRepeating(int arr[], int n) 
+    { 
+        // Insert all array elements in hash 
+        // table 
+        Map<Integer, Integer> m = new HashMap<>(); 
+        for (int i = 0; i < n; i++) { 
+            if (m.containsKey(arr[i])) { 
+                m.put(arr[i], m.get(arr[i]) + 1); 
+            } 
+            else { 
+                m.put(arr[i], 1); 
+            } 
+        } 
+  
+        // Traverse through map only and 
+        // using for-each loop for iteration over Map.entrySet() 
+        for (Map.Entry<Integer, Integer> x : m.entrySet()) 
+            if (x.getValue() == 1) 
+                System.out.print(x.getKey() + " "); 
+    } 
+  
+    // Driver code 
+    public static void main(String[] args) 
+    { 
+        int arr[] = { 9, 4, 9, 6, 7, 4 }; 
+        int n = arr.length; 
+        firstNonRepeating(arr, n); 
+    } 
+} 
+  
+// This code has been contributed by 29AjayKumar 
+*/
+
+/*All non repeating elements of an array with python
+# Efficient Python program to print all non- 
+# repeating elements. 
+  
+def firstNonRepeating(arr, n): 
+      
+    # Insert all array elements in hash 
+    # table 
+    mp={} 
+    for i in range(n): 
+        if arr[i] not in mp: 
+            mp[arr[i]]=0
+        mp[arr[i]]+=1
+          
+    # Traverse through map only and 
+    for x in mp: 
+        if (mp[x]== 1): 
+            print(x,end=" ") 
+              
+# Driver code 
+arr = [ 9, 4, 9, 6, 7, 4 ] 
+n = len(arr) 
+firstNonRepeating(arr, n) 
+   
+# This code is contributed by shivanisinghss2110 
+*/
+
+
+
+
+
+/*All combinations of an array with respect to r
+// Java program to print all combination of size r in an array of size n 
+import java.io.*; 
+  
+class Combination { 
+  
+    /* arr[]  ---> Input Array 
+    data[] ---> Temporary array to store current combination 
+    start & end ---> Staring and Ending indexes in arr[] 
+    index  ---> Current index in data[] 
+    r ---> Size of a combination to be printed */
+    static void combinationUtil(int arr[], int data[], int start, 
+                                int end, int index, int r) 
+    { 
+        // Current combination is ready to be printed, print it 
+        if (index == r) 
+        { 
+            for (int j=0; j<r; j++) 
+                System.out.print(data[j]+" "); 
+            System.out.println(""); 
+            return; 
+        } 
+  
+        // replace index with all possible elements. The condition 
+        // "end-i+1 >= r-index" makes sure that including one element 
+        // at index will make a combination with remaining elements 
+        // at remaining positions 
+        for (int i=start; i<=end && end-i+1 >= r-index; i++) 
+        { 
+            data[index] = arr[i]; 
+            combinationUtil(arr, data, i+1, end, index+1, r); 
+        } 
+    } 
+  
+    // The main function that prints all combinations of size r 
+    // in arr[] of size n. This function mainly uses combinationUtil() 
+    static void printCombination(int arr[], int n, int r) 
+    { 
+        // A temporary array to store all combination one by one 
+        int data[]=new int[r]; 
+  
+        // Print all combination using temprary array 'data[]' 
+        combinationUtil(arr, data, 0, n-1, 0, r); 
+    } 
+  
+    /*Driver function to check for above function*/
+    public static void main (String[] args) { 
+        int arr[] = {1, 2, 3, 4, 5}; 
+        int r = 3; 
+        int n = arr.length; 
+        printCombination(arr, n, r); 
+    } 
+} 
+*/
+
+
+
+
+/*Print all permutations of an array
+package test;
+
+import java.util.*;
+import java.io.*;
+public class test{
+    public static void main( String[] args ) throws IOException  
+    {   
+        Integer[] arr = {1,2,3,4};
+        int r = 2;
+        int level = 0;
+        ArrayList<Integer> array = new ArrayList<Integer>(Arrays.asList(arr));
+        int[] sub = new int[r];
+        permutation(array, sub, r, level);
+    }
+    
+    static void permutation(ArrayList<Integer> array, int[] sub, int r, int level){
+        for(int i = 0; i<array.size(); i++){
+            int x = array.get(i);
+            array.remove(i);
+            sub[level] = x;
+            if(level < r-1)permutation(array, sub, r, level+1);
+            else{
+                for(int z : sub){
+                    System.out.print(z+" ");
+                }
+                System.out.println();
+            }
+            array.add(i,x);
+        }
+    }
+}
+*/

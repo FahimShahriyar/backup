@@ -1,0 +1,148 @@
+Work Directory/Head, Staging Area, Local Repository, Remote Repository
+*Use tab to select folder e.g: cd "tab", cd b"tab" shows folders with the specified first letter
+*up arrow, and down arrow for previous commands
+*control + left arrow, control + right arrow for cursor long jump
+*HEAD is the very last commit of a branch
+*Upstream is remote repository
+*Downstream is working directory
+
+color/? (all color options)
+color 07 (0= background black, 7=foreground/text white)
+color (resets the color settings)
+cls (clear screen)
+clear (clear screen)
+dir (shows all files and folders)
+dir *.extension (only shows files with same extension)
+dir/a (shows all files and folders including hidden ones)
+cd (change directory)
+cd sample folder (goes to the sample folder)
+cd .. (returns to the first previous directory)
+cd ../.. (returns to the second previous directory)
+mkdir name (creates a new folder after the name)
+rmdir name (removes/ deletes an empty directory)
+rmdir /s name (deletes a non-empty directory)
+echo name.extension (creates a file)
+echo fileData > name.extension  (creates file with file data. If the file already exists then replaces the data)
+echo fileData >> name.extension (adds data to the file)
+fileName.extension (opens the file)
+copy file1 file2 (copies file1 data to file2 data)
+move file1 file2 (moves file1 data to file2 data and deletes file1)
+dir >> file.txt (copies all file and folder names to the file)
+del name.extension (deletes the file)
+type name.extension (shows all text of the file in the command prompt)
+move folder1 folder2 (moves folder1 in folder2)
+wmic logicaldisk get name (shows all the disk partitions)
+d: (changes directory to d drive)
+tree (shows files and folders like a tree)
+gcc --version (shows the gcc compiler version)
+ipconfig/? (shows all ipconfig options)
+
+git --version (shows the version of the git)
+
+git init (Makes the folder a git repository)
+git config --global user.name “FahimShahriyar”  (for all repositories with same username)
+git config --global user.email “fahimshahriyar1415@gmail.com”  (for all repositories with same email id)
+git config user.name “FahimShahriyar”  (for all repositories with different username)
+git config user.email “fahimshahriyar1415@gmail.com”  (for all repositories with different email id)
+git config --list  (shows all git properties like user id, email)
+git config -l  (shows all git properties like user id, email)
+
+
+git status (shows commits and unstaged files)
+git add fileName1 fileName2  (stages unstaged file)
+git add --all (stages all unstaged files)
+git add .  (stages all unstaged files)
+git reset  (Unstages all staged files)
+git reset --hard  (deletes the last commit and its changes)
+git reset --hard commitId
+git reset --soft commitId  (Deletes the commit but keeps all changes from last commit to the specified commit in staged area)
+git reset --hard HEAD (Going back to HEAD)
+git reset --hard HEAD^ (Going back to the commit before HEAD)
+git reset --hard HEAD-2 (Going back two commits before HEAD)
+git restore fileName/folderName (deletes all unstaged changes of the specific file or folder)
+git pull (syncs all changes in local repository with remote repository)
+
+
+git clean -f  (Deletes untracked new files)
+git clean -f -n  (Shows the future consequences for code git clean -f)
+
+git commit + Enter key + I key + "Commit Message" + Esc Key + ":x" + Enter Key  (Commits staged files)
+git commit -m “commit message” (commits staged files)
+git commit --amend -m "commit message" (adds all changes and replaces all commit commends with the last commit)
+
+git log (shows all commits with long serial number and upload time)
+git log --oneline (shows all commits with short serial number and less details)
+git checkout long/shortSerialNumber (repository returns to the specified serial number commit version)
+git checkout master (repository returns to the master branch and all deleted data restores)
+git diff (shows the differences between Work Directory and Local Repository)
+git diff --staged (shows the differences between Staging Area and Local Repository)
+git diff commitLong/shortSerialNumber1 commitLong/shortSerialNumber2  (Shows the differences between the two commits)
+git show commitLong/shortSerialNumber/commitId (shows the changes in the specific commit)
+git show HEAD (shows the very last commit of the branch)
+
+Delete file from Git:
+git rm fileName (Moves the file from Local Repository to Staging Area and deletes the file from Work Directory)
+git reset HEAD filename (Deletes the file from Staging Area)
+
+https://github.com/FahimShahriyar/backupCodes.git
+git remote add origin https://github.com/FahimShahriyar/backupCodes.git (connects local repository with remote repository)
+git remote add origin https://github.com/fahimshahriyarbd/projects.git
+git push -u origin master (sends all files from local repository to remote repository)
+
+
+SSH Key:
+* Remove Git Credential from Windows Credentials
+ssh-keygen -t rsa -b 4096 -C "email address" + Enter + gitKeyName + Enter + password + Enter + Retype password + Enter
+eval "$(ssh-agent -s)"
+ssh-add gitKeyName + Enter + typeGivenPasswordForSSHkey + Enter
+clip < gitKeyName.pub  (Copies the SSH key in clipboard)
+
+ssh-keygen -t rsa -b 4096 -C "email address" + Enter + Enter + password + Enter + Retype password + Enter
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa + Enter + typeGivenPasswordForSSHkey + Enter
+clip < ~/.ssh/id_rsa.pub  (Copies the SSH key in clipboard)
+
+git@github.com:FahimShahriyar/backupCodes.git
+git remote (shows all the remotes)
+git remote -v (shows all the remotes with fetch and pull url)
+git remote add origin git@github.com:FahimShahriyar/backupCodes.git  (git remote add origin git@github.com:FahimShahriyar/remoteRepositoryName.git) (origin is remote name. Remote name can be anything)
+git remote add origin git@github.com:fahimshahriyarbd/projects.git
+git remote rename oldRemoteName newRemoteName (renames remote name)
+git remote rm remoteName (removes the specified remote)
+git push -u remoteName master
+
+
+Clone a Repository:
+git clone https://github.com/FahimShahriyar/backupCodes.git
+git clone https://github.com/FahimShahriyar/backupCodes.git folderRename  (Clones the repository but remanes it)
+
+
+Git Fetch & Pull:
+git fetch + Enter + SSHkeyPassword + Enter  (git searches if any changes have been made in Remote Repository or other user's git)
+git pull + Enter + SSHkeyPassword + Enter   (git downloads all changes from Remote Repository to Work Directory)
+
+
+Git Branching:
+git branch  (Shows all branches. Which branch has * sign, the user is in that branch)
+git checkout branchName  (switches to the specified branchName)
+git branch branchName  (Creates a new branch by the branchName)
+git checkout -b branchName  (creates a new branch after the branchName and switches to that branch)
+git merge branchName  (Merges branchName branch with current branch. branchName branche's all files and data are now available in the current branch)
+git reset --merge  (aborting merge state)
+git branch -D branchName  (Deletes branchName branch)
+git branch -a (shows all local and remote branches)
+git branch -avv (shows all local and remote branches with last commit)
+
+Stash:
+git stash  (Deletes all files data and moves them in a temporary file.)
+git stash list  (Shows all stashes)
+git stash pop  (Restores all data)
+git stash apply  (Restores all data)
+git stash pop stash@{N}  (Restores to the Nth stashed version. N = 0,1,2,3,4,5......)
+
+
+Git Ignore:
+*After this process git stops tracking specified files
+*First a ignore file has to be created
+touch .ignoreFileName  (Creates a file after the ignoreFileName)
+*Open the ignore file in text editor and write the file name which you want to ignore. If you want to ignore all files of a file type add *.extension  e.g. *html

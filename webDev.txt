@@ -1,0 +1,3053 @@
+Bootstrap 1536 Classes:
+.accordion
+.active
+.alert
+.alert-danger
+.alert-dark
+.alert-dismissible
+.alert-heading
+.alert-info
+.alert-light
+.alert-link
+.alert-primary
+.alert-secondary
+.alert-success
+.alert-warning
+.align-baseline
+.align-bottom
+.align-content-around
+.align-content-between
+.align-content-center
+.align-content-end
+.align-content-lg-around
+.align-content-lg-between
+.align-content-lg-center
+.align-content-lg-end
+.align-content-lg-start
+.align-content-lg-stretch
+.align-content-md-around
+.align-content-md-between
+.align-content-md-center
+.align-content-md-end
+.align-content-md-start
+.align-content-md-stretch
+.align-content-sm-around
+.align-content-sm-between
+.align-content-sm-center
+.align-content-sm-end
+.align-content-sm-start
+.align-content-sm-stretch
+.align-content-start
+.align-content-stretch
+.align-content-xl-around
+.align-content-xl-between
+.align-content-xl-center
+.align-content-xl-end
+.align-content-xl-start
+.align-content-xl-stretch
+.align-items-baseline
+.align-items-center
+.align-items-end
+.align-items-lg-baseline
+.align-items-lg-center
+.align-items-lg-end
+.align-items-lg-start
+.align-items-lg-stretch
+.align-items-md-baseline
+.align-items-md-center
+.align-items-md-end
+.align-items-md-start
+.align-items-md-stretch
+.align-items-sm-baseline
+.align-items-sm-center
+.align-items-sm-end
+.align-items-sm-start
+.align-items-sm-stretch
+.align-items-start
+.align-items-stretch
+.align-items-xl-baseline
+.align-items-xl-center
+.align-items-xl-end
+.align-items-xl-start
+.align-items-xl-stretch
+.align-middle
+.align-self-auto
+.align-self-baseline
+.align-self-center
+.align-self-end
+.align-self-lg-auto
+.align-self-lg-baseline
+.align-self-lg-center
+.align-self-lg-end
+.align-self-lg-start
+.align-self-lg-stretch
+.align-self-md-auto
+.align-self-md-baseline
+.align-self-md-center
+.align-self-md-end
+.align-self-md-start
+.align-self-md-stretch
+.align-self-sm-auto
+.align-self-sm-baseline
+.align-self-sm-center
+.align-self-sm-end.align-self-sm-start
+.align-self-sm-stretch.align-self-start
+.align-self-stretch
+.align-self-xl-auto
+.align-self-xl-baseline
+.align-self-xl-center
+.align-self-xl-end
+.align-self-xl-start
+.align-self-xl-stretch
+.align-text-bottom
+.align-text-top
+.align-top
+.arrow
+.badge
+.badge-danger
+.badge-dark
+.badge-info
+.badge-light
+.badge-pill
+.badge-primary
+.badge-secondary
+.badge-success
+.badge-warning
+.bg-danger
+.bg-dark
+.bg-info
+.bg-light
+.bg-primary
+.bg-secondary
+.bg-success
+.bg-transparent
+.bg-warning
+.bg-white
+.blockquote
+.blockquote-footer
+.border
+.border-0
+.border-bottom
+.border-bottom-0
+.border-danger
+.border-dark
+.border-info
+.border-left
+.border-left-0
+.border-light
+.border-primary
+.border-right
+.border-right-0
+.border-secondary
+.border-success
+.border-top
+.border-top-0
+.border-warning
+.border-white
+.breadcrumb
+.breadcrumb-item
+.bs-popover-auto
+.bs-popover-bottom
+.bs-popover-left
+.bs-popover-right
+.bs-popover-top
+.bs-tooltip-auto
+.bs-tooltip-bottom
+.bs-tooltip-left
+.bs-tooltip-right
+.bs-tooltip-top
+.btn.btn-block
+.btn-danger
+.btn-dark
+.btn-group
+.btn-group-lg
+.btn-group-sm
+.btn-group-toggle
+.btn-group-vertical
+.btn-info
+.btn-lg
+.btn-light
+.btn-link
+.btn-outline-danger
+.btn-outline-dark
+.btn-outline-info
+.btn-outline-light
+.btn-outline-primary
+.btn-outline-secondary
+.btn-outline-success
+.btn-outline-warning
+.btn-primary
+.btn-secondary
+.btn-sm
+.btn-success
+.btn-toolbar
+.btn-warning
+.card
+.card-body
+.card-columns
+.card-deck
+.card-footer
+.card-group
+.card-header
+.card-header-pills
+.card-header-tabs
+.card-img
+.card-img-bottom
+.card-img-overlay
+.card-img-top
+.card-link
+.card-subtitle
+.card-text
+.card-title
+.carousel
+.carousel-caption
+.carousel-control-next
+.carousel-control-next-icon
+.carousel-control-prev
+.carousel-control-prev-icon
+.carousel-fade
+.carousel-indicators
+.carousel-inner
+.carousel-item
+.carousel-item-left
+.carousel-item-next
+.carousel-item-prev
+.carousel-item-right
+.clearfix
+.close
+.col
+.col-1
+.col-2
+.col-3
+.col-4
+.col-5
+.col-6
+.col-7
+.col-8
+.col-9
+.col-10
+.col-11
+.col-12
+.col-auto
+.col-form-label
+.col-form-label-lg
+.col-form-label-sm
+.col-lg
+.col-lg-1
+.col-lg-2
+.col-lg-3
+.col-lg-4
+.col-lg-5
+.col-lg-6
+.col-lg-7
+.col-lg-8
+.col-lg-9
+.col-lg-10
+.col-lg-11
+.col-lg-12
+.col-lg-auto
+.col-md
+.col-md-1
+.col-md-2
+.col-md-3
+.col-md-4
+.col-md-5
+.col-md-6
+.col-md-7
+.col-md-8
+.col-md-9
+.col-md-10
+.col-md-11
+.col-md-12
+.col-md-auto
+.col-sm
+.col-sm-1
+.col-sm-2
+.col-sm-3
+.col-sm-4
+.col-sm-5
+.col-sm-6
+.col-sm-7
+.col-sm-8
+.col-sm-9
+.col-sm-10
+.col-sm-11
+.col-sm-12
+.col-sm-auto
+.col-xl
+.col-xl-1
+.col-xl-2
+.col-xl-3
+.col-xl-4
+.col-xl-5
+.col-xl-6
+.col-xl-7
+.col-xl-8
+.col-xl-9
+.col-xl-10
+.col-xl-11
+.col-xl-12
+.col-xl-auto
+.collapse
+.collapsing
+.container
+.container-fluid
+.container-lg
+.container-md
+.container-sm
+.container-xl
+.custom-checkbox
+.custom-control
+.custom-control-inline
+.custom-control-input
+.custom-control-label
+.custom-file
+.custom-file-input
+.custom-file-label
+.custom-radio
+.custom-range
+.custom-select
+.custom-select-lg
+.custom-select-sm
+.custom-switch
+.d-block.d-flex
+.d-inline
+.d-inline-block
+.d-inline-flex
+.d-lg-block
+.d-lg-flex
+.d-lg-inline
+.d-lg-inline-block
+.d-lg-inline-flex
+.d-lg-none
+.d-lg-table
+.d-lg-table-cell
+.d-lg-table-row
+.d-md-block
+.d-md-flex
+.d-md-inline
+.d-md-inline-block
+.d-md-inline-flex
+.d-md-none
+.d-md-table
+.d-md-table-cell
+.d-md-table-row
+.d-none
+.d-print-block
+.d-print-flex
+.d-print-inline
+.d-print-inline-block
+.d-print-inline-flex
+.d-print-none
+.d-print-table
+.d-print-table-cell
+.d-print-table-row
+.d-sm-block
+.d-sm-flex
+.d-sm-inline
+.d-sm-inline-block
+.d-sm-inline-flex
+.d-sm-none
+.d-sm-table
+.d-sm-table-cell
+.d-sm-table-row
+.d-table
+.d-table-cell
+.d-table-row
+.d-xl-block
+.d-xl-flex
+.d-xl-inline
+.d-xl-inline-block
+.d-xl-inline-flex
+.d-xl-none
+.d-xl-table
+.d-xl-table-cell
+.d-xl-table-row
+.disabled
+.display-1
+.display-2
+.display-3
+.display-4
+.dropdown
+.dropdown-divider
+.dropdown-header
+.dropdown-item
+.dropdown-item-text
+.dropdown-menu
+.dropdown-menu-left
+.dropdown-menu-lg-left
+.dropdown-menu-lg-right
+.dropdown-menu-md-left
+.dropdown-menu-md-right
+.dropdown-menu-right
+.dropdown-menu-sm-left
+.dropdown-menu-sm-right
+.dropdown-menu-xl-left
+.dropdown-menu-xl-right
+.dropdown-toggle
+.dropdown-toggle-split
+.dropleft
+.dropright
+.dropup
+.embed-responsive
+.embed-responsive-16by9
+.embed-responsive-1by1
+.embed-responsive-21by9
+.embed-responsive-4by3
+.embed-responsive-item
+.fade
+.figure
+.figure-caption
+.figure-img
+.fixed-bottom
+.fixed-top
+.flex-column
+.flex-column-reverse
+.flex-fill
+.flex-grow-0
+.flex-grow-1
+.flex-lg-column
+.flex-lg-column-reverse
+.flex-lg-fill
+.flex-lg-grow-0
+.flex-lg-grow-1
+.flex-lg-nowrap
+.flex-lg-row
+.flex-lg-row-reverse
+.flex-lg-shrink-0
+.flex-lg-shrink-1
+.flex-lg-wrap
+.flex-lg-wrap-reverse
+.flex-md-column
+.flex-md-column-reverse
+.flex-md-fill
+.flex-md-grow-0
+.flex-md-grow-1
+.flex-md-nowrap
+.flex-md-row
+.flex-md-row-reverse
+.flex-md-shrink-0
+.flex-md-shrink-1
+.flex-md-wrap
+.flex-md-wrap-reverse
+.flex-nowrap
+.flex-row
+.flex-row-reverse
+.flex-shrink-0
+.flex-shrink-1
+.flex-sm-column
+.flex-sm-column-reverse
+.flex-sm-fill
+.flex-sm-grow-0
+.flex-sm-grow-1
+.flex-sm-nowrap
+.flex-sm-row
+.flex-sm-row-reverse
+.flex-sm-shrink-0
+.flex-sm-shrink-1
+.flex-sm-wrap
+.flex-sm-wrap-reverse
+.flex-wrap
+.flex-wrap-reverse
+.flex-xl-column
+.flex-xl-column-reverse
+.flex-xl-fill
+.flex-xl-grow-0
+.flex-xl-grow-1
+.flex-xl-nowrap
+.flex-xl-row
+.flex-xl-row-reverse
+.flex-xl-shrink-0
+.flex-xl-shrink-1
+.flex-xl-wrap
+.flex-xl-wrap-reverse
+.float-left
+.float-lg-left
+.float-lg-none
+.float-lg-right
+.float-md-left
+.float-md-none
+.float-md-right
+.float-none
+.float-right
+.float-sm-left
+.float-sm-none
+.float-sm-right
+.float-xl-left
+.float-xl-none
+.float-xl-right
+.focus
+.font-italic
+.font-weight-bold
+.font-weight-bolder
+.font-weight-light
+.font-weight-lighter
+.font-weight-normal
+.form-check
+.form-check-inline
+.form-check-input
+.form-check-label
+.form-control
+.form-control-file
+.form-control-lg
+.form-control-plaintext
+.form-control-range
+.form-control-sm
+.form-group
+.form-inline
+.form-row
+.form-text
+.h-100
+.h-25
+.h-50
+.h-75
+.h-auto
+.h1
+.h2
+.h3
+.h4
+.h5
+.h6
+.hide
+.img-fluid
+.img-thumbnail
+.initialism
+.input-group
+.input-group-append
+.input-group-lg
+.input-group-prepend
+.input-group-sm
+.input-group-text
+.invalid-feedback
+.invalid-tooltip
+.invisible
+.is-invalid
+.is-valid
+.jumbotron
+.jumbotron-fluid
+.justify-content-around
+.justify-content-between
+.justify-content-center
+.justify-content-end
+.justify-content-lg-around
+.justify-content-lg-between
+.justify-content-lg-center
+.justify-content-lg-end
+.justify-content-lg-start
+.justify-content-md-around
+.justify-content-md-between
+.justify-content-md-center
+.justify-content-md-end
+.justify-content-md-start
+.justify-content-sm-around
+.justify-content-sm-between
+.justify-content-sm-center
+.justify-content-sm-end
+.justify-content-sm-start
+.justify-content-start
+.justify-content-xl-around
+.justify-content-xl-between
+.justify-content-xl-center
+.justify-content-xl-end
+.justify-content-xl-start
+.lead
+.list-group
+.list-group-flush
+.list-group-horizontal
+.list-group-horizontal-lg
+.list-group-horizontal-md
+.list-group-horizontal-sm
+.list-group-horizontal-xl
+.list-group-item
+.list-group-item-action
+.list-group-item-danger
+.list-group-item-dark
+.list-group-item-info
+.list-group-item-light
+.list-group-item-primary
+.list-group-item-secondary
+.list-group-item-success
+.list-group-item-warning
+.list-inline
+.list-inline-item
+.list-unstyled
+.m-0
+.m-1
+.m-2
+.m-3
+.m-4
+.m-5
+.m-auto
+.m-lg-0
+.m-lg-1
+.m-lg-2
+.m-lg-3
+.m-lg-4
+.m-lg-5
+.m-lg-auto
+.m-lg-n1
+.m-lg-n2
+.m-lg-n3
+.m-lg-n4
+.m-lg-n5
+.m-md-0
+.m-md-1
+.m-md-2
+.m-md-3
+.m-md-4
+.m-md-5
+.m-md-auto
+.m-md-n1
+.m-md-n2
+.m-md-n3
+.m-md-n4
+.m-md-n5
+.m-n1
+.m-n2
+.m-n3
+.m-n4
+.m-n5
+.m-sm-0
+.m-sm-1
+.m-sm-2
+.m-sm-3
+.m-sm-4
+.m-sm-5
+.m-sm-auto
+.m-sm-n1
+.m-sm-n2
+.m-sm-n3
+.m-sm-n4
+.m-sm-n5
+.m-xl-0
+.m-xl-1
+.m-xl-2
+.m-xl-3
+.m-xl-4
+.m-xl-5
+.m-xl-auto
+.m-xl-n1
+.m-xl-n2
+.m-xl-n3
+.m-xl-n4
+.m-xl-n5
+.mark
+.mb-0
+.mb-1
+.mb-2
+.mb-3
+.mb-4
+.mb-5
+.mb-auto
+.mb-lg-0
+.mb-lg-1
+.mb-lg-2
+.mb-lg-3
+.mb-lg-4
+.mb-lg-5
+.mb-lg-auto
+.mb-lg-n1
+.mb-lg-n2
+.mb-lg-n3
+.mb-lg-n4
+.mb-lg-n5
+.mb-md-0
+.mb-md-1
+.mb-md-2
+.mb-md-3
+.mb-md-4
+.mb-md-5
+.mb-md-auto
+.mb-md-n1
+.mb-md-n2
+.mb-md-n3
+.mb-md-n4
+.mb-md-n5
+.mb-n1
+.mb-n2
+.mb-n3
+.mb-n4
+.mb-n5
+.mb-sm-0
+.mb-sm-1
+.mb-sm-2
+.mb-sm-3
+.mb-sm-4
+.mb-sm-5
+.mb-sm-auto
+.mb-sm-n1
+.mb-sm-n2
+.mb-sm-n3
+.mb-sm-n4
+.mb-sm-n5
+.mb-xl-0
+.mb-xl-1
+.mb-xl-2
+.mb-xl-3
+.mb-xl-4
+.mb-xl-5
+.mb-xl-auto
+.mb-xl-n1
+.mb-xl-n2
+.mb-xl-n3
+.mb-xl-n4
+.mb-xl-n5
+.media
+.media-body
+.mh-100
+.min-vh-100
+.min-vw-100
+.ml-0
+.ml-1
+.ml-2
+.ml-3
+.ml-4
+.ml-5
+.ml-auto
+.ml-lg-0
+.ml-lg-1
+.ml-lg-2
+.ml-lg-3
+.ml-lg-4
+.ml-lg-5
+.ml-lg-auto
+.ml-lg-n1
+.ml-lg-n2
+.ml-lg-n3
+.ml-lg-n4
+.ml-lg-n5
+.ml-md-0
+.ml-md-1
+.ml-md-2
+.ml-md-3
+.ml-md-4
+.ml-md-5
+.ml-md-auto
+.ml-md-n1
+.ml-md-n2
+.ml-md-n3
+.ml-md-n4
+.ml-md-n5
+.ml-n1
+.ml-n2
+.ml-n3
+.ml-n4
+.ml-n5
+.ml-sm-0
+.ml-sm-1
+.ml-sm-2
+.ml-sm-3
+.ml-sm-4
+.ml-sm-5
+.ml-sm-auto
+.ml-sm-n1
+.ml-sm-n2
+.ml-sm-n3
+.ml-sm-n4
+.ml-sm-n5
+.ml-xl-0
+.ml-xl-1
+.ml-xl-2
+.ml-xl-3
+.ml-xl-4
+.ml-xl-5
+.ml-xl-auto
+.ml-xl-n1
+.ml-xl-n2
+.ml-xl-n3
+.ml-xl-n4
+.ml-xl-n5
+.modal
+.modal-backdrop
+.modal-body
+.modal-content
+.modal-dialog
+.modal-dialog-centered
+.modal-dialog-scrollable
+.modal-footer
+.modal-header
+.modal-lg
+.modal-open
+.modal-scrollbar-measure
+.modal-sm
+.modal-static
+.modal-title
+.modal-xl
+.mr-0
+.mr-1
+.mr-2
+.mr-3
+.mr-4
+.mr-5
+.mr-auto
+.mr-lg-0
+.mr-lg-1
+.mr-lg-2
+.mr-lg-3
+.mr-lg-4
+.mr-lg-5
+.mr-lg-auto
+.mr-lg-n1
+.mr-lg-n2
+.mr-lg-n3
+.mr-lg-n4
+.mr-lg-n5
+.mr-md-0
+.mr-md-1
+.mr-md-2
+.mr-md-3
+.mr-md-4
+.mr-md-5
+.mr-md-auto
+.mr-md-n1
+.mr-md-n2
+.mr-md-n3
+.mr-md-n4
+.mr-md-n5
+.mr-n1
+.mr-n2
+.mr-n3
+.mr-n4
+.mr-n5
+.mr-sm-0
+.mr-sm-1
+.mr-sm-2
+.mr-sm-3
+.mr-sm-4
+.mr-sm-5
+.mr-sm-auto
+.mr-sm-n1
+.mr-sm-n2
+.mr-sm-n3
+.mr-sm-n4
+.mr-sm-n5
+.mr-xl-0
+.mr-xl-1
+.mr-xl-2
+.mr-xl-3
+.mr-xl-4
+.mr-xl-5
+.mr-xl-auto
+.mr-xl-n1
+.mr-xl-n2
+.mr-xl-n3
+.mr-xl-n4
+.mr-xl-n5
+.mt-0
+.mt-1
+.mt-2
+.mt-3
+.mt-4
+.mt-5
+.mt-auto
+.mt-lg-0
+.mt-lg-1
+.mt-lg-2
+.mt-lg-3
+.mt-lg-4
+.mt-lg-5
+.mt-lg-auto
+.mt-lg-n1
+.mt-lg-n2
+.mt-lg-n3
+.mt-lg-n4
+.mt-lg-n5
+.mt-md-0
+.mt-md-1
+.mt-md-2
+.mt-md-3
+.mt-md-4
+.mt-md-5
+.mt-md-auto
+.mt-md-n1
+.mt-md-n2
+.mt-md-n3
+.mt-md-n4
+.mt-md-n5
+.mt-n1
+.mt-n2
+.mt-n3
+.mt-n4
+.mt-n5
+.mt-sm-0
+.mt-sm-1
+.mt-sm-2
+.mt-sm-3
+.mt-sm-4
+.mt-sm-5
+.mt-sm-auto
+.mt-sm-n1
+.mt-sm-n2
+.mt-sm-n3
+.mt-sm-n4
+.mt-sm-n5
+.mt-xl-0
+.mt-xl-1
+.mt-xl-2
+.mt-xl-3
+.mt-xl-4
+.mt-xl-5
+.mt-xl-auto
+.mt-xl-n1
+.mt-xl-n2
+.mt-xl-n3
+.mt-xl-n4
+.mt-xl-n5
+.mw-100
+.mx-0
+.mx-1
+.mx-2
+.mx-3
+.mx-4
+.mx-5
+.mx-auto
+.mx-lg-0
+.mx-lg-1
+.mx-lg-2
+.mx-lg-3
+.mx-lg-4
+.mx-lg-5
+.mx-lg-auto
+.mx-lg-n1
+.mx-lg-n2
+.mx-lg-n3
+.mx-lg-n4
+.mx-lg-n5
+.mx-md-0
+.mx-md-1
+.mx-md-2
+.mx-md-3
+.mx-md-4
+.mx-md-5
+.mx-md-auto
+.mx-md-n1
+.mx-md-n2
+.mx-md-n3
+.mx-md-n4
+.mx-md-n5
+.mx-n1
+.mx-n2
+.mx-n3
+.mx-n4
+.mx-n5
+.mx-sm-0
+.mx-sm-1
+.mx-sm-2
+.mx-sm-3
+.mx-sm-4
+.mx-sm-5
+.mx-sm-auto
+.mx-sm-n1
+.mx-sm-n2
+.mx-sm-n3
+.mx-sm-n4
+.mx-sm-n5
+.mx-xl-0
+.mx-xl-1
+.mx-xl-2
+.mx-xl-3
+.mx-xl-4
+.mx-xl-5
+.mx-xl-auto
+.mx-xl-n1
+.mx-xl-n2
+.mx-xl-n3
+.mx-xl-n4
+.mx-xl-n5
+.my-0
+.my-1
+.my-2
+.my-3
+.my-4
+.my-5
+.my-auto
+.my-lg-0
+.my-lg-1
+.my-lg-2
+.my-lg-3
+.my-lg-4
+.my-lg-5
+.my-lg-auto
+.my-lg-n1
+.my-lg-n2
+.my-lg-n3
+.my-lg-n4
+.my-lg-n5
+.my-md-0
+.my-md-1
+.my-md-2
+.my-md-3
+.my-md-4
+.my-md-5
+.my-md-auto
+.my-md-n1
+.my-md-n2
+.my-md-n3
+.my-md-n4
+.my-md-n5
+.my-n1
+.my-n2
+.my-n3
+.my-n4
+.my-n5
+.my-sm-0
+.my-sm-1
+.my-sm-2
+.my-sm-3
+.my-sm-4
+.my-sm-5
+.my-sm-auto
+.my-sm-n1
+.my-sm-n2
+.my-sm-n3
+.my-sm-n4
+.my-sm-n5
+.my-xl-0
+.my-xl-1
+.my-xl-2
+.my-xl-3
+.my-xl-4
+.my-xl-5
+.my-xl-auto
+.my-xl-n1
+.my-xl-n2
+.my-xl-n3
+.my-xl-n4
+.my-xl-n5
+.nav
+.nav-fill
+.nav-item
+.nav-justified
+.nav-link
+.nav-pills
+.nav-tabs
+.navbar
+.navbar-brand
+.navbar-collapse
+.navbar-dark
+.navbar-expand
+.navbar-expand-lg
+.navbar-expand-md
+.navbar-expand-sm
+.navbar-expand-xl
+.navbar-light
+.navbar-nav
+.navbar-text
+.navbar-toggler
+.navbar-toggler-icon
+.no-gutters
+.offset-1
+.offset-2
+.offset-3
+.offset-4
+.offset-5
+.offset-6
+.offset-7
+.offset-8
+.offset-9
+.offset-10
+.offset-11
+.offset-lg-0
+.offset-lg-1
+.offset-lg-2
+.offset-lg-3
+.offset-lg-4
+.offset-lg-5
+.offset-lg-6
+.offset-lg-7
+.offset-lg-8
+.offset-lg-9
+.offset-lg-10
+.offset-lg-11
+.offset-md-0
+.offset-md-1
+.offset-md-2
+.offset-md-3
+.offset-md-4
+.offset-md-5
+.offset-md-6
+.offset-md-7
+.offset-md-8
+.offset-md-9
+.offset-md-10
+.offset-md-11
+.offset-sm-0
+.offset-sm-1
+.offset-sm-2
+.offset-sm-3
+.offset-sm-4
+.offset-sm-5
+.offset-sm-6
+.offset-sm-7
+.offset-sm-8
+.offset-sm-9
+.offset-sm-10
+.offset-sm-11
+.offset-xl-0
+.offset-xl-1
+.offset-xl-2
+.offset-xl-3
+.offset-xl-4
+.offset-xl-5
+.offset-xl-6
+.offset-xl-7
+.offset-xl-8
+.offset-xl-9
+.offset-xl-10
+.offset-xl-11
+.order-0
+.order-1
+.order-2
+.order-3
+.order-4
+.order-5
+.order-6
+.order-7
+.order-8
+.order-9
+.order-10
+.order-11
+.order-12
+.order-first
+.order-last
+.order-lg-0
+.order-lg-1
+.order-lg-2
+.order-lg-3
+.order-lg-4
+.order-lg-5
+.order-lg-6
+.order-lg-7
+.order-lg-8
+.order-lg-9
+.order-lg-10
+.order-lg-11
+.order-lg-12
+.order-lg-first
+.order-lg-last
+.order-md-0
+.order-md-1
+.order-md-2
+.order-md-3
+.order-md-4
+.order-md-5
+.order-md-6
+.order-md-7
+.order-md-8
+.order-md-9
+.order-md-10
+.order-md-11
+.order-md-12
+.order-md-first
+.order-md-last
+.order-sm-0
+.order-sm-1
+.order-sm-2
+.order-sm-3
+.order-sm-4
+.order-sm-5
+.order-sm-6
+.order-sm-7
+.order-sm-8
+.order-sm-9
+.order-sm-10
+.order-sm-11
+.order-sm-12
+.order-sm-first
+.order-sm-last
+.order-xl-0
+.order-xl-1
+.order-xl-2
+.order-xl-3
+.order-xl-4
+.order-xl-5
+.order-xl-6
+.order-xl-7
+.order-xl-8
+.order-xl-9
+.order-xl-10
+.order-xl-11
+.order-xl-12
+.order-xl-first
+.order-xl-last
+.overflow-auto
+.overflow-hidden
+.p-0
+.p-1
+.p-2
+.p-3
+.p-4
+.p-5
+.p-lg-0
+.p-lg-1
+.p-lg-2
+.p-lg-3
+.p-lg-4
+.p-lg-5
+.p-md-0
+.p-md-1
+.p-md-2
+.p-md-3
+.p-md-4
+.p-md-5
+.p-sm-0
+.p-sm-1
+.p-sm-2
+.p-sm-3
+.p-sm-4
+.p-sm-5
+.p-xl-0
+.p-xl-1
+.p-xl-2
+.p-xl-3
+.p-xl-4
+.p-xl-5
+.page-item
+.page-link
+.pagination
+.pagination-lg
+.pagination-sm
+.pb-0
+.pb-1
+.pb-2
+.pb-3
+.pb-4
+.pb-5
+.pb-lg-0
+.pb-lg-1
+.pb-lg-2
+.pb-lg-3
+.pb-lg-4
+.pb-lg-5
+.pb-md-0
+.pb-md-1
+.pb-md-2
+.pb-md-3
+.pb-md-4
+.pb-md-5
+.pb-sm-0
+.pb-sm-1
+.pb-sm-2
+.pb-sm-3
+.pb-sm-4
+.pb-sm-5
+.pb-xl-0
+.pb-xl-1
+.pb-xl-2
+.pb-xl-3
+.pb-xl-4
+.pb-xl-5
+.pl-0
+.pl-1
+.pl-2
+.pl-3
+.pl-4
+.pl-5
+.pl-lg-0
+.pl-lg-1
+.pl-lg-2
+.pl-lg-3
+.pl-lg-4
+.pl-lg-5
+.pl-md-0
+.pl-md-1
+.pl-md-2
+.pl-md-3
+.pl-md-4
+.pl-md-5
+.pl-sm-0
+.pl-sm-1
+.pl-sm-2
+.pl-sm-3
+.pl-sm-4
+.pl-sm-5
+.pl-xl-0
+.pl-xl-1
+.pl-xl-2
+.pl-xl-3
+.pl-xl-4
+.pl-xl-5
+.pointer-event
+.popover
+.popover-body
+.popover-header
+.position-absolute
+.position-fixed
+.position-relative
+.position-static
+.position-sticky
+.pr-0
+.pr-1
+.pr-2
+.pr-3
+.pr-4
+.pr-5
+.pr-lg-0
+.pr-lg-1
+.pr-lg-2
+.pr-lg-3
+.pr-lg-4
+.pr-lg-5
+.pr-md-0
+.pr-md-1
+.pr-md-2
+.pr-md-3
+.pr-md-4
+.pr-md-5
+.pr-sm-0
+.pr-sm-1
+.pr-sm-2
+.pr-sm-3
+.pr-sm-4
+.pr-sm-5
+.pr-xl-0
+.pr-xl-1
+.pr-xl-2
+.pr-xl-3
+.pr-xl-4
+.pr-xl-5
+.pre-scrollable
+.progress
+.progress-bar
+.progress-bar-animated
+.progress-bar-striped
+.pt-0
+.pt-1
+.pt-2
+.pt-3
+.pt-4
+.pt-5
+.pt-lg-0
+.pt-lg-1
+.pt-lg-2
+.pt-lg-3
+.pt-lg-4
+.pt-lg-5
+.pt-md-0
+.pt-md-1
+.pt-md-2
+.pt-md-3
+.pt-md-4
+.pt-md-5
+.pt-sm-0
+.pt-sm-1
+.pt-sm-2
+.pt-sm-3
+.pt-sm-4
+.pt-sm-5
+.pt-xl-0
+.pt-xl-1
+.pt-xl-2
+.pt-xl-3
+.pt-xl-4
+.pt-xl-5
+.px-0
+.px-1
+.px-2
+.px-3
+.px-4
+.px-5
+.px-lg-0
+.px-lg-1
+.px-lg-2
+.px-lg-3
+.px-lg-4
+.px-lg-5
+.px-md-0
+.px-md-1
+.px-md-2
+.px-md-3
+.px-md-4
+.px-md-5
+.px-sm-0
+.px-sm-1
+.px-sm-2
+.px-sm-3
+.px-sm-4
+.px-sm-5
+.px-xl-0
+.px-xl-1
+.px-xl-2
+.px-xl-3
+.px-xl-4
+.px-xl-5
+.py-0
+.py-1
+.py-2
+.py-3
+.py-4
+.py-5
+.py-lg-0
+.py-lg-1
+.py-lg-2
+.py-lg-3
+.py-lg-4
+.py-lg-5
+.py-md-0
+.py-md-1
+.py-md-2
+.py-md-3
+.py-md-4
+.py-md-5
+.py-sm-0
+.py-sm-1
+.py-sm-2
+.py-sm-3
+.py-sm-4
+.py-sm-5
+.py-xl-0
+.py-xl-1
+.py-xl-2
+.py-xl-3
+.py-xl-4
+.py-xl-5
+.rounded
+.rounded-0
+.rounded-bottom
+.rounded-circle
+.rounded-left
+.rounded-lg
+.rounded-pill
+.rounded-right
+.rounded-sm
+.rounded-top
+.row.row-cols-1
+.row-cols-2
+.row-cols-3
+.row-cols-4
+.row-cols-5
+.row-cols-6
+.row-cols-lg-1
+.row-cols-lg-2
+.row-cols-lg-3
+.row-cols-lg-4
+.row-cols-lg-5
+.row-cols-lg-6
+.row-cols-md-1
+.row-cols-md-2
+.row-cols-md-3
+.row-cols-md-4
+.row-cols-md-5
+.row-cols-md-6
+.row-cols-sm-1
+.row-cols-sm-2
+.row-cols-sm-3
+.row-cols-sm-4
+.row-cols-sm-5
+.row-cols-sm-6
+.row-cols-xl-1
+.row-cols-xl-2
+.row-cols-xl-3
+.row-cols-xl-4
+.row-cols-xl-5
+.row-cols-xl-6
+.shadow
+.shadow-lg
+.shadow-none
+.shadow-sm
+.show
+.showing
+.small
+.spinner-border
+.spinner-border-sm
+.spinner-grow
+.spinner-grow-sm
+.sr-only
+.sr-only-focusable
+.stretched-link
+.tab-content
+.tab-pane
+.table
+.table-active
+.table-bordered
+.table-borderless
+.table-danger
+.table-dark
+.table-hover
+.table-info
+.table-light
+.table-primary
+.table-responsive
+.table-responsive-lg
+.table-responsive-md
+.table-responsive-sm
+.table-responsive-xl
+.table-secondary
+.table-sm
+.table-striped
+.table-success
+.table-warning
+.text-black-50
+.text-body
+.text-break
+.text-capitalize
+.text-center
+.text-danger
+.text-dark
+.text-decoration-none
+.text-hide
+.text-info
+.text-justify
+.text-left
+.text-lg-center
+.text-lg-left
+.text-lg-right
+.text-light
+.text-lowercase
+.text-md-center
+.text-md-left
+.text-md-right
+.text-monospace
+.text-muted
+.text-nowrap
+.text-primary
+.text-reset
+.text-right
+.text-secondary
+.text-sm-center
+.text-sm-left
+.text-sm-right
+.text-success
+.text-truncate
+.text-uppercase
+.text-warning
+.text-white
+.text-white-50
+.text-wrap
+.text-xl-center
+.text-xl-left
+.text-xl-right
+.thead-dark
+.thead-light
+.toast
+.toast-body
+.toast-header
+.tooltip
+.tooltip-inner
+.valid-feedback
+.valid-tooltip
+.vh-100
+.visible
+.vw-100
+.w-100
+.w-25
+.w-50
+.w-75
+.w-auto
+.was-validated
+
+
+if :root font-size 16px then 1rem = 16px
+//load jquery-3.4.1.min.js before bootstrap.min.js. Or "bootstrap.min.js:6 Uncaught TypeError: Cannot read property 'fn' of undefined" problem occures
+//all head meta tags explained in bootstrap video 2, 21 minutes
+
+bg-primary//class, background:blue
+bg-success//class, background:green
+bg-info//class, background color light blue
+bg-warning//class, background color yellow
+bg-danger//class, background color red
+bg-muted//class, background color gray blueish
+bg-white//class, background:white;
+bg-dark//class, background color light black
+bg-light//class, background color light
+
+invisible//class, display:none;
+
+text-light//class, lightens the text color
+container//class,  padding-right: 15px;padding-left: 15px;margin-right: auto;margin-left: auto;
+h1//class, makes fonts like h1 tag
+h2//class, makes fonts like h2 tag
+h3//class, makes fonts like h3 tag
+h4//class, makes fonts like h4 tag
+h5//class, makes fonts like h5 tag
+h6//class, makes fonts like h6 tag
+
+display-1//class, font-size: 6rem;font-weight: 300;line-height: 1.2;
+display-2//class, font-size: 5.5rem;font-weight: 300;line-height: 1.2;
+display-3//class, font-size: 4.5rem;font-weight: 300;line-height: 1.2;
+display-4//class, font-size: 3.5rem;font-weight: 300;line-height: 1.2;
+
+lead//class, font-size: 1.25rem;font-weight: 300;
+font-weight-bold//class, makes font bold
+font-weight-normal//class, makes font weight normal
+font-italic//class, makes fonts italic
+
+text-lowercase//class, makes text lowercase
+text-uppercase//class, makes text uppercase
+text-capitalize//class, makes the first letters of the words of text uppercase
+
+list-unstyled//class, list-style:none;
+<ul class="list-inline">
+<li class="list-inline-item">li1<li>// display:inline-block/float:left //only which list items get this class are appeared side by side
+<li class="list-inline-item">li2<li>// display:inline-block/float:left
+<li>li3<li>// does not appear side by side as it did not got the class//appears below
+</ul>
+
+text-justify//class, whole paragraph appears like a block
+text-left//class, text-align: left;
+text-center//class, text-align: center;
+text-right//class, text-align: right;
+
+text-sm-right//class, text-small-right, text-align right for small devices which width >= 576px, if width< 576px then the device is extra small
+text-md-right//class, text-medium-right, text-align right for medium devices which width >= 768px
+text-lg-right//class, text-large-right, text-align right for large devices which width >= 992px
+text-xl-right//class, text-extra-large-right, text-align right for extra large devices which width >= 1200px
+
+text-sm-center//class, text-small-center, text-align center for small devices which width >= 576px, if width< 576px then the device is extra small
+text-md-center//class, text-medium-center, text-align center for medium devices which width >= 768px
+text-lg-center//class, text-large-center, text-align center for large devices which width >= 992px
+text-xl-center//class, text-extra-large-center, text-align center for extra large devices which width >= 1200px
+
+text-sm-left//class, text align left of any device large or small
+text-md-left//class, text align left of any device large or small
+text-lg-left//class, text align left of any device large or small
+text-xl-left//class, text align left of any device large or small
+
+align-baseline//class
+align-top//class
+align-middle//class
+align-bottom//class
+align-text-top//class
+align-text-bottom//class
+
+d-inline//class, tags like: h1,h2,h3,h4,h5,h6 leave their extra width
+d-inline-block//class, div tag leaves its extra width and display: inline-block;
+d-block//class, tags like: span takes the whole width as extra space
+
+float-left//class
+float-right//class
+float-none//class
+
+float-sm-right//class, for small devices
+float-md-right//class, for medium devices
+float-lg-right//class, for large devices
+float-xl-right//class, for extra-large devices
+
+float-sm-left//class, for small devices
+float-md-left//class, for medium devices
+float-lg-left//class, for large devices
+float-xl-left//class, for extra-large devices
+
+float-sm-none//class, for small devices
+float-md-none//class, for medium devices
+float-lg-none//class, for large devices
+float-xl-none//class, for extra-large devices
+
+//all button classes can design any tag like a button
+//to use any button class, btn class has to be used
+btn
+btn-block
+btn-primary// .btn-primary {color: #fff;background-color: #007bff;border-color: #007bff;}
+btn-secondary
+btn-success
+btn-info
+btn-warning
+btn-danger
+btn-link//shows button as a link
+
+//for these classes button background appears on hover
+btn-outline-primary// .btn-primary {color: #fff;background-color: #007bff;border-color: #007bff;}
+btn-outline-secondary
+btn-outline-success
+btn-outline-info
+btn-outline-warning
+btn-outline-danger
+btn-outline-link//shows button as a link
+active
+disabled
+<button class="btn btn-primary mt-2 btn-toggle" data-toggle="button"></button>//btn-toogle changes color. data-toggle attribute for this class must be used
+
+btn-lg//makes button large
+btn-sm//makes button small
+btn-block//button takes the whole width
+
+
+clearfix//if a div appears partially inside another div or if a div's bg-success close does not work then it is used to fix
+fixed-top//class, position:fixed at top
+fixed-bottom//class, position fixed at the bottom
+sticky-top//class, position: sticky, used for nav-bar, video:5, minute:14
+
+text-primary//class, text color blue
+text-success//class, text color green
+text-info//class, text color light blue
+text-warning//class, text color yellow
+text-danger//class, text color red
+text-muted//class, text color gray blueish
+text-white//class, color:white;
+
+mb-0//class, margin-bottom: 0rem;
+mb-1//class, margin-bottom: .25rem;
+mb-2//class, margin-bottom: .5rem;
+mb-3//class, margin-bottom: 1rem;
+mb-4//class, margin-bottom: 1.5rem;
+mb-5//class, margin-bottom: 3rem;
+
+mt-0//class, margin-top: 0rem;
+mt-1//class, margin-top: .25rem;
+mt-2//class, margin-top: .5rem;
+mt-3//class, margin-top: 1rem;
+mt-4//class, margin-top: 1.5rem;
+mt-5//class, margin-top: 3rem;
+
+mr-0//class, margin-right: 0rem;
+mr-1//class, margin-right: .25rem;
+mr-2//class, margin-right: .5rem;
+mr-3//class, margin-right: 1rem;
+mr-4//class, margin-right: 1.5rem;
+mr-5//class, margin-right: 3rem;
+
+ml-0//class, margin-left: 0rem;
+ml-1//class, margin-left: .25rem;
+ml-2//class, margin-left: .5rem;
+ml-3//class, margin-left: 1rem;
+ml-4//class, margin-left: 1.5rem;
+ml-5//class, margin-left: 3rem;
+
+mx-0/x = x axis/class, margin-left: 0rem;   margin-right: 0rem;
+mx-1//class, margin-left: .25rem; margin-right: .25rem;
+mx-2//class, margin-left: .5rem;  margin-right: .5rem;
+mx-3//class, margin-left: 1rem;   margin-right: 1rem;
+mx-4//class, margin-left: 1.5rem; margin-right: 1.5rem;
+mx-5//class, margin-left: 3rem;   margin-right: 3rem;
+
+my-0/y = y axis/class, margin-top: 0rem;   margin-bottom: 0rem;
+my-1//class, margin-top: .25rem; margin-bottom: .25rem;
+my-2//class, margin-top: .5rem;  margin-bottom: .5rem;
+my-3//class, margin-top: 1rem;   margin-bottom: 1rem;
+my-4//class, margin-top: 1.5rem; margin-bottom: 1.5rem;
+my-5//class, margin-top: 3rem;   margin-bottom: 3rem;
+
+m-0//class, margin: 0rem;
+m-1//class, margin: .25rem;
+m-2//class, margin: .5rem;
+m-3//class, margin: 1rem;
+m-4//class, margin: 1.5rem;
+m-5//class, margin: 3rem; // same for padding. just p = padding// pb, pt, pr, pl, px, py, p//{property}{sides}-size
+
+w-25//class, width: 25%
+w-50//class, width: 50%
+w-75//class, width: 75%
+w-100//class, width: 100%
+
+h-25//class, height: 25%
+h-50//class, height: 50%
+h-75//class, height: 75%
+h-100//class, height: 100%
+
+
+
+
+
+HTML:
+/*
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="shortcut icon" href="">
+  <link rel="stylesheet" href="Library\css\bootstrap.min.css">
+  <link rel="stylesheet" href="Library\css\animate.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style media="screen">
+  </style>
+</head>
+<body>
+
+
+<script type="text/javascript" src="Library/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="Library/js/popper.min.js"></script>
+<script type="text/javascript" src="Library/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="Library/js/scroll-out.min.js"></script>
+<script type="text/javascript" src="action.js"></script>
+<script type="text/javascript">
+
+</script>
+</body>
+</html>
+*/
+
+
+<link rel="shortcut icon" href="Library/contents/img1.jpg">
+<hr/>//creates a horizontal line
+<!-- Comment -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+
+&times;// cross sign
+&nbsp//white space
+
+<table style="border:1px solid blue; border-collapse:collapse;"></table>
+<a href="index.html">Home</a>  | <a href="aboutus.html">About Us</a> | <a href="gallery.html">Gallery</a> | <a href="ct.html">Contact us</a>
+<marquee onmouseover="this.stop()" onmouseout="this.start()" behavior="scroll" direction="" style="font-weight:bold;">E-shikhon</marquee>
+
+<input placeholder="Email adress"/><br/>
+<input type="number" placeholder="Password"/></br></br>
+
+<input type="checkbox"/>Banana
+<input type="checkbox"/>Apple
+<input type="checkbox"/>Mango
+
+<input name="Gender" type="radio"/>Male <input name="Gender" type="radio"/>Female
+
+
+<input type="date"/>
+<input type="hidden"/>
+
+<textarea placeholder="What is on your mind" cols="30" rows="10"></textarea>
+
+<input type="submit" value="Sign up"/> //If action attribute is empty in form tag then the page redirects itself with all form data.
+
+<select>
+<option>Country</option>
+<option>Bangladesh</option>
+<option>India</option>
+<option>Spain</option>
+<option>United States</option>
+<option selected="selected">Mexico</option>
+</select>
+
+<input type="file"/>
+<input type="file" multiple/> <!--for multiple files>
+<input type="submit" value="Create account">
+<input type="text" placeholder="User Name" pattern="[A-Za-z]{3}" required/> // 3 is value length
+<input type="number" placeholder="Enter Age"  name="age" min="01" max="80">//Input box with increase and decrease button
+
+
+<marquee scrollamount="30" behavior="alternate" direction="left">Fahim Shahriyar</marquee>
+
+<video height="500px" width="800px" controls>
+<source src="Space Shuttle.mp4"type="mp4-mpeg4"/>
+</video>
+
+<pre></pre> <!-- Shows the text as it is written including spaces and new-lines -->
+
+
+
+CSS:
+<link rel="stylesheet" href="style.css">
+style="background:red;"//inline css
+<style></style>//Inner html goes inside the tag
+padding: 4px 4px 4px 4px;
+padding: 0;
+border: 5cm;
+width: 1vh;//vh, vw, vmin, vmax. v= viewport
+1vw = 1% of the viewport width
+background:red !important;
+Typo// Typing mistake
+
+bottom:20px; //it sets the element's height until 20 px of the display;
+over-flow:scroll;
+element::-webkit-scrollbar{width:2px !important;}
+::-webkit-scrollbar{width: 2px;}
+::-webkit-scrollbar-thumb{background:#999;}
+::-webkit-scrollbar-track{background: white;}
+
+width:fit-content;
+margin:auto;
+
+@font-face {
+  font-family:xyz;
+  src: url(scripalt.woff);
+}
+
+@media(min-width:576px){tag{}}//works for devices which screen width is equal or greater than 576px//for small devices
+@media(min-width:768px){tag{}}//works for devices which screen width is equal or greater than 768px//for medium devices
+@media(min-width:992px){tag{}}//works for devices which screen width is equal or greater than 992px//for large devices
+@media(min-width:1200px){tag{}}//works for devices which screen width is equal or greater than 1200px//for extra-large devices
+
+@media(max-width:575px){tag{}}//for extra small devices
+@media(max-width:767px){tag{}}//for small devices
+@media(max-width:991px){tag{}}//for medium devices
+@media(max-width:1199px){tag{}}//for large devices
+
+
+text-transform: uppercase;
+text-decoration: underline;
+font-style: italic;
+
+transform-origin: top;
+transform:scaleX(value);
+transform:scaleY(value);
+transform:scaleZ(value);
+
+tag:hover{}
+tag1:hover tag2{}//effect occures on tag2 while hovering on tag1. tag2 must be inside tag1
+tag:before{}
+tag:after{}
+tag:first-child{}//works on the first child of the tag
+tag:last-child{}//works on the last child of the tag
+tag:nth-of-child(number){}//works on the nth child of the tag
+tag:nth-of-type(1){}//works on the nth of tag
+tag:first-letter{}//works on the first leter
+tag:first-line{}//works on the first line
+tag:not(className/idName){}//works on all tags except the specified tag
+
+background-image:url(Library/contents/img1.jpg);
+background: linear-gradient(#00000087,#000000c2), linear-gradient(#0000001f,#00000038), url(background.jpg);
+background-attachment: fixed;//background image does not move with scroll
+background-size: cover;
+background-repeat: no-repeat;
+background-position: 100% 50%;
+background-size: 22px 22px;
+
+a:link{color:black;}
+a:visited{color:blue;}
+
+@keyframes change {
+from{transform: translateX(0px) translateY(0px);}
+to{transform: translateX(20px) translateY(20px);}
+}
+/*
+.image{
+  width: 400px;
+  height: 200px;
+  transition: transform 1s;
+}
+.image:hover{
+  transform: scale(1.09);
+  transform-origin: 50% 50%;
+}
+*/
+
+/*
+<div class="container mt-5" style="display:flex;">
+  <div style="width:100%;height:100px;order:2;background:red;">One</div>
+  <div style="width:100%;height:100px;order:1;background:blue;">Two</div>
+  <div style="width:100%;height:100px;order:3;background:green;">Three</div>
+  <div style="width:100%;height:100px;order:4;background:yellow;">Four</div>
+</div>
+*
+<div class="container mt-5" style="display:flex;flex-direction:column;">
+  <div style="width:100%;height:100px;order:2;background:red;">One</div>
+  <div style="width:100%;height:100px;order:1;background:blue;">Two</div>
+  <div style="width:100%;height:100px;order:3;background:green;">Three</div>
+  <div style="width:100%;height:100px;order:4;background:yellow;">Four</div>
+</div>
+*/
+
+.flexBox{
+display:flex;
+justify-content: flex-start(default)/flex-end/center/space-around/space-between; //Horizontal
+align-items: flex-start(default)/flex-end/center/baseline/stretch; //Vertical
+flex-direction: row/row-reverse/column/column-reverse;
+flex-wrap:nowrap(default)/wrap/wrap-reverse;
+flex-flow:column wrap;  //combination of flex-direction and flex-wrap;
+align-content: flex-start(default)/flex-end/center/space-around/space-between/stretch;
+}
+.flexBox .divBox{
+order:-2,-1,0,1,2,3;
+align-self: flex-start(default)/flex-end/center/baseline/stretch;
+flex-grow:1,2,3,4..; //Makes the element grow larger along with the axis
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .col-xm-1 {width: 8.33%;}
+  .col-xm-2 {width: 16.66%;}
+  .col-xm-3 {width: 25%;}
+  .col-xm-4 {width: 33.33%;}
+  .col-xm-5 {width: 41.66%;}
+  .col-xm-6 {width: 50%;}
+  .col-xm-7 {width: 58.33%;}
+  .col-xm-8 {width: 66.66%;}
+  .col-xm-9 {width: 75%;}
+  .col-xm-10 {width: 83.33%;}
+  .col-xm-11 {width: 91.66%;}
+  .col-xm-12 {width: 100%;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+  .col-sm-1 {width: 8.33%;}
+  .col-sm-2 {width: 16.66%;}
+  .col-sm-3 {width: 25%;}
+  .col-sm-4 {width: 33.33%;}
+  .col-sm-5 {width: 41.66%;}
+  .col-sm-6 {width: 50%;}
+  .col-sm-7 {width: 58.33%;}
+  .col-sm-8 {width: 66.66%;}
+  .col-sm-9 {width: 75%;}
+  .col-sm-10 {width: 83.33%;}
+  .col-sm-11 {width: 91.66%;}
+  .col-sm-12 {width: 100%;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .col-md-1 {width: 8.33%;}
+  .col-md-2 {width: 16.66%;}
+  .col-md-3 {width: 25%;}
+  .col-md-4 {width: 33.33%;}
+  .col-md-5 {width: 41.66%;}
+  .col-md-6 {width: 50%;}
+  .col-md-7 {width: 58.33%;}
+  .col-md-8 {width: 66.66%;}
+  .col-md-9 {width: 75%;}
+  .col-md-10 {width: 83.33%;}
+  .col-md-11 {width: 91.66%;}
+  .col-md-12 {width: 100%;}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .col-lg-1 {width: 8.33%;}
+  .col-lg-2 {width: 16.66%;}
+  .col-lg-3 {width: 25%;}
+  .col-lg-4 {width: 33.33%;}
+  .col-lg-5 {width: 41.66%;}
+  .col-lg-6 {width: 50%;}
+  .col-lg-7 {width: 58.33%;}
+  .col-lg-8 {width: 66.66%;}
+  .col-lg-9 {width: 75%;}
+  .col-lg-10 {width: 83.33%;}
+  .col-lg-11 {width: 91.66%;}
+  .col-lg-12 {width: 100%;}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .col-xl-1 {width: 8.33%;}
+  .col-xl-2 {width: 16.66%;}
+  .col-xl-3 {width: 25%;}
+  .col-xl-4 {width: 33.33%;}
+  .col-xl-5 {width: 41.66%;}
+  .col-xl-6 {width: 50%;}
+  .col-xl-7 {width: 58.33%;}
+  .col-xl-8 {width: 66.66%;}
+  .col-xl-9 {width: 75%;}
+  .col-xl-10 {width: 83.33%;}
+  .col-xl-11 {width: 91.66%;}
+  .col-xl-12 {width: 100%;}
+}
+
+
+Java Script:
+camelCase
+Java script works inside jQuery
+Double quotation can not be use inside itself.
+Single quotation can not be use inside itself.
+//, /* */ is used to comment on java script
+<script type="text/javascript" src="action.js"></script>
+String literals : `` //Makes any html code into string;
+`<div>${variableName}</div>` //Usage of javascript variable inside string literals
+
+Network > XHR //Javascript json files
+
+console.log(variable/"string");//To write on the console
+document.write("<h1>Lorem</h1>");//appends to the html document
+document.write("Lorem"+" "+"Five");
+
+onclick="return confirm('Are you sure');
+<a onclick="return confirm('1 row will be deleted');" href="delete.php?id=<?php echo $myData["id"];?>">Delete</a>
+
+data-varName="value";//html attribute for any tag
+.attr("data-deleteVal");;//returns the value assaigned for that varName
+
+<button onclick="alert()">Click</button>//ondblclick,onmouseover,onmouseenter,onmouseout,onmouseup,onmousedown,onmousemove,onmousewheel,onmouseleave
+alert("");
+.addEventListener('click',function(){})//dblclick,mouseover,mouseenter,mouseout,mouseup,mousedown,mousemove,mousewheel,mouseleave
+.addEventListener('click',functionName);
+<input type="text" onkeydown="alert(this.value)">//onkeyup(best), onkeypress
+<button onclick="work()">Click</button>//work function is defined in java script file
+document.querySelector("inputTypeText").value; //returns the value of the input tag
+document.querySelector("inputTypeRadio/inputTypeCheckbox").checked //returns true if the tag is checked
+document.querySelector("selectTag").selectedIndex; //returns the index number of the selected option of the select tag
+document.querySelector("selectTag").value; //returns the value of the selected option of the select tag
+
+document.getElementById('id')
+document.getElementsByClassName('className')[0]
+document.getElementsByTagName('tagName')[0]
+document.querySelector('.input').style.background="red";//indexing not needed
+
+.style.display='none';//.display='hide' does not work
+.style.background="red";
+.innerHTML="";
+.style.fontSize="10px";
+.setAttribute("style","display:block;color:white;");//other attributes can also work
+.setAttribute("class","name1 name2");
+.setAttribute("id","name1");
+
+==//true if equal value
+!=//true if not equal value
+===//true if equal value and equal type
+!==//true if not equal value or not equal type
+&& = and operator
+|| = or operator
+
+typeof(variable)//returns the type of the variable
+console.log((x==y)? "Yes":"No");//?= Ternary operator
+
+var object = {var1: "string", var2: number, var3:function()};//object.var1
+var array = ["string", number];//array[0]
+var array = new Array("string",number,"string");
+var array = []; array[0]=value; array[1]=value; array[2]=value;
+var str="String";
+var str='string\'s'//back slash is used to add appostrophy sign
+
+str.length//returns the length of the string
+str.endsWith("string")//returns true if the string ends with the specified string
+str.includes("string")//returns true if the string contains the specified string
+str.indexOf("string")//returns the index number of the specified index
+str.slice(0,10)//returns the sliced piece
+str.toUpperCase()//returns the Upper Case form of the string
+str.bold()//returns the bold form of the string
+str.italics()//returns the italic form of the string
+str.fontColor('')//returns the string with font color specified
+str.toLowerCase();//returns the string in lower case
+str.toUpperCase();//returns the string in upper case
+str.trim()//removes the spaces from starting and ending of the string and returns the result string
+str.match(/@/);// returns true if the string contains the special character
+
+array.length//returns the length of the array
+array.sort();//sorts the array
+array.push("array"/number);//appends to the array
+var = array.toString();//returns the string form of the array with commas as separators
+var = array.join("+");//returns the string form of the array with '+' as separators
+array.pop();//removes the last element of the array
+array.shift();//removes the first element of the array
+array.unshift("string"/number)//adds the element at the beginning of the array
+array[array.length]="string"/number//appends the element to the array
+array.splice(num1,num2,"str","str");
+    //num1= The position where new element should be added
+    //num2= How many elements should be removed
+    //str= The new elements to be added
+array.splice(0,1);//removes the first element of the array
+array1.concat(array2);//Concatenates (joins) array2 with array1
+array1.concat(array2, array3);//Concatenates array2 and array3 with array1
+var array2 = array1.slice(2);//except first two elements and returns the other elements
+var array2 = array1.slice(0,2);//returns the first two elements of array 1
+
+document.getElementsByTagName('button')[0].addEventListener('click',function(){
+  document.getElementsByTagName('div')[0].style.transform="rotate(120deg)";
+});
+document.getElementsByTagName('button')[1].addEventListener('click',function(){
+  document.getElementsByTagName('div')[0].style.transform="rotate(0deg)";
+});//div এর transition:all 1s; থাকলে transition effect দেখা যায় । No class needed for transition
+
+function time(){
+  var dateObj = new Date();
+  var hours = dateObj.getHours();
+  var minutes = dateObj.getMinutes();
+  var seconds = dateObj.getSeconds();
+  document.getElementById('dtime').innerHTML=hours+":"+minutes+":"+seconds;
+}setInterval(time,1000);
+setTimeout(function(){}, 3000);
+var = dateObj.getFullYear();//returns the full four digit year number
+var = dateObj.getMonth();//returns the month number(0-11)
+var = dateObj.getDate();//returns day number(1-31)
+var = dateObj.getHours();//returns the hour(0-23)
+var = dateObj.getMinutes();//returns the minutes(0-59)
+var = dateObj.getSeconds();//returns the seconds(0-59)
+var = dateObj.getMilliseconds();//returns the millisecond(0-999)
+var = dateObj.getTime();//returns the milliseconds since January 1, 1970
+var = dateObj.getDay();//returns the day(0-6)
+
+dateObj.setFullYear(number);//sets the full four digit year number
+dateObj.setMonth(number);//sets the month number(0-11)
+dateObj.setDate(number);//sets day number(1-31)
+dateObj.setHours(number);//sets the hour(0-23)
+dateObj.setMinutes(number);//sets the minutes(0-59)
+dateObj.setSeconds(number);//sets the seconds(0-59)
+dateObj.setMilliseconds(number);//sets the millisecond(0-999)
+dateObj.setTime(number);//sets the milliseconds since January 1, 1970
+dateObj.setDay(number);//sets the day(0-6)
+
+var = Math.round(4.7);//returns 5. returns the nearest integer number
+var = Math.round(4.4);//returns 4
+var = Math.pow(8,2);//returns 64
+var = Math.sqrt(64);//returns 8
+var = Math.abs(-4.8);//returns the absolute value
+var = Math.ceil(4.4);//returns 5 returns the rounded up nearest integer
+var = Math.floor(4.4);//returns 4 returns the rounded down nearest integer
+var = Math.random();//returns a random number between 0 to trans to 1
+
+switch(number/variable/array){
+  case value:
+    statement;
+    break;
+  default:
+    statement;
+}
+
+document.getElementById('btn').addEventListener('click',function(){
+    this.style.display='none';
+})
+
+var obj={var1:"string",var2:10,var3:function(){return this.var1}};
+console.log(obj.var3());
+
+.append("");//adds to the last
+.prepend("");//adds to the first
+.append(document.createElement("button"));//appends a button tag inside the container tag
+.classList.add("");//ads only one class name at a time but repeatedly useable
+.classList.remove("");//removes the class
+.classList.toggle("");//toggles the class
+.classList.replace("oldClass","newClass");
+.className="name1 name2";//multiple values possible. but removes previous class names
+if(document.querySelector("tag").classList.contains("ClassName")){}// returns 1 if the tag has the class
+if(document.querySelector(".className/#id"))//returns true is the class/id is present
+
+
+document.getElementById("selectTag1").addEventListener("change",function(){
+  if (this.value==1) {
+    document.getElementById("selectTag2").innerHTML='<option value="">Select division</option><option value="">Dhaka</option><option value="">Rajshahi</option><option value="">Khulna</option><option value="">Barisal</option><option value="">Chottogram</option>';
+}});
+
+window.open("url");//opens a new tab with the url
+window.open("url","Text that have no effect");//opens a new tab with the url
+window.open("url","Text that have no effect","height=400px,width=700px");
+window.open("url","Text that have no effect","height=400px,width=700px,left=350%,top=100px");
+window.location.replace("url");//which page has this code, the code changes the page's url
+
+var mywindow = window.open(null,"Text that have no effect","height=400px,width=700px,left=350%,top=100px");
+mywindow.document.write("<h1>Hello</h1>")
+mywindow.close();
+mywindow.location.replace("url");
+
+document.querySelector("formTag").addEventListener("submit",function(){});//works on submit button clicked inside form tag
+onsubmit="return false"//a form tag attribute. Submit button does not submit to the server. But addEventListener("submit") works to check the data are valid or not like password length;
+
+window.pageYOffset //value changes with scroll
+document.documentElement.scrollTop //value changes with scroll
+window.scrollTo(0,500);
+
+window.innerHeight //returns height of the browser window
+window.innerWidth //returns width of the browser window
+document.documentElement.clientHeight //returns height of the browser window
+document.documentElement.clientWidth //returns width of the browser window
+screen.width //width of the whole screen
+screen.height //height of the whole screen
+screen.availWidth //available screen width
+screen.availHeight //available screen height
+
+document.querySelector("div").offsetLeft  //returns the absolute top position without margin of the element. This value does not change
+document.querySelector("div").offsetTop  //returns the absolute top position without margin of the element. This value does not change
+
+var style = document.createElement("style");
+style.innerHTML = "#target{color:blue;}";
+document.head.appendChild(style);
+
+var style = document.createElement("style");
+document.head.appendChild(style);
+style.sheet.insertRule("#target{color:blue;}");
+
+var varName = prompt("Entr a number / string", "Dfault value");
+
+
+
+
+/*Click image and Ajax image save.
+<!--
+<script type="text/javascript" src="webcam.min.js"></script>
+<style>
+#my_camera{
+	width: 120px;
+	height: 140px;
+	border: 1px solid black;
+}
+</style>
+<div id="my_camera"></div>
+<input type=button value="Camera Start" onClick="configure()">&nbsp;&nbsp;
+<input type=button value="Click" onClick="take_snapshot();saveSnap();">
+<div id="results"></div>
+-->
+<script language="JavaScript">
+	function configure(){
+		Webcam.set({
+			width: 120,
+			height: 140,
+			image_format: 'jpeg',
+			jpeg_quality: 90
+		});
+		Webcam.attach( '#my_camera' );
+	}
+	var shutter = new Audio();
+	shutter.autoplay = false;
+	shutter.src = navigator.userAgent.match(/Firefox/) ? 'shutter.ogg' : 'shutter.mp3';		
+	function take_snapshot() {
+		shutter.play();
+		Webcam.snap( function(data_uri) {
+		document.getElementById('results').innerHTML = 
+			'<img id="imageprev" src="'+data_uri+'"/>';			
+		} );
+		Webcam.reset();
+	}
+	function saveSnap(){
+		var base64image =  document.getElementById("imageprev").src;
+		var person = prompt("Please enter Adhar Number", "");
+		 Webcam.upload( base64image, 'upload.php?person='+person, function(code, text) {
+			 console.log('Save successfully');
+		});
+
+	}
+</script>
+
+*upload.php file
+<?php
+$filename = 'pic_'.$_GET['person'] . '.jpeg';
+ move_uploaded_file($_FILES['webcam']['tmp_name'],'upload/'.$filename);
+?>
+*/
+
+
+/*javascript image preview
+<div id="preview-container">
+    <button id="upload-dialog">Choose Image</button>
+    <input type="file" id="image-file" accept="image/jpg,image/png" style="display:none" />
+    <img id="preview-image" style="display:none" />
+<div>
+<script>
+var _PREVIEW_URL;
+document.querySelector("#upload-dialog").addEventListener('click', function() {
+    document.querySelector("#image-file").click();
+});
+document.querySelector("#image-file").addEventListener('change', function() {
+    var file = this.files[0];
+    var mime_types = [ 'image/jpeg', 'image/png' ];
+    if(mime_types.indexOf(file.type) == -1) {
+        alert('Error : Incorrect file type');
+        return;
+    }
+    if(file.size > 2*1024*1024) {
+        alert('Error : Exceeded size 2MB');
+        return;
+    }
+    document.querySelector("#upload-dialog").style.display = 'none';
+    _PREVIEW_URL = URL.createObjectURL(file);
+    document.querySelector("#preview-image").setAttribute('src', _PREVIEW_URL);
+    document.querySelector("#preview-image").style.display = 'inline-block';
+});
+</script>
+*/
+
+
+jQuery:
+$ = jQuery
+jQuery works inside java script
+jQuery cdn by google helps the page to load fast
+
+$(document).ready(function(){});
+
+$('tag').css("background","purple");//adds CSS
+$('tag').css({
+  "background": "purple",
+  "font-size": "25px", //"font-size": "+=25px"
+  "color": "red"
+});
+$('tag').height(500).width(500);
+
+$('tag').hide();
+$('tag').show();
+$('tag').toggle();
+$('tag').hide('slow');
+$('tag').show('fast');
+$('tag').toggle(2000);//value in millisecond
+
+$('tag').hide('slow',function(){alert();});//function inside hide is called call back parameter
+      vs
+$('tag').hide('slow');alert();
+
+$('*').hide();//hides all tags inside html tag
+$(this).hide();
+$('tag:first').hide();//Hides the first tag
+$('tag:last').hide();//Hides the last tag
+$('ul li:first-child').hide();
+$('ul li:last-child').hide();
+$('ul li:nth-child(1)').hide();
+$('a').hide();== $('[href]').hide();//both hides the anchor tag
+$(':button').hide();//hides the button
+$('a[target="_blank"]').hide();//hides the tag specified with the attribute
+$('tag').first().css();//css works only on the first tag among of the same tags
+$('tag').last().css();//css works only on the last tag among of the same tags
+$('tag').eq(0).css();//css works only on the nth tag among of the same tags
+$('tag').filter(".className/#Id").css();//css works only on the specified tag among of the same tags
+$('tag').not(".className/#Id").css();//css works on all the tags except the specified tag among of the same tags
+
+
+$('tag').click(function(){});//dblclick,mouseover,mouseenter,mouseout,mouseup,mousedown,mousemove,mousewheel,mouseleave
+$('tag').hover(function(){},function(){});//first function for mouse enter, second function for mouse leave
+$('inputTypeText').focus(function(){});
+$('tag').on("click",function(){});
+$('tag').on({
+  mouseenter: function(){},
+  mouseleave: function(){},
+  click: function(){}
+});
+
+$('tag').fadeIn('slow');
+$('tag').fadeOut('fast');
+$('tag').fadeToggle(2000);
+$('tag').fadeTo('slow', .5);//.5 = Opacity/
+$('tag').slideDown('slow');//slides down a display:none; element
+$('tag').slideUp('fast');
+$('tag').slideToggle(2000);
+
+$('tag').animate({left:"500px",width:"200px",height:"100px",opacity:".5",fontSize:"30px"});
+$('tag').animate({left:"500px",width:"+=200px",height:"+=100px",opacity:".5"});
+$('tag').animate({left:"500px",width:"-=200px",height:"-=100px",opacity:".5"});
+$('tag').animate({left:"500px",width:"toggle",height:"toggle",opacity:".5"});
+$('tag').stop();//stops animate, fade, slide function
+
+var= $('tag');
+var.animate({left:"300px",width:"300px",height:"200px",opacity:".5"}, "slow");
+var.animate({left:"300px",width:"300px",height:"300px",opacity:".5"}, "slow");
+var.animate({left:"300px",width:"200px",height:"300px",opacity:".5"}, "slow");
+var.animate({left:"0px",width:"200px",height:"200px",opacity:"1"}, "slow");
+
+$('tag').slideUp('slow').slideDown('slow').css("","");//jQuery chaining method. one function works after another
+
+$('tag').text()//returns all text inside the tag. Get function
+$('tag').html()//returns all html inside the tag. Get function
+$('input').val()//returns the value of the input tag. Get function
+$("select")).children("option:selected").val()
+$("checkbox/radio").is(":checked")
+$('tag').attr("attributeName")//returns the attribute's value. Get function
+
+$('tag').text("string");//Set function
+$('tag').html("htmlString");//Set function
+$('input').val("value");//Set function
+$('tag').attr("attributeName","value");//Set function
+
+$('tag').append("");
+$('tag').prepend("");
+$('tag').before("");
+$('tag').after("");
+$('tag').remove();//removes the tag
+$('tag').empty();//emptys the tag
+$('tag').addClass("class1 class2");
+$('tag').removeClass("className");
+$('tag').toggleClass("class1 class2");
+if($('tag').hasClass('className')){} // Returns 1 if the tag has the class
+if($(".class/#id")){}// Returns 1 if the class or id exists
+
+console.log("");
+
+Traversing: Ancestor, Descendent, Siblings
+.parent().css();//Css works only on the direct parent tag of the current tag
+.parents().css();//Css works on all the parent tags of the current tag
+.parents("parentId/Class/Tag").css();//css works on the specified parent tag
+.parentsUntil("parentId/Class/Tag").css();//css works until the specified parent tag
+
+.children().css();//css works only on the first child tag
+.find("tag").css();//css works only on the specified child tag //a tag's child's child is also the first tag's child
+
+.siblings().css();//css works on all the sibling tags of the current tag
+.next().css();//css works only on the adjust next sibling tag
+.nextAll().css();//css works on all the next sibling tags of the current tag
+.nextUntil("tag").css();//css works on until the specified sibling tag
+.prev().css();//css works only on the adjust previous tag
+.prevAll().css();//css works on all the previous sibling tags
+.prevUntil().css();//css works on until the specified sibling tag
+
+$("div").position().top //returns the absolute top position with margin of the element. This value does not change
+$("div").position().left //returns the absolute left position with margin of the element. This value does not change
+
+AJAX: Asynchronous Javascript and XML
+$('tag').load("demo.html");
+
+
+
+
+/*
+<script> //Whole jquery-ui package is needed for this function
+  $( function() {
+    $( "inputTypeText" ).datepicker(); //Picks up date
+  } );
+  </script>
+*/
+
+
+
+
+PHP:
+//, # for single line commnt
+/**/ for double line comment
+" '$var' "//variable works
+' "$var" '//variable won't work
+<?php
+print"";
+echo""; //echo works faster than print.
+?>
+print'' or echo'' also works
+echo "string $var";
+print "string $var";
+$fileName = uniqid().".jpg";
+
+$var = 10; // $ sign is used to denote a variable
+echo"String".$var."string";
+echo"<h1>String</h1>"
+echo $var.$var1; // string addition
+echo $var+$var1; // mathematical addition
+$GLOBALS["variableName"]= value; //Global variable declearation
+
+strip_tags(string) //deletes all the tags and returns rest of the string
+substr($image, 0,7)
+substr($image, -3) //returns last three characters of the string
+strlen($image) //returns the length of the string
+strtoupper($image)
+strtolower($image)
+$input = "hi there. how is it doing. I am your mentor. Today i'm gonna teach you how to write essay";
+$output = substr($input, 0, 10);
+str_pad($output, 13,"."); //adds three dots at the end of the string and returns it
+
+define("varName",10,true);// constant variable. true denotes that the variable name is not case-sensative
+echo varName;
+
+
+var_dump($varName); //shows varName details
+floor($varName); // returns the integer part of a float number
+
+strlen(varName); // returns the length of the string variable
+str_word_count(varName);// returns the words count of the string
+strrev(varName);//returns the reversed string
+strpos(varname,"String");// returns the position of the string in the variable
+str_replace("str1","str2",varName); //replaces str1 with str2
+md5(varName/""); // returns the encripted form of the string. Used for passwords
+sha1(varName/""); // returns the encripted form of the string. Used for passwords
+md5(sha1(string));// Usually used in websites to make it more secure
+
+$x++, $x--, ++$x, --$x, $x = $y+10;
+$x and $y, $x or $y, $x xor $y,
+
+$varName = array(1,2,3,4,5);
+foreach($varName as $num){
+	echo $num."<br/>";
+}
+
+$varName = array("Name"=>"Fahim","Occupation"=>"Author");
+echo $varName["Name"];
+
+$varName = range("0","9"); //Assaings all numbers in the range as an array
+$varName = range("A","Z");
+$varName = array_merge(array1,array2);
+shuffle(arrayName); //shuffles the array
+
+ucfirst(arrayName/stringName); //Uppercases the first charecter
+
+count($array);//returns the item count of the array
+
+function functionName($parameter){}
+
+$var = 10;
+function fone(){
+	global $var;	echo $var;
+}
+
+<form method="GET" action="welcome.php"></form>
+echo $_GET["username"];
+
+<form method="POST" action="welcome.php"></form>
+echo $_POST["username"];<!--While sending data POST method is more useful than GET method. Because GET method sends data through URL. But POST method sends data hiddenly. Again URL can contain only 2048 cherecters-->
+
+$_REQUEST["username"];<!--While retrieving data REQUEST is best. REQUEST works for both GET and POST methods.-->
+
+isset($_REQUEST["inputTypeRadio"]); <!--returns true only if the radio button has been checked-->
+isset($_REQUEST["inputTypeCheckbox"]); <!--returns true only if the checkbox has been checked-->
+
+isset($_POST["inputName"]) <!--returns true only if the input box has data-->
+
+
+
+
+/*
+ <form enctype="multipart/form-data" method="POST" action="welcome.php">
+	<input style="margin:10px;font-size:15px;" type="file" name="profilepic"/><br/>
+	<input type="submit" value="Submit" style="margin:10px; padding:10px;border:1px solid #4889af; border-radius:5px; background:#4889af; color:white;">
+</form>
+
+<pre style="font-family:arial;"> <!--welcome.php file code-->
+<?php
+	$fileUp= $_FILES["profilepic"];
+	echo var_dump($fileUp);
+	$fileName = $fileUp["name"];
+	echo "<br/>".$fileUp["name"];
+	echo "<br/>".$fileUp["type"];
+	echo "<br/>".$fileUp["tmp_name"];
+	echo "<br/>".$fileUp["error"];
+	echo "<br/>".$fileUp["size"]; //Size in Byte
+
+	move_uploaded_file($fileUp["tmp_name"],"images/$fileName"); //Saves the file in the folder inside server
+
+	echo "<br/><img src='images/$fileName'/>"; <!--Quotation usage alert-->
+?>
+</pre>
+*/
+
+
+
+
+move_uploaded_file($fileUp["tmp_name"],"images/hello.jpg")
+
+if($stringVar==$stringVar){}
+
+ if($usrNm==$dbUsrNm && $usrPwd==$dbUsrPwd){
+	 header("location: user.php?username=$usrNm");}// redirects the page to the location
+header('location: user.php?username='.$usrNm);
+
+if(isset($_REQUEST["unmchpwd"])){} // returns 1 if the variable has data
+
+$result= "index.php?name=fahim&id=fahim shahriyar";
+header("location: $result");
+
+$first_name= htmlspecialchars(ltrim(rtrim($_REQUEST["first_name"]))); // ltrim() function removes all spaces from index[0] and htmlspecialchars() function turns all html codes into plain text. Hackers can use html codes into input fields to hack.
+$first_name= htmlspecialchars(trim($_REQUEST["first_name"]));// trim function removes all spaces from first and last
+
+$first_name= html_entity_decode($first_name); // Actives all html tags which were turned into plain text by htmlspecialchars() function.
+$first_name = htmlspecialchars_decode(first_name); // Actives all html tags which were turned into plain text by htmlspecialchars() function.
+
+
+
+
+/*Signup form with PHP
+<!--index.php file starts here-->
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+</head>
+<body style="font-family:arial;background:white;">
+<div style="padding: 100px 100px;margin:auto;width:500px;">
+<form enctype="multipart/form-data" method="GET" action="welcome.php">
+	<input name="firstName" type="text" placeholder="First name" style="width:450px;padding:10px;margin:10px;"/><br/>
+		<?php
+		if(isset($_REQUEST["fnmerr"])){
+			echo"<span style='color:red;font-family:arial;font-size:13px;padding:0px 10px;'>*Required</span><br/>";
+		}
+		if(isset($_REQUEST["fnmspserr"])){
+			echo"<span style='color:red;font-family:arial;font-size:13px;padding:0px 10px;'>*First name can not have space</span><br/>";
+		}
+		?>
+	<input name="lastName" type="text" placeholder="Last name" style="width:450px;padding:10px;margin:10px;"/><br/>
+	<input name="password" type="password" placeholder="Password" style="width:450px;padding:10px;margin:10px;"/><br/>
+		<?php
+		$result = "";
+		$value = 0;
+		if(isset($_REQUEST["lnerr"])){
+			$value = 1;
+			$result .="at least 8 characters";
+		}
+		if(isset($_REQUEST["ucerr"])){
+			if($value){
+				$result .=", ";
+			}
+			$value = 1;
+			$result .="Uppercase";
+		}
+		if(isset($_REQUEST["lcerr"])){
+			if($value){
+				$result .=", ";
+			}
+			$value = 1;
+			$result .="Lowercase";
+		}
+		if(isset($_REQUEST["nmbrerr"])){
+			if($value){
+				$result .=", ";
+			}
+			$value = 1;
+			$result .="Number";
+		}
+			if(isset($_REQUEST["schrerr"])){
+			if($value){
+				$result .=", ";
+			}
+			$value = 1;
+			$result .="!,@,#,$,%^&*";
+		}
+		if($value){
+			echo"<span style='color:red;font-family:arial;font-size:13px;padding:0px 10px;'>*Use $result</span><br/>";
+		}
+		?>
+	<input name="repassword" type="password" placeholder="Retype password" style="width:450px;padding:10px;margin:10px;"/><br/>
+		<?php
+		if(isset($_REQUEST["mcherr"])){
+			echo"<span style='color:red;font-family:arial;font-size:13px;padding:0px 10px;'>*Password does'nt match</span><br/>";
+		}
+		?>
+	<input type="submit" value="Sign up" style="margin:10px; padding:10px;border:1px solid #4889af; border-radius:5px; background:#4889af; color:white;width:474px;"/>
+</form>
+</div>
+</body>
+</html> <!--index.php file ends here-->
+
+<!--welcome.php file starts here-->
+<?php
+$result = "index.php?";
+
+$firstName= htmlspecialchars(trim($_REQUEST["firstName"]));
+$lastName= htmlspecialchars(trim($_REQUEST["lastName"]));
+$password = htmlspecialchars($_REQUEST["password"]);
+$repassword = htmlspecialchars($_REQUEST["repassword"]);
+
+$fnmerr = 1;
+$fnmspserr = 1;
+$lnerr = 1;
+$ucerr = 1;
+$lcerr = 1;
+$nmbrerr = 1;
+$schrerr = 1;
+$mcherr = 1;
+
+if(strlen($firstName)==0){ //first name check
+	$fnmerr = 0;
+	$result= $result."fnmerr=yes";
+}
+else{
+	$result= $result."fnm=yes";
+}
+if(preg_match('@[ ]@',$firstName)==1){ //firstName space check
+	$fnmspserr = 0;
+	$result= $result."&fnmspserr=yes";
+}
+if(strlen($password)<8){ // password length check
+	$lnerr = 0;
+	$result= $result."&lnerr=yes";
+}
+if(preg_match('@[A-Z]@',$password)==0){ //uppercase checking
+	$ucerr = 0;
+	$result= $result."&ucerr=yes";
+}
+if(preg_match('@[a-z]@',$password)==0){ //lowercase checking
+	$lcerr = 0;
+	$result= $result."&lcerr=yes";
+}
+if(preg_match('@[0-9]@',$password)==0){ //number checking
+	$nmbrerr = 0;
+	$result= $result."&nmbrerr=yes";
+}
+if(preg_match("#[\\~\\`\\!\\@\\#\\$\\%\\^\\&\\*\\(\\)\\_\\-\\+\\=\\{\\}\\[\\]\\|\\:\\;\\&lt;\\&gt;\\.\\?\\/\\\\\\\\]+#",$password)==0){ //special character checking
+	$schrerr = 0;
+	$result= $result."&schrerr=yes";
+}
+if($password!= $repassword){
+	$mcherr = 0;
+	$result= $result."&mcherr=yes";
+}
+
+if($fnmerr && $fnmspserr && $lnerr && $ucerr && $lcerr && $nmbrerr && $schrerr && $mcherr){
+	header("location: user.php");
+}
+else{
+	header("location: $result");
+}
+?>
+
+<!--welcome.php file ends here-->
+*/
+
+
+
+
+if(preg_match('/^[a-zA-Z0-9]+$/i',$var)){}
+
+include"fileName.php";// includes the php file
+include_once"fileName.php";// includes the php file
+require"fileName.php";// includes the php file
+require_once"fileName.php";// includes the php file. Fastest way to include a file
+
+date("D")
+date("d")
+date("M")
+date("m")
+date("Y")
+date("y")
+date("d m y")
+date("d/m/y")
+date("d-m-y")
+date_default_timezone_set('Asia/Dhaka');//sets the timezone
+date("d-m-y h:i")
+date('Y m d h:i:s')
+date_default_timezone_get()
+time()//returns the milliseconds since January 1, 1970
+
+readfile("fileName.php")//returns all data from the file
+$var = fopen("fileName.php","w");//creates the file if it does not exist already
+fwrite($var,"string\n");
+echo readfile("fileName.php");
+fclose($var);
+
+setcookie("userName","Fahim Shahriyar",time()+320); // cookies are saved in browser for that decleared time period. After that the cookies are deleted. Between that time period any page can access the cookies. With the help of these cookies login forms are filled autometically
+echo $_COOKIE["userName"];
+
+
+
+
+/*<!--To use session variable session_start() function must be called at the start of the file-->
+<?php
+session_start();
+?>
+<!DOCTYPE HTML>
+.
+.
+.
+<body>
+<?php
+$_SESSION["userName"] = "Fahim Shahriyar";// session variables are stored temporarily in the browser. They can be accessed by any page. The veriables get deleted when the browser is closed.
+echo $_SESSION["userName"];
+?>
+</body>
+</html>
+*/
+
+
+
+
+MySQL:
+*MySQL keywords, table name, column name are not case-sensative.
+*Table name should be plural number form of noun and in small letters.
+*ColumnName/fieldName should be singular number form of noun and in small letters
+*Use /**/ for multiline comment and -- for single line comment
+
+DATA TYPE :
+	string
+		char (21) (fixed lenght | index | searching fast)
+		varchar (20) (Lenght not fixed | charecter wise space will assign)
+	number
+		Tinyint 	(1 byte)  8 bit  = 2^8 = 256 (unsigned) 0-255 | signed (-128 +127)
+		Smallint	(2 byte)  16 bit = 2^16 = 65536 (unsigned) 0-65536 | signed (-32767 +32767)
+		MediumInt	(3 byte)  24 bit = 2^24 = 256 (unsigned) | signed
+		Int			(4 byte)  32 bit = 2^32 = 256 (unsigned) | signed
+		BigInt		(5 byte)  40 bit = 2^40 = 256 (unsigned) | signed
+	date
+		date (3 byte)
+		time  (3 byte)
+		year  (1 byte)
+		datetime (8 byte) [index| searching fast]
+		timestamp (4 byte)[not index | searching fast]  log
+	boolean
+
+
+
+CREATE DATABASE databaseName;//Creates database after the name
+CREATE TABLE tableName(
+	columnName/fieldName int not null primary key auto_increment,
+	id int not null primary key auto_increment,
+	name varchar(200) not null,
+	email varchar(50) not null,
+	date_of_birth datetime,
+	phone int not null,
+	address varchar(1000), --varchar max lenth is 100 characters
+)
+INSERT INTO table-name(column_name,column_name,column_name,column_name) VALUES("Value","Value","Value","Value");
+UPDATE table-name SET column-name="value", column-name="value" WHERE column-name="value";
+DELETE FROM table-name WHERE column-name="value";
+SELECT column-name, column-name FROM table-name WHERE column-name="value";
+SELECT * FROM table-name; --selects all columns and all rows
+
+SELECT * FROM `users` limit 5  --Selects first 5 rows
+SELECT * FROM `users` order by id DESC limit 5 --Selects last 5 rows and arranges them in descending order by id
+SELECT * FROM `users` order by id DESC limit 5,2 --6th row from last is starting point and range is 2
+SELECT * FROM `users` limit 1,5  --Selects 2nd to 4th row
+SELECT * FROM `users` where id > 2
+SELECT * FROM `users` where id > 2 AND id < 5
+SELECT * FROM `users` where id >= 2 AND id <= 5
+SELECT * FROM `users` where id BETWEEN 2 AND 5
+SELECT * FROM users where name like 'a%'
+SELECT * FROM users where email like 'Rice%'
+SELECT * FROM apps_countries where country_name like 'a%n'  --Selects rows where country_name starts with 'a' and ends with 'n'
+SELECT * FROM apps_countries where country_name like '%a' --Selects rows where country_name ends with 'a'
+SELECT sum(id) FROM apps_countries --adds id values of selected rows
+SELECT avg(id) FROM apps_countries --gives avrage value of the id values of selected rows
+SELECT count(id) FROM apps_countries --Gives the total count value of the id values of selected rows
+DELETE FROM apps_countries where id =1
+DELETE FROM apps_countries where id BETWEEN 2 AND 5
+DROP TABLE exams;
+DROP database eshikhonwebdevelopment;
+UPDATE users SET email = 'abc@gmail.com' WHERE id=3;
+
+ALTER TABLE users modify phone varchar(20);
+ALTER TABLE users ADD age tinyint unsigned AFTER phone;
+ALTER TABLE users DROP COLUMN active;
+ALTER TABLE users CHANGE COLUMN name username varchar(500);
+rename TABLE users to orders;
+TRUNCATE TABLE orders;  /*To add rows in deleted id rows*/
+ALTER TABLE orders add FOREIGN KEY(country_id) REFERENCES apps_countries(id);
+ALTER TABLE orders add FOREIGN KEY(phone) REFERENCES phone_code(id);
+
+
+
+$connect = mysqli_connect("Host_Name","User_Name","Password","Databese_Name"); //host_name = localhost/https://facebook.com/ https://google.com
+
+
+
+/* SELECT Query
+<?php
+
+$host = "localhost";
+$dbUser = "fahim";
+$dbPwd = "fahimshahriyar";
+$dbName = "testdatabase";
+
+$connect = mysqli_connect($host,$dbUser,$dbPwd,$dbName);
+
+if($connect==false){
+	echo"<h1>Error establishing database connection!</h1>";
+}
+$myquery = "SELECT fname,lname FROM users;";
+$runQuery = mysqli_query($connect,$myquery);
+
+if($runQuery==true){
+	$dataCount = mysqli_num_rows($runQuery); //mysqli_num_fields($runQuery);
+	if($dataCount>0){
+		while($mydata = mysqli_fetch_array($runQuery)){
+			print_r($mydata);
+			echo $mydata["fname"]." ";
+		}
+	}
+	else{
+		echo "No data available!";
+	}
+}else{
+	echo mysqli_error($connected);
+}
+
+?>
+*/
+
+
+
+
+/* Update query
+<!--connect.php file starts here-->
+<?php
+
+$host = "localhost";
+$dbUser = "fahim";
+$dbPwd = "fahimshahriyar";
+$dbName = "testdatabase";
+
+$connect = mysqli_connect($host,$dbUser,$dbPwd,$dbName);
+
+if($connect==false){
+	echo"<h1>Error establishing database connection!</h1>";
+}
+?>
+<!--connect.php file ends here-->
+<!--index.php file starts here-->
+<?php
+require_once("connect.php");
+$myQuery = "UPDATE users SET fname='Hello' WHERE id=1;";
+//$myQuery = "UPDATE users SET fname= '$varName' WHERE id=1;";
+$runQuery = mysqli_query($connect,$myQuery);
+if($runQuery==true){
+	echo "Database updated";
+}
+else{
+	echo "Database update failed";
+}
+?>
+<!--index.php file ends here-->
+*/
+
+
+
+
+$myQuery = "UPDATE users SET fname= '$varName' WHERE id=1;";
+$myQuery= "select * from users WHERE fname LIKE'%$search%' AND lname LIKE '%$search%';"; // Like-wise search
+
+
+
+
+/* SELECT Query with table
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+</head>
+<body style="font-family:arial;background:white;">
+
+<div style="display:block;overflow:hidden;">
+<table style="margin:auto;;border-collapse:collapse;" border="1px solid blue" cellspacing="3px" cellpadding="12px">
+<tr>
+	<th>ID</th>
+	<th>First Name</th>
+	<th>Last Name</th>
+	<th>Email Address</th>
+	<th>Signup Date</th>
+</tr>
+<?php
+
+require_once("connect.php");
+$myQuery= "select * from users;";
+$runQuery = mysqli_query($connect,$myQuery);
+if($runQuery==true){
+	$dataCount = mysqli_num_rows($runQuery);
+	if($dataCount){
+		while($myData = mysqli_fetch_array($runQuery)){?>	<!--Back PHP-->
+		<tr>
+			<td><?php echo $myData["id"]?></td>
+			<td><?php echo $myData["fname"]?></td>
+			<td><?php echo $myData["lname"]?></td>
+			<td><?php echo $myData["email_addr"]?></td>
+			<td><?php echo $myData["signupDate"]?></td>
+		</tr>
+		<?php
+		}
+	}
+	else{
+		echo "Data not found!!";
+	}
+}
+else{
+	echo mysqli_errno($connect);
+}
+
+?>
+
+</table>
+</div>
+</body>
+</html>
+*/
+
+
+
+/*Save data in database using only one php file
+<?php
+session_start();
+error_reporting(0);
+include('connect.php');
+ 
+if(isset($_POST['save'])){
+$name=strtoupper($_POST['name']);
+$fname=strtoupper($_POST['fname']);
+$address=strtoupper($_POST['address']);
+$desig=strtoupper($_POST['designation']);
+$age=$_POST['age'];
+$bgroup=$_POST['bgroup'];
+$gender=$_POST['gender'];
+$imark=strtoupper($_POST['imark']);
+$ccname=$_POST['ccname'];
+$contactno=$_POST['contactno'];
+
+$warea=$_POST['warea'];
+$query="INSERT INTO gpass (name,fname,address,designation,age,bgroup,gender,imark,ccname,contactno,warea) VALUES ('$name','$fname','$address','$desig','$age','$bgroup','$gender','$imark','$ccname','$contactno','$warea')";
+
+if (mysqli_query($con, $query)) {
+	?>  
+	<script>
+	  alert("Data Inserted Successfully");
+	</script>
+	<?php
+	else {
+	  echo "error:".mysqli_error($con);
+	}
+	mysqli_close($con);
+}
+
+<form action="" method="post" enctype="multipart/form-data">
+.
+.
+.
+<input type="submit" value="Submit" name="save"> //If action attribute is empty in form tag then the page redirects itself with all form input data.
+?>
+*/

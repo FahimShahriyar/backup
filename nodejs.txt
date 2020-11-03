@@ -1,0 +1,372 @@
+Module: A JS file which contains functions. Module is a global object.
+
+global.console.log("working") //library functions are attached with global object.
+console.log("working")
+console.log(module) //Shows the modules' property
+
+setInterval(()=>{console.log("Hey");},1000)
+setTimeout(()=>{console.log("Hey");},1000)
+
+console.log(__dirname) //prints the directory
+console.log(__filename) //prints the file name
+
+const functionName = (a, b) => a+b
+
+
+
+CMD commands:
+1.cat fileName //It is a CMD command. It shows whole data in CMD
+2. code . //This code opens the folder in visual studio
+3. touch fileName //It creates a new file by the file name
+4. setting default port number in OS: export PORT=7070
+
+
+
+Exporting module components:
+module.exports = {varname, functionName, .....} //only exported elements can be used by another module
+module.exports.functionName = functionName //only exported elements can be used by another module
+module.exports.varName = varName //only exported elements can be used by another module
+module.exports.functionName = (a, b) => a+b //Exportation while declaration
+
+
+
+Importing modules:
+const objectName = require("./moduleName") //Module name without .js . ./ is root directory where the present file exists. Require function imports modules and functions. Built in modules doesn't need path.
+const {functionName} = require("./moduleName") //functionName has to be exactly as defined in the moduleName
+
+
+
+Path module:
+const path = require("path")
+path.basename(__filename) //returns the file name
+path.basename(__dirname) //returns the current folder name
+path.extname(__filename) //returns the extension name
+let pathObj = {
+    dir : "user/local",
+    name : "testfile",
+    ext : ".js"
+}
+path.format(pathObj) //returns a string formed path
+path.isAbsolute(__filename) //returns true if the path is absolute
+path.isAbsolute("./action.js") //returns false if the path is relative
+path.join("local", "user", "fahim", "test.js") //returns a string formed path
+path.parse(__filename) //returns an object like pathObj of the path
+
+
+
+OS module:
+const os = require("os")
+os.arch() //returns the architecture of the pc
+os.cpus() //returns cpu cores' details of the pc
+os.freemem() //returns free memory amount of ram
+os.networkInterfaces() //returns the network interface as a object
+os.hostname() //returns hostname
+os.type() //returns operating system type
+os.userInfo() //returns user info
+os.homedir() //returns home directory
+
+
+
+fs (file system) module:
+const fs = require("fs")
+const testobj = {
+  name: "fahim",
+  district : "dinajpur"
+}
+const data = JSON.stringify(testobj) //returns the object as a json string
+fs.writeFile("./action.js", data, (err) => {
+  //this is a callback function
+  if(err){
+    console.log(err)
+  }else{
+    console.log("file write successful")
+  }
+})
+fs.readFile("./action.js", (err, data) =>{
+    if(err){
+        console.log(err)
+      }else{
+        let obj = JSON.parse(data)
+        console.log(obj)
+    }
+})
+
+
+
+http module:
+/*
+const http = require('http')
+const server = http.createServer((req, res) =>{
+  console.log(req.url)
+  res.end("<h1>Hi there</h1>")
+})
+server.listen(4141, () =>{
+  console.log("server is running on port 4141")
+})
+*/
+/*
+const http = require('http')
+const fs = require('fs')
+const server = http.createServer((req, res) =>{
+  fs.readFile("./index.html", (err, data) =>{
+    if(err){
+        console.log(err)
+      }else{
+        res.write(data)
+        res.end()
+    }
+})
+})
+server.listen(4141, () =>{
+  console.log("server is running on port 4141")
+})
+*/
+
+
+
+npm:
+Node package manager. It is automatically installed with node.js. It is used to install third party packages.
+npm init  //initializes npm in the current folder and asks for details for package.json file
+npm init -y //initializes npm in the current folder with default details for package.json file
+npm install packageName //installed packages are dependencies of the project
+npm i packageName // i is short form of install
+npm install --save-dev packageName //this command installs devDependencies. devDependencies are development dependencies. This packages are used to make the development process easier like auto save on change. Main project is not dependent on devDependencies. This packages are used only for development purpose
+npm i -D packageName // short code for installing devDependencies
+
+
+chalk package:
+installation: npm install chalk
+index.js file: index.js has to be in the folder where npm has been initiated
+  const chalk = require('chalk')
+  console.log(chalk.white.bold.inverse("Chalk is running"))
+
+
+nodemon devDependencie package:
+installation: npm install --save-dev nodemon
+Changes in package.json file: this changes are needed because nodemon has not been saved as global dependency
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+npm start  //this command starts the file which is declared in package.json file as "main": "index.js"
+
+npm install //this command install all packages included in dependencies
+
+Nodemon as global dependency: If any package is installed as global dependency then any project can use that package
+installation: npm i -g nodemon
+nodemon index.js //this command runs the specified file
+
+
+
+scripts: Scripts are declared in package.json file
+"scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "start": "nodemon index.js",
+  "prod": "node index.js"
+},
+start and test are special commands.
+Special command running: Both commands are same. These are run in CMD
+  1. npm run start
+  2. npm start
+Ordinary command running:
+  1. npm run prod
+
+
+
+Express.js:
+installation: npm i express --save
+
+server creation with express.js:
+/*
+const express = require("express")
+const app = express()
+app.get('/users', (req, res)=>{  //These are called route handler. This is get method. Server sends this data only for localhost:8080/users url.
+    res.send("<h1>This is users page</h1>")
+})
+app.get('/', (req, res)=>{  //root directory has to be declared last. If one url is matched then others will not run. if / is defined first and /users is defined after that and some one types url of /users directory then / of home directory will match with the / part of /users directory and the home page will be shown.
+    res.send("<h1>This is home page</h1>")
+})
+app.get('*', (req, res)=>{  //server sends this data for all urls. This is used to handle invalid urls.
+    res.send("<h1>Page not found</h1>")
+})
+const port = process.env.PORT || 8080 //if OS has any default port then process.env.PORT returns the port number. Otherwise port number is set to 8080. CMD command for setting default port: export PORT=7070
+app.listen(port, ()=>{
+    console.log(`Local server is running on ${port}`);
+})
+*/
+
+
+
+Middleware:
+1. Middleware is the state between request and response. A middleware can change a request or validate a request. It helps to secure our site
+2. Third party middleware morgan installation command: npm i morgan . This middleware logs all requests in the terminal
+/*
+const express = require("express")
+const morgan = require("morgan")
+const app = express()
+app.use(morgan("dev"))
+
+app.get('/users', (req, res)=>{  //server sends this data only for localhost:8080/users url.
+    res.send("<h1>This is users page</h1>")
+})
+app.get('/', (req, res)=>{  //root directory has to be declared last. If one url is matched then others will not run. if / is defined first and /users is defined after that and some one types url of users directory then / of users url will match with the / part of home and the home page will be shown.
+    res.send("<h1>This is home page Fahim</h1>")
+})
+app.get('*', (req, res)=>{  //server sends this data for all urls. This is used to handle invalid urls.
+    res.send("<h1>Page not found</h1>")
+})
+const port = process.env.PORT || 8080 //if OS has any default port then process.env.PORT returns the port number. Otherwise port number is set to 8080. CMD command for setting default port: export PORT=7070
+app.listen(port, ()=>{
+    console.log(`Local server is running on ${port}`);
+})
+*/
+/*Middleware for specific route handler
+const express = require("express")
+const app = express()
+const morgan = require("morgan")
+app.get('/users', morgan("dev"), (req, res)=>{
+    res.send("<h1>This is users page</h1>")
+    res.json({
+        "message" : "I am a message"
+    })
+})
+app.get('/', (req, res)=>{
+    res.send("<h1>This is home page Fahim</h1>")
+})
+app.get('*', (req, res)=>{
+    res.send("<h1>Page not found</h1>")
+})
+const port = process.env.PORT || 8080
+app.listen(port, ()=>{
+    console.log(`Local server is running on ${port}`);
+})
+*/
+
+
+custom middleware creation:
+/*
+const express = require("express")
+const app = express()
+function customMiddleWare(req, res, next){
+    console.log("you are logged as ", req.url)
+    next()
+}
+app.use(customMiddleWare)
+app.get('/users', (req, res)=>{
+    res.send("<h1>This is users page</h1>")
+})
+app.get('/', (req, res)=>{
+    res.send("<h1>This is home page Fahim</h1>")
+})
+app.get('*', (req, res)=>{
+    res.send("<h1>Page not found</h1>")
+})
+const port = process.env.PORT || 8080
+app.listen(port, ()=>{
+    console.log(`Local server is running on ${port}`);
+})
+*/
+/*Multiple middleware and middleware inside a function
+const express = require("express")
+const app = express()
+const morgan = require("morgan")
+function customMiddleWare(req, res, next){
+    console.log("you are logged as ", req.url)
+    next()
+}
+function tinylogger(){
+    return (req, res, next)=>{
+        console.log(`${req.method} is ${req.url}`)
+        next()
+    }
+}
+const middleware = [morgan("dev"), tinylogger(), customMiddleWare]
+app.use(middleware)
+app.get('/users', (req, res)=>{
+    res.send("<h1>This is users page</h1>")
+})
+app.get('/', (req, res)=>{
+    res.send("<h1>This is home page Fahim</h1>")
+})
+app.get('*', (req, res)=>{
+    res.send("<h1>Page not found</h1>")
+})
+const port = process.env.PORT || 8080
+app.listen(port, ()=>{
+    console.log(`Local server is running on ${port}`);
+})
+*/
+
+
+
+Using router package:
+Router is a third party package which is used by express.js
+/*
+const express = require("express")
+const app = express()
+const userRouter = express.Router()
+userRouter.get("/login", (req, res)=>{
+    res.send("<h1>This is login page</h1>")
+})
+userRouter.get("/signup", (req, res)=>{
+    res.send("<h1>This is signup page</h1>")
+})
+userRouter.get("/logout", (req, res)=>{
+    res.send("<h1>This is logout page</h1>")
+})
+app.use('/users', userRouter)
+app.get('/users', (req, res)=>{
+    res.send("<h1>This is users page</h1>")
+})
+app.get('/', (req, res)=>{
+    res.send("<h1>This is home page Fahim</h1>")
+})
+app.get('*', (req, res)=>{
+    res.send("<h1>Page not found</h1>")
+})
+const port = process.env.PORT || 8080
+app.listen(port, ()=>{
+    console.log(`Local server is running on ${port}`);
+})
+*/
+
+
+Using router package in different file:
+/*
+//userRouter.js file starts here
+const userRouter = require("express").Router()
+userRouter.get("/login", (req, res)=>{
+    res.send("<h1>This is login page</h1>")
+})
+userRouter.get("/signup", (req, res)=>{
+    res.send("<h1>This is signup page</h1>")
+})
+userRouter.get("/logout", (req, res)=>{
+    res.send("<h1>This is logout page</h1>")
+})
+module.exports = userRouter
+//userRouter.js file ends here
+
+//index.js file starts here
+const express = require("express")
+const userRouter = require("./userRouter")
+const app = express()
+
+app.use('/users', userRouter)
+app.get('/users', (req, res)=>{
+    res.send("<h1>This is users page</h1>")
+})
+app.get('/', (req, res)=>{
+    res.send("<h1>This is home page Fahim</h1>")
+})
+app.get('*', (req, res)=>{
+    res.send("<h1>Page not found</h1>")
+})
+const port = process.env.PORT || 8080
+app.listen(port, ()=>{
+    console.log(`Local server is running on ${port}`);
+})
+//index.js file ends here
+*/
+url with variable:
+router.get

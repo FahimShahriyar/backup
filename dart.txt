@@ -1,0 +1,229 @@
+Datatype:
+int a = 4;
+String s = 'string'; //Single line string
+String s = '''String
+			  String'''; //Multiline string
+double d = 2.1;
+bool varName = true;
+
+
+
+print(variable);
+print('string $variable');
+print('${num1 + num2}');
+
+
+
+Variable:
+_variableName //Private variable
+$variableName
+
+//static variable type like integer, string etc
+var a = 8;
+var a = 10; // In static variable type we can not assign other type of data.
+
+//Dynamic variable type
+dynamic name = 8;
+dynamic name = 'string'; //In dynamic variable type we can assign any type of data into any data type variable.
+
+
+
+
+Function:
+//dynamic function; Its return type is void
+add(){
+	print('add');
+}
+
+//Function call without parameter name
+void main(){
+	manage(5, 10);
+}
+manage(int a, int b){}
+
+//Function call with parameter name
+void main(){
+	manage(b:10, a:5);
+}
+manage({int a, int b}){}
+
+//One-line function
+int add(int a, int b) => a+b;
+
+
+
+String methods:
+string.trim();  // Deletes additional white spaces
+string.isEmpty  //Returns true or false
+string.toUpperCase();
+num.parse(stringVariable); //String to number
+
+
+
+Integer methods:
+integerVariable.isEven();
+integerVariable.toString();
+
+
+
+
+Double methods:
+doubleVariable.turncate(); //returns only hte whole number
+doubleVariable.ceil();
+doubleVariable.floor;
+
+
+
+List: //array
+List listName = [1,2,3, 'a']; //Dynamic data type List which can store different data type values at the same type
+print(listName);
+print(listName[index]);
+List<int> listName = [1,2,3]; //Static data type List
+list.add(value);
+list.remove(value);
+list.removeAt(index);
+list.isEmpty();
+list.map((x) => print(x)); //Map function
+secontList = firstList;  //copy firstList to secontList
+secontList = firstList.map((x) => x).toList(); //copy firstList to secontList
+list.forEach((x) => print(x));
+
+
+
+Map:
+Map mapName = {key:value, key:value}
+map[key] = value;
+map.length
+map.isEmpty
+map.isNotEmpty
+map.forEach((key, value){function statements;});  //For each function with annonymous function
+map.forEach((key, value) => function statements);  //For each function with one-line function
+
+
+
+for loop:
+for(int i = 0; i<value; i++){}
+for(var i in list){}
+
+
+
+switch:
+switch(value){
+case valueSample:
+statement;
+break;
+}
+
+
+
+Condition:
+if(condition){}
+else if(condition){}
+else{}
+
+Ternary operator:
+(condition)? trueStatement : falseStatement;
+
+
+
+Object oriented programming:
+class Class{} //class name's first character has to be capital letter
+Class objName = Class();
+lowerCamelCasing
+UpperCamelCasing
+
+//Class with constructor
+class ClassName{
+	String name; int rollNo;
+	ClasName(String name, int rollNo){  //Constructor
+		this.name = name;
+		this.rollNo = rollNo;
+	}
+}
+
+//Class with constructor in one line
+class ClassName{
+	String name; int rollNo;
+	ClasName(this.name, this.rollNo)  //Constructor
+}
+
+//Class with constructor in one line before variable declaration
+class ClassName{
+	ClasName(this.name, this.rollNo)  //Constructor
+	String name; int rollNo;
+}
+
+
+
+Exception Handling:
+try{
+
+}
+catch(e){
+	print(e);
+}
+
+
+
+Future:
+void main() {
+  print('start');
+  printFile();
+  print('end');
+}
+void printFile(){
+  Future<String> result = downloadFile();
+  print(result);
+}
+Future<String> downloadFile() {
+  Future<String> result = Future.delayed(
+    Duration(seconds:6), (){
+      return 'Data';
+    }
+  );
+  return result;
+}
+
+
+
+Future and Then:
+void main() {
+  print('start');
+  printFile();
+  print('end');
+}
+void printFile() {
+  Future<String> result = downloadFile();
+  result.then((resultString){
+    print(resultString);
+  });
+}
+Future<String> downloadFile() {
+  Future<String> result = Future.delayed(
+    Duration(seconds:6), (){
+      return 'Data';
+    }
+  );
+  return result;
+}
+
+
+
+Async and Await:
+void main() {
+  print('start');
+  printFile();
+  print('end');
+}
+void printFile() async{
+  String result = await downloadFile();
+  print(result);
+}
+Future<String> downloadFile() {
+  Future<String> result = Future.delayed(
+    Duration(seconds:6), (){
+      return 'Data';
+    }
+  );
+  return result;
+}

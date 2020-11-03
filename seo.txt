@@ -1,0 +1,266 @@
+https://www.google.com/ncr  #No country redirection
+
+First check your name is available in form of domain or not
+Develop FB profile, FB page, Google plus, Linkedin, Pinterest, Tumbler,Twitter, SlideShare, Youtube channel, Web page by one name
+use different photos on these platforms and name the photos by your name (fahim-shahriyar) so that google can recognize you
+
+fahimshahriyar_bd  #use meaningful keywords at the end for user name if your name is not available. Don't use numbers
+
+NICHE - Topic of a website
+
+Search engine result page properties:
+SERP - Search Engine Result Page
+Google Knowledge Graph/ One box  #Creatable with SEO
+Google Knowledge Graph for Movies/Books/Persons
+Site Link  #Only authority level websites get site link. Not creatable with SEO
+3 Pack/ Snack pack  #Previous version 7 pack
+Google instant search  #Google suggestions below the search box
+Google Related Search / Google Suggested Result  #Google suggestions at the end of Google SERP
+Featured snippets  # A box containing the most accurate answer of a question. This is actually the first result with precised information of the page.
+https://www.namecheap.com
+
+Free keyword suggestions tools:
+https://adwords.google.com/KeywordPlanner
+https://ubersuggest.io/
+http://answerthepublic.com/
+http://www.wordze.com/
+http://smallseotools.com/keywords-suggestions-tool/
+http://tools.seobook.com/keyword-tools/seobook/
+http://www.semrush.com/
+http://www.spyfu.com/
+http://www.longtailpro.com
+
+Keyword Generation Technique:
+1. Google search result with volume
+2. https://ubersuggest.io/
+3. https://www.answerthepublic.com
+4. Google keyword Planner. https://adwords.google.com/KeywordPlanner
+5. https://www.quora.com
+
+Types of keywords:
+1. Product or service keywords (Mobile Phone)
+2. Brands keywords (Nokia Mobile Phone)
+3. Modifiers keywords (Latest Mobile Phone)
+4. Entity keywords (Mobile Phone shop)
+5. Geographic keywords (Mobile Phone Shop in Dhaka)  #Important for local business
+6. Demographic segmented keywords (Pink Mobile for Women)
+7. Call to action keywords (Buy Mobile Phone, Sign up)  #Most important
+8. Educational keywords (How to buy a mobile phone)  #Second most important
+9. B2B(Business to Business) keywords (Mobile Phone Wholesale)
+10. Others keyword (Beautiful wallpaper, Hindi songs)
+
+Think first before you start:
+1. Identify your products or services
+2. Mark off your competitors
+3. Identify your brand value
+4. Judge your target market
+5. Fix your budget
+
+Identifying and building your initial keyword list:
+1. Start writing a keyword list of your own site
+2. Write down the most relevant keywords for your site that you believe
+3. Consider like your customers or visitors. Think, which keyword they wrote when they search your site content
+4. Try to avoid using Stop Words as your keywords (Stop words - The words google does not read like - in, to etc. Example: How to learn seo is wrong. Use How learn seo. But the keyword has to be meaningful. Stop words can be used occassionally to make keywords meaningful)
+5. Try to use exact match domain as your keywords
+6. See what keywords your competitors are ranking for
+7. Choose LTK(Long Tail Keyword - is a phrase which contains three or more words), it will help you to get targeted traffic in your website.
+8. Try to use LSI(Latent Semantic Indexing) keywords (Meaning same but keyword is different. Like: Gents bag, Bag for Gents. Google likes semantic keywords very much)
+	a. LSI Generator tool - http://lsigraph.com
+
+
+Allintitle Concept: Allintitle is a search operator
+1. To get allintitle value use allintitle:how to make a roof garden
+2. It is thaught that if allintitle is less than 1000 or in between
+ a. 1000 - 5000 then the keyword is Non-competitive / Low competition
+ b. 5000-15000, then the keyword is fairly competitive/medium competition
+ c. 15000+ then the keyword is highly competitive / high competition
+3. If your site is new then use low competitive keywords so that you can come to the first page of SERP. Thus google will recognize you and mark you. When your site becomes much recognizes and gets fair traffics then use high competitive key words 
+
+
+Domain Name Selection:
+1. Brainstorm 2 or 3 main keywords
+2. Make your domain name simple and easy to say
+3. Try to choose .com domain name cause google likes .com domain more
+4. Keep it short and meaningful
+5. Don't use special characters and numbers in domain name
+  a.example-word.com
+  b.example247.com
+  
+EMD - Exact Match Domain
+1. EMD are the domains which exactly matches with the products or services with of the website. Though google has said that he won't give priority to EDM. Which means any domain name can get ranks. But EDM is important for branding
+
+How to use Anchor Text Effectively:
+1. Your anchor text keyword and the target page should be relevant
+2. Try to use anchor text with highly related and ranked page  (Low rank external links will also degrade your website)
+3. Use internal and external links
+4. Don't always use your best keywords as anchor text
+5. After the update Google is looking much closer at backlinks now. Google is looking at not only the anchor text of each link but how natural the anchor text appears.
+
+Keyword Density and Formula: Number of times keyword is used in the article
+1. Aim for one keyword per 100 words. 1% to 3% keyword looks natural and reasonable
+2. Divide the number of times the keyword was used with the number of the words in your article. Once you discover the answer, multiply this number by 100 (Example: 40/ 1000 = .04*100=4%)
+3. http://www.shoutmeloud.com/keyword-density-seo.html
+
+Google trends:
+1. https://www.trends.google.com/trends/
+
+Keyword prominence:
+1. Keyword prominance means to place keywords in a web page so that google and user can easily understand the page
+2. The most 3 important place to place keyword in the web page are:
+	a. Web page url
+	b. Web page heading/ title
+	c. The first line first word in the detailing (SEO is the thechnique to optimize web page for search engines)
+	
+Keyword match type: Let out main keywordis Learn SEO
+1. Exact match keyword: [Learn seo]
+2. Phrase match keyword: "How to learn SEO" / "Learn SEO at home"  #Phrase match keyword is created by adding other words at the start or at the end of main keyword. It is wrote inside double quotation
+3. Broad match keyword: SEO course in Dhaka / Learn practical SEO  #Broad match keywords are created by addin other words inside the main keyword. Search engine shows broad matches
+4. Negative match keyword  #If I do not provide free SEO course then free is a negative word for me
+
+
+Domain name suggestion tool:
+https://www.namemesh.com
+
+Google chrome useful extensions:
+1. Keyword everywhere extension  #Paste API key sent by the developers in the update options of the extension. This extension is used to see volume of the searches
+2. MozBar extension  #Account creation needed. Gives DA, PA values
+3. SEOquake extension  #Gives Keyword difficulty value
+4. Alexa Traffic Rank
+5. Fat Rank
+6. SEO & Website Analysis
+7. SEO META in 1 CLICK
+8. Social Analytics
+
+Keywords used in a webpage:
+1. Go to https://adwords.google.com/KeywordPlanner
+2. Past the page URL in the Landing Page box and press Get Ideas
+
+DA - Domain Authority
+PA - Page Authority
+
+Non-competitive / Low competitive Sites:
+1. News sites
+2. Sub-domain sites #www.images.xyz.com, www.maps.google.com
+3. Question answer sites  #Quora, Yahoo
+4. Social media
+5. Free domain sites  #Blogspot, Wordpress
+6. E-commerce Site
+
+Keyword Analysis Excel Sheet Columns:
+	SI, Keywords, Average Monthly Search, Keyword Difficulty, DA < 20, PA < 20, Backlinks < 20, Low Competitive Site Ranking, Allintitle, Remarks
+
+CTR - Click Through Rate. The number of clicks on the website
+
+SERP Results Components:
+1. Result Title  # If the title is long then on SERP the rest of the title is shown as three dots(...). This is called Ellipsis
+2. URL / Permalink / Address
+3. Meta description
+
+Title:
+1. Title tags are used in three key places:
+	1. SERPs  #These are called SEO title. Title on the article is called Page title. Page titles can be made a little shorter so that the user can read that easily.
+	2. Web browser tab title 
+	3. Links shared in Social network
+2. 50 - 60 Characters & 460 pixels
+3. Put your Main Keyword
+4. Place your main Keyword first
+5. Avoid Keyword stuffing
+6. Title must be meaningful
+7. Every page should have a unique title
+8. Pipe (|) symbol is best for using as title seperator and it is recommanded by google
+9. Keep your title length moderate so that Ellipse does not appear
+10. Why won't Google use my title:
+	1. Your title is keyword-stuffed
+	2. Your title does't match the query
+11. Links:
+	1. Character counter: http://www.javascriptkit.com/script/script2/charcount.shtml
+	2. Page Title Pixel counter: http://www.webshoptimizer.com/page-title-pixel-meter/
+	3. Title generator: https://www.title-generator.com/
+	4. Title analyzer: https://coschedule.com/headline-analyzer
+12. Tricks:
+	1. Capital letters take more pixels
+	2. If your title matches with any page on the first page then your page won't come on the first page
+
+URL:
+1. URLs must be shorter than 2083 characters
+2. A wll-crafted URL provides both humans and search engines an easy-to-understand indication of what the destination page will be about
+3. Keeping URLs as simple, relevant, compelling and accurate
+4. When necessary for readability, use hyphens to separate words.
+6. Include your target keyword
+7. Avoid stop word
+
+Meta description: Description below the webpage title in SERP. It is the summary of the whole writing. I must be with in 150-160 characters.
+1. It must contain the keywords. Google highlightes the keywords in meta description
+2. 120 - 130 characters are best. 
+3. Use simple and easy language
+4. Unique meta description
+5. Avoid keyword stuffing
+
+robots.txt: This file is used to control search engine like stop search engine from indexing a page
+1. To access robots.txt file use : www.xyz.com/robots.txt
+2. Example:
+	1. User-agent: *  #Calls all search engine bots. # is used for one line commenting
+	   Disallow: / #Disallows search engine bot to index the whole site
+	   Disallow: /directory-name #Disallows search engine bot to index the whole directory
+	   Disallow: /file-name #Disallows search engine bot to index the file
+	   Disallow: /*.gif$ #Disallows search engine bot to index all gif files in the whole web site
+	
+	2. User-agent: *  #Calls all search engine bots. # is used for one line commenting
+	   Allow: /  #Allows search engine bot to index the whole site
+	
+	3. User-agent: Googlebot
+	   disallow: / #Disallows only google bot to index the whole site
+	
+	4. User-agent: Googlebot-Image
+	   disallow: /*.png$ #Disallows only google image bot to index all png files in the whole web site
+	
+Side map: It is created to help both search engine and users. File format of Side maps for search engines is .xml and file format of Side maps for users is .html
+
+Google Algorithm:
+1. Google Penguin //Spam protection algorithm. This algorithm checks the site if it has poor backlinks or irrelevant backlinks. Google Penguin is linked with Google-bot.
+2. Google Panda //Spam protection algorithm. This algorithm is most important in SEO industry. This algorithm checks if the structure of content of your website is right or not. This algorithm was launched in 2011. Before 2011 SEO jobs were mainly making backlinks with website which is called off page SEO.
+3. Google payday
+4. Mobile Friendly //Checks your website if it is mobile friendly or not
+5. Pigeon //This algorithm is for local search like Hotels in Dhaka
+6. Pirate //Checks if your content / image is copied or not
+7. Hummingbird //Google search algorithm
+
+Google penalty:
+1. Manual penalty : If your site has any problem then google gives notifications through Google Webmasters to notify you.
+2. Algorithmic penalty : Degrades your rank. It has no notification. You will see degradation in traffic ammount in your web site. Google analytics shows the Traffic amount.
+3.Sandbox: If your break google rules again and again then your site is included in sandbox and your site won't get rank in first 10 pages of SERP. If high authority sites( Which has PA, DA around like 80 or 90) give you backlink then you can get out of Sandbox.
+
+Google dancing:
+	Sometimes goggle shuffles the site ranks. In this your site rank can degrade. But it will become normal within 24-48 hours. This is called google dancing.
+	
+Google bombing:
+	Sometimes SEO experts make fun of famous companies or persons. They use famous persons photo in many webpages and gives the image a peculiar name. Then if people search by the peculiar name then they see the persons photo in SERP first page. Again SEO experts uses famous companies links in many webpages with peculiar title in anchor tag. Thus if people search with the peculiar title then they will see the companies link in SERP.
+
+Reverse SEO:
+	Reverse seo means is one website is on first page of SERP then others also uses their techniques to come to the first page. Again sometimes people hires SEO experts to give irrelevant backlinks to opponents websites. Thus they degrade their opponents website.
+	
+Image optimization:
+1. Use unique images that are page-relevant.
+2. Use the highest quality format possible.
+3. Reduce the size of your image file.
+4. Organize multiple images for optimum viewing.
+5. Include a concise caption with your image.
+6. Utilize the “Alt Text” to maximize accessibility.
+	
+Content optimization:
+1. Good Title
+2. Good feature image with image optimization
+3. Good introduction part (Not more than 100 words. Include your main key word atleast once in first two lines of the introduction part/ Intro part)
+4. Divide your content in small paragraphs which contains not more than 100 words
+5. Use bullet point or number
+6. Use your main keyword in h2 or h3 tag for 1 or 2 times
+7. Use text modifiers but never use underline.
+8. Write content in simple sentence.
+9. Write content in first person
+10. Use CDN for big images. This is paid like Max CDN.
+11. Use video in the middle or at the end of the page. Never use videos from your server. This will slow the page. Use Youtube videos. Never use autoplay in videos. If you use another's video hide the youtube channel link.
+12. Write a good conclusion.
+13. Content should contain 2000+ words.
+14. Never copy. Use Copyscape which is a paid plagiarism checker.
+
+http status code: 404(Page not found), 301(Permanent redirection), 302(Temporary redirection)

@@ -1,0 +1,127 @@
+*Do not discuss problems of ongoing competition
+*On competitions if you don't understand something in the statement, you could ask the jury for a clarification by sending a specific question about the problem assuming a Yes/No answer
+*Sample test cases can not be trusted. Invent your own test cases.
+
+
+Timed: 2-5 hours
+Individual or team
+Time limit : 1 or 2 second
+Space limit: 512 mb
+Hardest problem 200 lines at most
+
+
+Verdicts:
+1. CE - Compilation error
+2. RE - Runtime error
+3. TL - Time limit exceeded
+4. ML - Memory limit exceeded
+5. PE - Presentation error - Output formatted incorrectly
+6. WA - Wrong answer - Output not correct
+7. AC - Accepted
+
+
+
+Steps in solving a problem:
+1. Read the statement
+2. Formalize it
+3. Invent a solution
+4. Prove it
+5. Implement it
+6. Test your implementation
+7. Debug if not working
+8. Submit and get AC (hopefully)
+
+
+
+Ask questions:
+1. Summarize the issue in the title as good as possible
+2. Format your question and code in it well
+3. Include just enough code to reproduce the problem
+
+
+
+As time is everything, find a way to do routine things faster/before the contest:
+1. Learn to use specific IDE, preferabley lightweight one - save time on creating new projects, opening new files, debugging
+2. Prepare a template code with common includes and so on - to not start from scratch each time
+3. Backup code versions and tests
+
+
+
+ACM ICPC: ACM International Collegiate Programming Contest
+1. 5 hours contest
+2. Team of three
+3. One computer per team
+4. Result right after submission
+5. Ranking by number of accepted problems, on equality - by penalty time. Penalty time = minute when got AC + incorrect attempts * 20
+6. You must be enrolled in a degree program to participate
+7. Onsite contests, multi-tiered: Subregionals, Regionals, World Finals
+
+
+
+Google Code Jam, Facebook Hacker Cup:
+1. Individual, open for all
+2. Annual, begin with Qualification Round, usually April(GCJ) and January (FHC)
+3. All round except final are online
+4. You solve the problem, request input and in several(6) minutes need to send output, so not solution itself
+
+
+
+TopCoder:
+1. Regular rounds - Single Round Matches (SRMs)
+2. One rounds in every two weeks
+3. No price
+4. Rating system - after each round your rating changes
+5. Challenge phase - you need to come up with a test to fail other people's solution
+6. Annual TopCoder Open - multi-tiered championship
+
+
+
+Codeforces:
+1. Also regular rounds and rating system
+2. Prize rounds with job opportunities by technological companies
+
+
+
+TopCoder
+AtCoder
+
+
+
+Other resources:
+1. Codechef - regular rounds and practice problems
+2. Hackerrank - rounds and challenges, strongly aimed to help companies in recruiting
+3. Sphere Online Judge - vast problems archive
+4. CSAcademy - poised for learningf
+
+
+
+Stress testing
+Unit testing
+
+
+
+In fast languages like C++ and Java operations per sec is 10^8 - 10^9
+In slow languages like python operations per sec is 10^7
+
+
+
+Light operations:
+• Addition, subtraction
+• logical
+• Multiplication
+Heavy operations:
+• %
+• appending to strings/lists
+• recursion
+• math functions like sqrt
+• Input, Output
+
+
+
+Integer Overflow:
+1. Integer 4 bytes in java and python. Heighest value is 2 billion.
+2. In python the size is expanded as much as needed
+3. Product of two integers is integer
+4. Product of one integer and one long is long
+5. Long is 64 bit
+6. Fractions are stored as Numerator and Denominator

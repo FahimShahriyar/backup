@@ -1,0 +1,256 @@
+CCNA - Cisco Certified Network Associate
+Software: Cisco Packet Tracer, GNS3, PuTTY
+
+ncpa.cpl  #Run command. Use to open all network adapters
+net user  #Shell command. Use to see all users in the machine
+net user userName newPassword  #Use to change password
+net user userName *  #Use to change password hiddenly
+
+ipconfig
+ipconfig /all
+getmac  #To get Mac address
+
+MAC (Media Access Control) address / Physical address:
+Mac address has two parts. OUI - Organizationally Unique Identifire(First 48 bits), NIC - Network Interface Controller Specific(Last 48 bits)
+
+RIR - Regional Internet Registry
+AS - Autonomous System
+
+IANA (Internet Assigned Numbers Authority) has divided the world in 5 Regional internet registries:
+1.AFRINIC -  African Network Information Center
+2.APNIC - Asia-Pacific Network Information Centre
+3.ARIN - American Registry for Internet Numbers
+4.LACNIC -  Latin America and Caribbean Network Information Centre
+5.RIPE NCC - Réseaux IP Européens Network Coordination Centre
+
+IP address / Logical address:
+IPv4 - 32 bits
+IPv6 - 128 bits
+A IP address has two parts: 1. Network part  2. Host part
+00000000.00000000.00000000.00000000 = 0.0.0.0
+11111111.11111111.11111111.11111111 = 255.255.255.255
+
+Subnet Mask: Subnet Mask indicates the network part and host part of an IP address.
+There are two ways to write subnet mask
+1. 192.168.0.1/24   # /24 means 255.255.255.0  24 is the network part bit number. So the host part bit number is 32-24 = 8
+2. Dotted decimal value - 255.255.255.0
+
+IPv4 addresses classes:  #IP class is defined in first 8 bits of the IP address
+Class A: 0-127/8 (For end users like - PC, Mobile, Printer)
+Class B: 128-191/16 (For end users like - PC, Mobile, Printer)
+Class C: 192-223/24 (For end users like - PC, Mobile, Printer)
+Class D: 224-239 (For Multicast Address)
+Class E: 240-255 (For R&D)
+
+IPv4 has 3 types of casting:
+1. Unicast - 1 to 1
+2. Multicast - 1 to Many (But not all)
+3. Broadcast – 1 to ALL
+
+Duplex:
+1. Simplex
+2. Half Duplex
+3. Full Duplex
+
+NAT - Network Address Translation:
+IPv4 still has available IPs because there is NATing. NATing means to use Public and Private IPs.
+1. Private IP - Internet unaccessible IP. Private IP is not routable in internet:
+	1. Class A: 10.0.0.0 - 10.255.255.255
+	2. Class B: 172.16.0.0 – 172.31.255.255
+	3. Class C: 192.168.0.0 – 192.168.255.255
+2. Public IP - Internet accessible IP : All IPs except private IPs are public IP
+
+Number of IP:
+Number of usable host IP ((2^n)-2); Where n = Number of host bit. Two IPs are subtracted.
+One subtracted IP is for network and the other one is for broadcast.
+The lowest IP is network Address and the highest IP is Broadcast address
+*If all host bits are 0 then it is a network address.
+*If all host bits are 1 then it is the broadcast address.
+
+Technique for getting Network address:
+1. Main technique:
+	Let, A IP address is 192.168.200.100/28  #If the subnet mask is in Dotted decimal form then convert it into forward slash form.
+	192.168.200.100 = 11000000.10101000.11001000.01100100
+	From subnet mask we get that the net work part of the IP is 28 bit. So The network address of the IP will be first 28 bits of the address and the other 4 bits will be 0.
+	So the network address is 11000000.10101000.11001000.01100000 = 192.168.200.96
+	So the broadcast address is 11000000.10101000.11001000.01101111 = 192.168.200.111
+2. Shortcut technique:
+	Let, A IP address is 192.168.200.100/28  #If the subnet mask is in Dotted decimal form then convert it into forward slash form.
+	From subnet mask we get that the net work part of the IP is 28 bit. The 28th bit means 2^4 = 16. Now we have to go to the table of 16.
+	16*0 = 0
+	16*1 = 16
+	16*2 = 32
+	16*3 = 48
+	16*4 = 64
+	16*5 = 80
+	16*6 = 96
+	16*7 = 112
+	So 100 is in between 96 and 112. So the network address is 192.168.200.96 and the broadcast address is 192.168.200.(112-1) = 192.168.200.111
+	Working of the technique:  From subnet mask we get that the network part of the IP is 28 bit. So the host part is last 4 bits. And for network address these 4 bits will be zero. So Every possible network id's last octate value for the subnet mask will be divided by the 28th bit's positional value which is 16. Thus we get the network address and the broadcast address.
+
+Number of subnets:
+	Let a ip address 192.168.10.0/27
+	So the number of bits for subnet mask is 27-24 = 3 #24 is the default subnet mask for class c IPs
+	So the number of subnets are 2^3 = 8
+	Let a ip address 2.168.10.0/17 which is a class A IP and its default subnet mask is 8
+	So the number of bits for subnet mask is 17-8 = 9
+	So the number of subnets are 2^9 = 512
+
+VLSM (Variable Length Subnet Mask): Calculating sunbet mask and IP range form device count
+Let, 6 switches are connected to a router and the switches have 30,10,60,7,2,20 devices. The IP block is 192.168.1.0/24
+Step1: Arrange the device numbers in decending order.
+Step2: Calculate the minimum subnet mask for the device count including network address and broadcast address.
+Step3: Calculate from the previous row which octate has the subnet mask and the subnet mask's last bit's positional value
+Step-1 - Step-2 - Step-3
+60   -   /26    - 192.168.1.0/26 #This row has no previous row.
+30   -   /27    - 192.168.1.64/27 #Previous row's subnet mask is 26 and it is on the 4th octate. 26th bit's positional value is 64. So 64 is added to the last octate block of this row.
+20   -   /27    - 192.168.1.96/27 #Previous row's subnet mask is 27 and it is on the 4th octate. 27th bit's positional value is 32. So 32 is added to the last octate block of this row.
+10   -   /28    - 192.168.1.128/28 #Previous row's subnet mask is 27 and it is on the 4th octate. 27th bit's positional value is 32. So 32 is added to the last octate block of this row.
+7    -   /28    - 192.168.1.144/28 #Previous row's subnet mask is 28 and it is on the 4th octate. 28th bit's positional value is 16. So 16 is added to the last octate block of this row.
+2    -   /30    - 192.168.1.160/30 #Previous row's subnet mask is 28 and it is on the 4th octate. 28th bit's positional value is 16. So 16 is added to the last octate block of this row.
+
+FLSM (Fixed Length Subnet Mask) : All switches will have same count of devices.
+
+Another example of VLSM:
+Let, 7 switches are connected to a router and the switches have 200,120,40,50,2,120,8 devices. The IP block is 172.16.0.0/20
+Step-1 -  Step-2  - Step-3
+200    -   /26    - 172.16.0.0/24
+120    -   /26    - 172.16.1.0/25
+120    -   /26    - 172.16.1.128/25
+50     -   /26    - 172.16.2.0/26
+40     -   /26    - 172.16.2.64/26
+8      -   /26    - 172.16.2.128/28
+2      -   /26    - 172.16.2.144/30
+
+Same Device connection Crossover Cable (Like PC to PC or PC or PC to Router. Cz PC and Router both can be used as routers)
+Different Device connection Straight Through Cable (Like PC to Switch or PC to Hub)
+
+NIC: A NIC (Network Interface Card) is commonly known as a LAN adapter that provides the physical connection from a computer/network component to a wired/wireless layer 2 media. A NIC has following components:
+1. Interupt Request Line (IRQ)
+2. An input and output address in its memory
+3. Driver software that interfaces with the NIC
+4. A MAC (Media Access Control/Machine Access Code) address
+
+Cabling Types:
+1. Copper Cabling
+	1.Thicnet
+	2.Thinnet
+	3.Unshielded Twisted Pair (UTP)
+2. Fiber Optic Cabling
+
+Cabling instruments: RJ45 connector, Crimping tool, UTP Cat 5
+Crossover cable: 1:3 & 2:6. 1st pin goes to 3rd pin and 2nd pin goes to 6th pin.
+White-Orange - 1 - White-Green
+Orange - 2 - Green
+White-Green - 3 - White-Orange 
+Blue - 4 - White-Brown
+White-Blue - 5 - Brown
+Green - 6 - Orange
+White-Brown - 7 - Blue 
+Brown - 8 - White-Blue
+
+Straight Through cable:
+White-Orange - 1
+Orange - 2
+White-Green - 3
+Blue - 4
+White-Blue - 5
+Green - 6
+White-Brown - 7 
+Brown - 8
+
+OSI model: Open System Interconnection.
+Notes:
+	1. OSI model is used when we connect two different vendors' routers.
+	2. OSI model has 7 layers. 5th,6th & 7th layers are upper layer or system layer and 1st,2nd,3rd & 4th layers are lower layer. Network eningeers work with only lower layer. System autometically configures the upper layer
+	3. Segment, Packet, Frame, Bit are commonly called PDU - Protocol Data Unit
+	4. While sending data 
+OSI model layers:
+7.Application:
+	Notes:
+		1. This layer is user interface
+		2. In this layer data unit is Data.
+6.Presentation:
+	Notes:
+		1. In this layer data unit is Data.
+	Work:
+		1. Maintains file formates.
+		2. Sends data in encrypted form.
+		3. Decrypts received data.
+5.Session:
+	Notes:
+		1. In this layer data unit is Data.
+	Works:
+		1. Establishes connection between mechines before sending or receiving data.
+		2. Creates connection between upper and lower layer.
+		3. Cuts connection of idle users cause every server has a load capacity. So session layer cutts connection with idle users to give support to other users.
+4.Transport:
+	Works:
+		1. Transport layer mainly establishes connection between Sender and Receiver. Session layer is just a helper.
+		2. Flow control.
+	Notes:
+		Connection is established in two way in this mode:
+		1.TCP - Transmission Control Protocol
+			Notes:
+				1. TCP is slower then UDP.
+				2. In this layer data unit is Segment.
+			Works:
+				1. In TCP mode connection establishment is happend in 3 way handshake. First the server sends a Sync packet to the client. The client receives the packet and sends a Sync-acknowledgement packet to the Server. The server receives the packet and sends a acknowledgement packet to the client. Thus the connection is established.
+				2. If sender has 6 Mbps connection and a receiver has 3 Mbps connection then TCP maintains the flow such that the sender can send data in 6 Mbps speed and the receiver can receive data in 3 Mbps speed.
+				3. Divides Data in small segmentations. Every segment has a serial number.First sender sends one segment. When the receiver receives the segment then it sends a acknowledgement to the sender. Then sender sends the next segment. If sender does not receives the acknowledgement then it again sends the same segment after a few moments. That's why it is called reliable mood.
+				4. Every segment has a header. The header has port numbers in it. When the server sends data to a client, every segment of that data has a port number. This port number indicates the tab of the browser or other applications. When client sends data to the server then the header has TCP port numbers like 80 for http in it. If two applications of a machine generates same port numbers then the router changes the last lately generated port number's value.	
+		2.UDP - User Datagram Protocol
+			Notes:
+				1. This mode is unreliable.
+				2. UDP is faster than TCP.
+				3. UDP is used in live streaming, Phone calling etc where we need fast communication and data loss is not a factor / fear.
+				4. In audio and video we use UDP protocol.
+3.Network:
+	Notes:
+		1. Router works in this layer
+		2. Routing protocol: Data sending paths are routing protocol. OSPF, EIGRP, RIP, ISIS etc are routing protocols.
+		3. Routed protocol: IPv4, IPv6, Appletalk are routed protocol.
+		4. Data segments in Network layer are called packets.
+	Works:
+		1. Network layer selects the best path to send the data and forwards packets from one network to another.
+		2. Every packet gets one more header in Network layer. This header has source IP and destination IP. This is called logical addressing.
+2.DataLink:
+	Notes:
+		1. Switch, Bridge works in this layer.
+		2. Data packets in DataLink layer are called Frames.
+	Works:
+		1. When two senders at a time sends to a receiver then datalink layer colntrols the data flow.
+		2. DataLink layer adds one more header which has Physical address or mac address. These are source MAC address(SMAC) and destination MAC address(DMAC).
+		3. This layer checks if the data has altered during transmission. Thats why this layer also adds a trailer to all frames.
+1.Physical :
+	Notes:
+		1. Hub, Repeater works in this layer.
+		2. In this layer frames are converted into bits.
+
+TCP port numbers and protocols: TCP/IP - Transmission Control Protocol / Internet Protocol
+	FTP: File Transfer Protocol - File upload & download
+	FTP -- Data - 20  # Data transfer port
+	FTP -- Control - 21 #User and server connection establishment port
+	
+	Mail transfer:
+	CC - Carbon Copy.
+	BCC - Blind Carbon Copy
+	CC and BCC are used to inform others that a mail has been sent to the person whose email address in in To box. The persons who are in the CC can see all persons in CC and BCC and To. But those who are in BCC can see only who are in CC and To. To can see both CC and BCC.
+	Simple Mail Transfer Protocol (SMTP) - 25 #This protocol sends the mail from user to server
+	POP3 - 110  #This protocol sends mail from server to user. In this protocol after sanding the mail to the user the mail does not exists in the server any longer.
+	IMAP - 143  #This protocol sends mail from server to user. In this protocol after sanding the mail to the user the mail exists in the server.
+	
+	Login Protocol:
+	SSH - 22  #SSH - Secure Shell. This protocol is used to login. But in this protocol userId and password are transfered in encrypted text.
+	Telnet - 23  #This protocol is used to login. But in this protocol userId and password are transfered in plain text.
+	
+	Domain Name System (DNS) - 53
+	HTTP - 80
+	HTTPS - 443 #In https the data is transfered in a secured way which is encryption. This security is provided by the certification providing company. If data is leaked somehow then we can claim to the certification providing company.
+	
+Public DNS IP of Google:
+8.8.8.8
+8.8.4.4
+4.4.2.2
+9.9.9.9
+1.1.1.1 #Most secured DNS IP

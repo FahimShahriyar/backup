@@ -1,0 +1,56 @@
+Software:
+1.7-Zip
+2.Acunetix Web Vulnerability Scanner 8.0
+3.Adobe Acrobat Reader DC
+4.Atom
+5.Avro Keyboard
+6.Cisco Packet Tracer
+7.CodeBlocks
+8.Color Cop
+9.Git version
+10.Google Chrome
+11.Notepad++
+12.PotPlayer
+13.PyCharm
+14.Python
+15.XAMPP
+16.Node.js
+17.EasyEDA
+18.FastStone Image Viewer
+19.Microsoft Visual Studio
+20.
+
+Start:
+1.Paint
+2.Command Prompt
+
+Taskbar:
+1.File manager
+2.Atom
+3.XAMPP
+4.Google Chrome
+5.Notepad++
+
+Desktop:
+1.This PC
+2.Workplace
+3.Cache
+4.Acunetix Web Vulnerability Scanner 8.0
+5.Avro Keyboard
+6.ColorCop
+7.Acunetix WVS Reporter 8
+8.Pycharm
+9.Adobe Acrobat Reader DC
+10.Recycle Bin
+11.Download
+12.PotPlayer
+13.Avro Spell Checker
+14.Cisco Packet Tracer
+
+Plugins:
+Notepad++: AutoSave, Compare, Explorer, HTML Tag, Markdown Panel, MarkdownViewer++, Preview HTML
+Atom: 
+1. atom-live-server	by	jas-chen
+2. autosave-onchange    by	ChexWarrior
+3. emmet		by	emmetio
+4. file-icons		by	file-icons

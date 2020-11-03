@@ -1,0 +1,587 @@
+/*Syntax
+#include <iostream>
+using namespace std;
+
+int main() {
+  b = 1e7;
+  cout << "Hello" << endl;  //End of line
+  cout << "Hello\n" << "Hi\n";  //End of line
+  int a;
+  cin >> a;
+  cout << a << "\n";
+  cout << "Hello " << a << " Hi\n";
+  return 0;
+}
+*/
+
+
+
+Variable types: int, double, char, string, bool
+int a = 1, b = 2, c = 3; //Declaring many variables
+const a = 15; //Constand declaration
+
+
+
+Strings:
+//To use strings, you must include an additional header file in the source code, the <string> library
+#include <string>
+string = string + string; 						String concatanation
+string = string.append(string); 				String concatanation
+string.length(); 								String size
+string.size();  								String size
+string[n] 										Accessing characters
+getline (cin, stringVariableName); 				String input
+int compare(const string& str)					It is used to compare two string objects.
+int length()									It is used to find the length of the string.
+void swap(string& str)							It is used to swap the values of two string objects.
+string substr(int pos,int n)					It creates a new string object of n characters.
+int size()										It returns the length of the string in terms of bytes.
+void resize(int n)								It is used to resize the length of the string up to n characters.
+string& replace(int pos,int len,string& str)	It replaces portion of the string that begins at character position pos and spans len characters.
+string& append(const string& str)				It adds new characters at the end of another string object.
+char& at(int pos)								It is used to access an individual character at specified position pos.
+int find(string& str,int pos,int n)				It is used to find the string specified in the parameter.
+int find_first_of(string& str,int pos,int n)	It is used to find the first occurrence of the specified sequence.
+int find_first_not_of(string& str,int pos,int n )	It is used to search the string for the first character that does not match with any of the characters specified in the string.
+int find_last_of(string& str,int pos,int n)		It is used to search the string for the last character of specified sequence.
+int find_last_not_of(string& str,int pos)		It searches for the last character that does not match with the specified sequence.
+string& insert()								It inserts a new character before the character indicated by the position pos.
+int max_size()									It finds the maximum length of the string.
+void push_back(char ch)							It adds a new character ch at the end of the string.
+void pop_back()									It removes a last character of the string.
+string& assign()								It assigns new value to the string.
+int copy(string& str)							It copies the contents of string into another.
+char& back()									It returns the reference of last character.
+Iterator begin()								It returns the reference of first character.
+int capacity()									It returns the allocated space for the string.
+const_iterator cbegin()							It points to the first element of the string.
+const_iterator cend()							It points to the last element of the string.
+void clear()									It removes all the elements from the string.
+const_reverse_iterator crbegin()				It points to the last character of the string.
+const_char* data()								It copies the characters of string into an array.
+bool empty()									It checks whether the string is empty or not.
+string& erase()									It removes the characters as specified.
+char& front()									It returns a reference of the first character.
+string&  operator+=()							It appends a new character at the end of the string.
+string& operator=()								It assigns a new value to the string.
+char operator[](pos)							It retrieves a character at specified position pos.
+int rfind()										It searches for the last occurrence of the string.
+iterator end()									It references the last character of the string.
+reverse_iterator rend()							It points to the first character of the string.
+void shrink_to_fit()							It reduces the capacity and makes it equal to the size of the string.
+char* c_str()									It returns pointer to an array that contains null terminated sequence of characters.
+const_reverse_iterator crend()					It references the first character of the string.
+reverse_iterator rbegin()						It reference the last character of the string.
+void reserve(inr len)							It requests a change in capacity.
+allocator_type get_allocator();					It returns the allocated object associated with the string.
+
+
+
+Omitting Namespace:
+You might see some C++ programs that runs without the standard namespace library. The using namespace std line can be omitted and replaced with the std keyword, followed by the :: operator for string (and cout) objects:
+
+/*
+#include <iostream>
+#include <string>
+
+int main() {
+  std::string greeting = "Hello";
+  std::cout << greeting;
+  return 0;
+}
+*/
+
+
+
+Arithmatic operators: +, - , *, /, %, ++, --
+
+
+
+Assignment operators: =, +=, -=, *=, /=, %=, &=, |=, ^= (XOR), >>=, <<=, ~= (Bitwise NOT)
+
+
+
+Logical operators:
+&& 	Logical and
+|| 	Logical or
+!	Logical not
+
+
+
+
+#include <cmath>
+min(intVar, intVar)
+max(intVar, intVar)
+abs(x)			//Returns the absolute value of x
+acos(x)			//Returns the arccosine of x, in radians
+asin(x)			//Returns the arcsine of x, in radians
+atan(x)			//Returns the arctangent of x, in radians
+cbrt(x)			//Returns the cube root of x
+ceil(x)			//Returns the value of x rounded up to its nearest integer
+cos(x)			//Returns the cosine of x, in radians
+cosh(x)			//Returns the hyperbolic cosine of x, in radians
+exp(x)			//Returns the value of Ex
+expm1(x)		//Returns ex -1
+fabs(x)			//Returns the absolute value of a floating x
+fdim(x, y)		//Returns the positive difference between x and y
+floor(x)		//Returns the value of x rounded down to its nearest integer
+hypot(x, y)		//Returns sqrt(x2 +y2) without intermediate overflow or underflow
+fma(x, y, z)	//Returns x*y+z without losing precision
+fmax(x, y)		//Returns the highest value of a floating x and y
+fmin(x, y)		//Returns the lowest value of a floating x and y
+fmod(x, y)		//Returns the floating point remainder of x/y
+pow(x, y)		//Returns the value of x to the power of y
+sin(x)			//Returns the sine of x (x is in radians)
+sinh(x)			//Returns the hyperbolic sine of a double value
+tan(x)			//Returns the tangent of an angle
+tanh(x)			//Returns the hyperbolic tangent of a double value
+
+
+
+
+bool: true, false
+
+
+
+Condition:
+if (condition1) {
+  // block of code to be executed if condition1 is true
+} else if (condition2) {
+  // block of code to be executed if the condition1 is false and condition2 is true
+} else {
+  // block of code to be executed if the condition1 is false and condition2 is false
+}
+
+
+
+Short hand if...else (Ternary operator):
+variable = (condition) ? expressionTrue : expressionFalse;
+
+
+
+
+Switch:
+int a = 4, x = 3, y = 4;
+switch(a) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:          //The default keyword specifies some code to run if there is no case match
+    // code block
+}
+
+
+
+Loop:
+while (condition) {
+  // code block to be executed
+}
+
+do {
+  // code block to be executed
+}
+while (condition);
+
+for (int i = 0; i < 5; i++) {
+  cout << i << "\n";
+}
+
+
+
+Array:
+string cars[4] = {"Volvo", "BMW", "Ford", "Mazda"};
+cars[0] = "Opel";
+cout << cars[0];
+
+//You don't have to specify the size of the array. But if you don't, it will only be as big as the elements that are inserted into it:
+string cars[] = {"Volvo", "BMW", "Ford"}; // size of array is always 3
+sizeof(array)/sizeof(array[0]) //calculating length of array
+
+/*Sort an array
+#include <bits/stdc++.h> 
+using namespace std; 
+  
+int main() 
+{ 
+    int arr[] = {1, 5, 8, 9, 6, 7, 3, 4, 2, 0}; 
+    int n = sizeof(arr)/sizeof(arr[0]); 
+  
+    sort(arr, arr+n); 
+    for (int i = 0; i < n; ++i) 
+        cout << arr[i] << " "; 
+  
+    return 0; 
+}
+*/
+
+
+
+Pair:
+/*
+  pair <int, char> pairvar;
+  pairvar.first = 10;
+  pairvar.second = 'H';
+*/
+
+
+
+Pointer:
+string* ptr = &food;
+
+
+
+Function:
+void myFunction(string fname) {
+  cout << fname << " Refsnes\n";
+}
+
+
+
+Default Parameter Value:
+void myFunction(string country = "Norway") {
+  cout << country << "\n";
+}
+
+Function Overloading: With function overloading, multiple functions can have the same name with different parameters:
+int myFunction(int x){}
+float myFunction(float x){}
+double myFunction(double x, double y){}
+
+
+
+define:
+#define sz(v) int(v.size())
+#define all(v) v.begin(), v.end()
+#define pb push_back
+#define ft first
+#define sc second
+#define a() 5,6    //returns two integers
+
+
+
+OOP:
+/*
+class MyClass {       // The class
+  public:             // Access specifier
+    int myNum;        // Attribute (int variable)
+    string myString;	// Attribute (string variable)
+	void myMethod() {  // Method/function defined inside the class
+      cout << "Hello World!";
+    }
+};
+int main() {
+  // Create an object of Car
+  Car carObj1;
+  carObj1.brand = "BMW";
+  carObj1.model = "X5";
+  carObj1.year = 1999;
+  myObj.myMethod();
+  
+  return 0;
+}
+*/
+
+
+Function outside class:
+/*
+class MyClass {        // The class
+  public:              // Access specifier
+    void myMethod();   // Method/function declaration
+};
+
+// Method/function definition outside the class
+void MyClass::myMethod() {
+  cout << "Hello World!";
+}
+
+int main() {
+  MyClass myObj;     // Create an object of MyClass
+  myObj.myMethod();  // Call the method
+  return 0;
+}
+*/
+
+
+Constructor:
+/*
+class Car {        // The class
+  public:          // Access specifier
+    string brand;  // Attribute
+    string model;  // Attribute
+    int year;      // Attribute
+    Car(string x, string y, int z) { // Constructor with parameters
+      brand = x;
+      model = y;
+      year = z;
+    }
+};
+
+int main() {
+  // Create Car objects and call the constructor with different values
+  Car carObj1("BMW", "X5", 1999);
+  Car carObj2("Ford", "Mustang", 1969);
+  
+  return 0;
+}
+*/
+
+
+constructor outside class:
+/*
+class Car {        // The class
+  public:          // Access specifier
+    string brand;  // Attribute
+    string model;  // Attribute
+    int year;      // Attribute
+    Car(string x, string y, int z); // Constructor declaration
+};
+
+// Constructor definition outside the class
+Car::Car(string x, string y, int z) {
+  brand = x;
+  model = y;
+  year = z;
+}
+
+int main() {
+  // Create Car objects and call the constructor with different values
+  Car carObj1("BMW", "X5", 1999);
+  Car carObj2("Ford", "Mustang", 1969);
+
+  // Print values
+  cout << carObj1.brand << " " << carObj1.model << " " << carObj1.year << "\n";
+  cout << carObj2.brand << " " << carObj2.model << " " << carObj2.year << "\n";
+  return 0;
+}
+*/
+
+
+
+Access specifier:
+public - members are accessible from outside the class
+private - members cannot be accessed (or viewed) from outside the class
+protected - members cannot be accessed from outside the class, however, they can be accessed in inherited classes.
+
+
+
+Inheritance:
+derived class (child) - the class that inherits from another class
+base class (parent) - the class being inherited from
+
+
+
+Multilevel inheritance:
+/*
+// Base class (parent)
+class MyClass {
+  public:
+    void myFunction() {
+      cout << "Some content in parent class." ;
+    }
+};
+
+// Derived class (child)
+class MyChild: public MyClass {
+};
+
+// Derived class (grandchild)
+class MyGrandChild: public MyChild {
+};
+
+int main() {
+  MyGrandChild myObj;
+  myObj.myFunction();
+  return 0;
+}
+*/
+
+
+
+Multiple inheritance:
+/*
+// Base class
+class MyClass {
+  public:
+    void myFunction() {
+      cout << "Some content in parent class." ;
+    }
+};
+
+// Another base class
+class MyOtherClass {
+  public:
+    void myOtherFunction() {
+      cout << "Some content in another class." ;
+    }
+};
+
+// Derived class
+class MyChildClass: public MyClass, public MyOtherClass {
+};
+
+int main() {
+  MyChildClass myObj;
+  myObj.myFunction();
+  myObj.myOtherFunction();
+  return 0;
+}
+*/
+
+
+
+Files:
+ofstream		Creates and writes to files
+ifstream		Reads from files
+fstream			A combination of ofstream and ifstream: creates, reads, and writes to files
+
+
+/*
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+  // Create and open a text file
+  ofstream MyFile("filename.txt");
+
+  // Write to the file
+  MyFile << "Files can be tricky, but it is fun enough!";
+
+  // Close the file
+  MyFile.close();
+}
+*/
+
+
+
+/*
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+  // Create a text string, which is used to output the text file
+string myText;
+
+// Read from the text file
+ifstream MyReadFile("filename.txt");
+
+// Use a while loop together with the getline() function to read the file line by line
+while (getline (MyReadFile, myText)) {
+  // Output the text from the file
+  cout << myText;
+}
+
+// Close the file
+MyReadFile.close();
+}
+*/
+
+
+
+Exception:
+/*
+try {
+  int age = 15;
+  if (age > 18) {
+    cout << "Access granted - you are old enough.";
+  } else {
+    throw (age);
+  }
+}
+catch (int myNum) {
+  cout << "Access denied - You must be at least 18 years old.\n";
+  cout << "Age is: " << myNum;
+}
+*/
+
+
+
+Handle Any Type of Exceptions (...):
+//If you do not know the throw type used in the try block, you can use the "three dots" syntax (...) inside the catch block, which will handle any type of exception:
+/*
+try {
+  int age = 15;
+  if (age > 18) {
+    cout << "Access granted - you are old enough.";
+  } else {
+    throw 505;
+  }
+}
+catch (...) {
+  cout << "Access denied - You must be at least 18 years old.\n";
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+Rock, Paper, Scissors:
+Alice and Bob decided to play exactly n rounds of the game described above. Alice decided to show rock a1 times, show scissors a2 times and show paper a3 times. Bob decided to show rock b1 times, show scissors b2 times and show paper b3 times. Though, both Alice and Bob did not choose the sequence in which they show things. It is guaranteed that a1+a2+a3=n and b1+b2+b3=n.
+
+Your task is to find two numbers:
+1. the minimum number of round Alice can win;
+2. the maximum number of rounds Alice can win.
+
+/*
+#include <bits/stdc++.h>
+
+#define sz(v) int(v.size())
+#define all(v) v.begin(), v.end()
+#define pb push_back
+#define ft first
+#define sc second
+
+using namespace std;
+
+int n;
+vector<int> a, b;
+
+inline void read() {
+	cin >> n;
+	a.resize(3);
+	b.resize(3);
+	for (int i = 0; i < 3; i++) cin >> a[i];
+	for (int i = 0; i < 3; i++) cin >> b[i];
+}
+	
+inline void solve() {
+	int ans1 = INT_MAX;
+	vector<pair<int, int> > ord;
+	ord.pb({0, 0});
+	ord.pb({0, 2});
+	ord.pb({1, 1});
+	ord.pb({1, 0});
+	ord.pb({2, 2});
+	ord.pb({2, 1});
+	sort(all(ord));
+	do {
+		vector<int> a1 = a, b1 = b;
+		for (int i = 0; i < sz(ord); i++) {
+			int cnt = min(a1[ord[i].ft], b1[ord[i].sc]);
+			a1[ord[i].ft] -= cnt;
+			b1[ord[i].sc] -= cnt;			
+		}
+		int cur = min(a1[0], b1[1]) + min(a1[1], b1[2]) + min(a1[2], b1[0]);
+		ans1 = min(ans1, cur);
+	} while(next_permutation(all(ord)));
+	int ans2 = min(a[0], b[1]) + min(a[1], b[2]) + min(a[2], b[0]);
+	cout << ans1 << ' ' << ans2 << endl;
+}
+
+int main () {
+    read();
+    solve();
+}
+*/
