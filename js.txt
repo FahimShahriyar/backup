@@ -2,21 +2,21 @@
 *ES5 is supported by all browsers. But ES6, ES7, ES8 is only supported by the modern browsers. Old browsers does not support ES6, ES7, ES8. The solution to this problem is transpiling and polyfilling (converting to ES5)
 *JS does not need semi-colons
 *Dynamic Typing - Data types are automatically assigned to variables
-*variables that does not hava any data are undefined type
+*variables that does not have any data are undefined type
 *Type coertion - Joining strings, numbers, booleans and undefined with '+' operator, incrementing strings
-*ES5 is supported by all browsers. But ES6, ES7, ES8 is only supported by the modern browsers. Old browsers does not support ES6, ES7, ES8. The solution to this problem is transpiling and polyfilling (converting to ES5)
 *JS does not need semi-colons
 *Dynamic Typing - Data types are automatically assigned to variables
-*variables that does not hava any data are undefined type
+*variables that does not have any data are undefined type
 *Type coertion - Joining strings, numbers, booleans and undefined with '+' operator
 *\n is used for new line
 *numOne < numTwo returns true or false
-*operator precidence - operators are performed decendingly as their precidence
+*operator precedence - operators are performed descending as their precedence
 *x = y = 10 assigns both variables a value of 10
 *2 == '2'  returns true. == operator does type coertion
 *2 === '2' returns false. This operator is called strict equality
 *When ever JS expects a value, is an expression. Like addition, subtraction, multiplication, greater than, less than, equals
 *statements does not produce immediate values. They just perform an action. Like if else statement, while loop, for loop, function declaration, print statement, assignment statement 
+*DOM - Document Object Model  //HTML is stored in DOM
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -30,7 +30,7 @@ typeof varName  //returns the type of the variable in string format
 
 
 
-Type coertion:
+Type coercion:
 /*
 console.log('I am ' + 23 + ' years old');
 console.log('23' - '10' - 3);
@@ -218,26 +218,118 @@ x.forEach(y)
 
 
 
+How JS work behind:
+1. JS code ->Abstract syntax tree -> Machine code  //Parser in the engine parses the JS code, looks for errors and makes an abstract syntax tree. Then the engine creates Machine code form the abstract syntax tree.
+2. Global execution context : variable === window.variable
+3. Global execution context is associated with global object which is the window object
+4. Every function in the global execution context gets its own execution context over the global execution context.
+5. When the function is terminated, its execution context is also removed.
+6. We can attach an execution context to an execution context object
+7. execution context object has 3 properties : 1. Variable object 2. Scope chain 3. This variable
+8. Creation of execution context has 2 phases : 1. Creation phase 2. execution phase
+9. In the creation phase:
+    1. Variable object is created : all variables are created and set to undefined. All functions are acknowledged
+    2. Scope chain is created
+    3. Value of 'this' variable is determined
+10. In execution phase, code generated in the creation phase is ran line by line.
+11. An execution context is only created when a function is called.
+
+
+
+Hoisting:
+*As functions are acknowledged in the creation phase before the execution phase, it is possible to call a function before it is declared 
+*Hoisting for functions works only with function declaration not with function expression. Because if we use function expression, after the creation phase, the function variable will be undefined.
+*for variables also, Hoisting will result to undefined for the same reason in the above point.
+/*
+write()
+function write(){
+    console.log("I am writing")
+}
+*/
+
+
+
+Scope chain:
+1. Scope chain is the hierarchy of execution contexts.
+2. A variable is available in the execution context it is created and in all execution contexts that are above of the execution context it is created
+
+
+
+Determination of this variables:
+1. In any regular function, this variable points to the window object. Functions inside a method are also a regular function like the functions that are stated in the global context. Those are also attached with the global context.
+2. In method call, this variable points to the object it is stated.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
 
+Method borrowing:
+/*
+var f = {
+    a : 100,
+    b : function(){
+        console.log(this.a)
+    }
+}
+
+var s = {
+    a : 200,
+}
+
+s.b = f.b
+s.b()
+*/
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+There is a saying, Everything is an object in JS 
+There are Two data types in Java Scripts:
+1. Primitives: numbers, string, booleans, undefined, Null
+2. Objects: Arrays, Functions, Objects, Dates, Wrappers of Number, String and Boolean
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
 
+Classes are called Constructor or Prototype in JS:
+/*
+var Person = function(first, last , year, job){  //first letter of constructor function name is capital by convention
+    this.name = {
+        first,
+        last,
+    }
+    this.year = year
+    this.job = job
+    this.work = function(){
+        console.log(this.job)
+    }
+}
+
+var obj = new Person('Fahim', 'Shahriyar', 2000, 'student')  //new operator creates an empty object
+
+console.log(obj.name)
+obj.work()
+
+// Adding methods and variables into a constructor. This methods and classes can not be inherited
+Person.prototype.go = function() {
+    console.log(this.number)
+}
+obj.go()
+Person.prototype.number = 10
+obj.go()
 
 
+//Inherit another constructor
+var Teacher = function(first, last, year, subject, job = 'teacher'){
+    console.log(this)
+    Person.call(this, first, last, year, job)
+    this.subject = subject
+}
 
-
-
-
-
-
-
-
-
-
+var sir = new Teacher('Muir', 'Ahmed', 3000, 'chemistry')
+console.log(sir.subject)
+*/
 
 
 
