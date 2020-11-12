@@ -2236,7 +2236,7 @@ var style = document.createElement("style");
 document.head.appendChild(style);
 style.sheet.insertRule("#target{color:blue;}");
 
-var varName = prompt("Entr a number / string", "Dfault value");
+var varName = prompt("Enter a number / string", "Default value");
 
 
 

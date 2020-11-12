@@ -150,6 +150,12 @@ Truthly values: Values other than Falsy Values
 
 Functions:
 
+1. A function is an instance of the Object type
+2. A function behaves like any other object
+3. We can store functions in a variable
+4. We can pass a function as an argument. This is universal for both function expression and function declaration.
+5. We can return a function from a function
+
 Function declaration:
 function functionName (parameter){
     statements
@@ -159,6 +165,58 @@ Function expression:
 var functionName = function(parameter){
     statements
 }
+
+/* Function return
+function x(){
+    return function(){ //Function without a name is an anonymous function
+        console.log("I am a function inside a function")
+    }
+}
+x()()
+*/
+
+/* closure - Inner function has always access to the variables and functions of outer function even if the outer function has terminated. The reason is though after execution a function looses its execution context, its scope chain is still their. Thats why inner function can still access the variable object of the outer function.
+function x(){
+    let x = 10
+    return function(){
+        console.log(x)
+    }
+}
+x()()
+
+let y = x()
+y()
+*/
+
+/*passing function as argument or call back function
+function a(x , y){  //call back function
+    y(x)
+}
+
+a(20, function(b){
+    console.log(b)
+})
+*/
+
+/*Data privacy creating new scope top of the global scope. Calling function while expressing it. Java script parser thinks that anything that is inside a parenthesis can not be a statement. It is always an expression.
+//This is called ifi function. IFI - Immediate Function Invocation Syntax
+(function(){
+    let x = 10
+    console.log(x)
+})()
+*/
+
+/* call, apply and bind
+function x(a,b,c){
+    console.log(a + " " + b + " " + c)
+}
+
+x.call(this, 10, 20, 30)
+x.apply(this, [10, 20, 30])
+
+let y = x.bind(this, 10, 20)
+y(30)
+*/
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -267,8 +325,8 @@ Method borrowing:
 /*
 var f = {
     a : 100,
-    b : function(){
-        console.log(this.a)
+    b : function(x , y){
+        console.log(this.a + " " + x + " " + y)
     }
 }
 
@@ -276,8 +334,15 @@ var s = {
     a : 200,
 }
 
-s.b = f.b
-s.b()
+s.b = f.b //creating new element
+s.b(10, 20)
+
+f.b.call(s, 10, 20) //method borrowing with call function
+
+f.b.apply(s, [10, 20])  //method borrowing with apply function. This takes the targeted object and an array of parameters
+
+let c = f.b.bind(s, 10) //bind method allows to give partial parameters. It returns another function with rest of the parameter
+c(20)
 */
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -286,7 +351,7 @@ s.b()
 There is a saying, Everything is an object in JS 
 There are Two data types in Java Scripts:
 1. Primitives: numbers, string, booleans, undefined, Null
-2. Objects: Arrays, Functions, Objects, Dates, Wrappers of Number, String and Boolean
+2. Objects: Arrays, Functions, Objects, Dates, Wrappers of Number, String and Boolean // console.info(Object variable name). Objects are reference to the memory address
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -329,7 +394,40 @@ var Teacher = function(first, last, year, subject, job = 'teacher'){
 
 var sir = new Teacher('Muir', 'Ahmed', 3000, 'chemistry')
 console.log(sir.subject)
+console.log(sir.hasOwnProperty('first')) //Returns true for own properties. Not for inherited properties
+
 */
+
+
+
+/* creating object with Object.create method
+var person = {
+    work : function(){
+        console.log(this.name)
+    }
+}
+
+//adding object elements
+var fahim = Object.create(Person, {
+    name : {value : "Fahim"},
+    job : {value : 'student'},
+    year : {value : 2000},
+})
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
