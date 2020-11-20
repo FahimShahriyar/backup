@@ -1,6 +1,6 @@
 *ES6/ES2015 is the biggest update to the language
 *ES5 is supported by all browsers. But ES6, ES7, ES8 is only supported by the modern browsers. Old browsers does not support ES6, ES7, ES8. The solution to this problem is transpiling and polyfilling (converting to ES5)
-*JS does not need semi-colons
+*JS does not need semi-colons strictly. Where a semicolon is needed, JS automatically adds it behind the scene. The process that does this is called Automatically Semicolon Insertion.
 *Dynamic Typing - Data types are automatically assigned to variables
 *variables that does not have any data are undefined type
 *Type coertion - Joining strings, numbers, booleans and undefined with '+' operator, incrementing strings
@@ -17,6 +17,7 @@
 *When ever JS expects a value, is an expression. Like addition, subtraction, multiplication, greater than, less than, equals
 *statements does not produce immediate values. They just perform an action. Like if else statement, while loop, for loop, function declaration, print statement, assignment statement 
 *DOM - Document Object Model  //HTML is stored in DOM
+*DRY - Don't Repeat Yourself - Never use same code again and again. Just make a function and call it.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -97,6 +98,8 @@ console.log(x)
 
 console.log(`Is y less than 10? ${y<10 ? true : false}`)
 */
+
+stringVar.replace('presentString', futureString)  //replaces presentChildString with futureChildString
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -175,6 +178,23 @@ function x(){
 x()()
 */
 
+/*Arrow function
+var x =  y=>  y
+console.log(x(10))
+*/
+
+/*Arrow function with no parameter
+var x =  ()=> 'Hello world'
+console.log(x())
+*/
+
+/*Arrow function with parenthesis
+var x =  (a,b)=>{
+    return a+b
+}
+console.log(x(10, 20))
+*/
+
 /* closure - Inner function has always access to the variables and functions of outer function even if the outer function has terminated. The reason is though after execution a function looses its execution context, its scope chain is still their. Thats why inner function can still access the variable object of the outer function.
 function x(){
     let x = 10
@@ -186,6 +206,17 @@ x()()
 
 let y = x()
 y()
+*/
+
+/*closure
+function x(){
+    document.addEventListener('click', function(){
+        console.log("Hi i am working")
+    })
+    console.log('Start')
+}
+
+x()
 */
 
 /*passing function as argument or call back function
@@ -266,8 +297,8 @@ for(var i = 0; i<10; i++)
 while(i<10)
 /*
 var x = [1,2,3,4,5,6,7,8]
-var y = function(item){
-    console.log(item)
+var y = function(currentElement, currentIndex, entireArray){
+    console.log(currentIndex + ' - ' +currentElement)
 }
 x.forEach(y)
 */
@@ -414,15 +445,57 @@ var fahim = Object.create(Person, {
     year : {value : 2000},
 })
 */
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
 
+Module pattern: Modules are used to ensure data privacy. Modules uses IFI and Closure.
+/*
+var module = (function(){
+    let x = 10
+
+    function work(add){
+        console.log(x+add)
+    }
+
+    return {
+        work : function(para){
+            work(para)
+        },
+    }
+})()
+
+module.work(10)  //x and work are never accessible from the global scope
+
+var second = (function(mod){
+    return {
+        work: function(){
+            mod.work(10)  //If we want to use other modules inside a module then we should pass the other modules as parameters into our module. It is a good practice. Because if we want to rename the other modules then we don't need to change every where of our code. We can just simply change the name in the parameter.
+        },
+    }
+})(module)
+
+second.work()
+*/
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
 
+DOM Manipultion:
+/*
+var x = document.querySelectorAll('body , head')  //returns a NodeList of the selected elements. A NodeList object is a list of nodes extracted from a document. NodeList is like an array.
 
+x.forEach(function(element){
+    element.style.backgroundColor = 'red'
+});
+*/
+
+document.querySelector('.class/#id').insertAjacentHTML('beforebegin', string) //inserts the string as a sibling element before the selected element
+document.querySelector('.class/#id').insertAjacentHTML('afterbegin', string) //inserts the string as a child element inside the top of the selected element
+document.querySelector('.class/#id').insertAjacentHTML('beforeend', string) //inserts the string as a child element inside the bottom of the selected element
+document.querySelector('.class/#id').insertAjacentHTML('afterend', string) //inserts the string as a sibling element after the selected element
 
 
 
